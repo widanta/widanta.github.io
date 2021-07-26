@@ -1,0 +1,403 @@
+body {
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e87c18;
+  height: 5px;
+  border-radius: 15px;
+}
+
+.navbar-color {
+  background-color: #f5f5f5;
+}
+
+#navbarNav ul li a {
+  color: #e87c18;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* akhir navbar */
+
+/* header */
+.judul-atas {
+  font-family: "kanit", sans-serif;
+  font-size: 36px;
+  color: #e87c18;
+  font-weight: bold;
+}
+
+.sub-judul {
+  font-family: "kanit", sans-serif;
+  font-size: 32px;
+}
+
+.p-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.model-img {
+  margin-top: 100px;
+}
+.model {
+  width: 350px;
+}
+/* akhir header */
+
+/* content */
+
+#content {
+  margin-top: 100px;
+}
+
+.header-img {
+  width: 200px;
+  height: 200px;
+  margin: 5px auto 5px;
+}
+
+.header-contact-img {
+  width: 200px;
+  height: 200px;
+}
+
+.maps-judul {
+  font-size: 24px;
+  font-family: "kanit", sans-serif;
+  color: #e87c18;
+  font-weight: bold;
+  margin: 0;
+}
+
+.maps-p {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #8f8f8f;
+  margin-bottom: 8;
+}
+
+.kotak-luar {
+  background-color: white;
+  border-radius: 10px;
+  height: auto;
+}
+
+.contact-info {
+  background-color: #f0aa69;
+  height: 415px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin: 0px auto 0px;
+}
+
+.contact-input {
+  margin-top: 20px;
+  margin: 0px auto 0px;
+}
+
+.btn-kirim {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #e87c18;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: rgb(245, 245, 245);
+}
+
+.lokasi,
+.email,
+.kontak {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.lokasi-i {
+  color: red;
+  font-size: 16px;
+}
+
+.kontak-i {
+  color: green;
+  font-size: 16px;
+}
+
+.bulet {
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.link {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.link-button i {
+  color: black;
+}
+
+.link-button {
+  text-align: center;
+}
+/* akhir */
+
+/* footer */
+#footer {
+  background-color: black;
+  height: 165px;
+  overflow: hidden;
+}
+
+#footer h2 {
+  color: white;
+  font-family: "kanit", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #e87c18;
+}
+
+.ceated-span {
+  color: white;
+}
+
+.love-span {
+  color: red;
+}
+
+.by-span {
+  color: white;
+}
+
+#footer .footer-img img {
+  height: 40px;
+}
+
+#footer .footer-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+#footer .footer-text p a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer .footer-text a {
+  text-decoration: none;
+}
+/* akhir footer */
+
+/* resopnsive-screen */
+
+@media (max-width: 768px) {
+  .header-img {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto 5px;
+  }
+
+  .header-contact-img {
+    width: 150px;
+    height: 150px;
+  }
+  .model {
+    width: 200px;
+    margin-top: 80px;
+  }
+  .wadah {
+    width: 90%;
+    height: auto;
+  }
+
+  button {
+    text-align: end;
+  }
+
+  .btn-kirim {
+    font-size: 16px;
+    text-align: end;
+  }
+
+  #footer {
+    background-color: black;
+  }
+
+  #footer h2 {
+    color: white;
+    font-family: "kanit", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #e87c18;
+  }
+
+  #footer .footer-img img {
+    height: 25px;
+  }
+
+  #footer .footer-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: white;
+  }
+
+  #footer .footer-text p a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footer .footer-text a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    text-align: center;
+    margin: 0px auto;
+  }
+  p {
+    text-align: start;
+  }
+
+  h1 {
+    text-align: start;
+  }
+
+  h3 {
+    text-align: start;
+  }
+
+  .alert-success {
+    border-radius: 10px;
+  }
+
+  .header-img {
+    width: 200px;
+    height: 200px;
+    margin: 5px auto 5px;
+  }
+
+  .header-contact-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .p-card {
+    margin-bottom: 32px;
+  }
+
+  .contact-info {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .link {
+    margin-bottom: 30px;
+  }
+
+  .p-contact {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    text-align: start;
+    margin-top: 8px;
+  }
+
+  .navbar-logo {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2px;
+  }
+
+  .model {
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .wadah {
+    width: 90%;
+    height: auto;
+  }
+
+  #footer {
+    background-color: black;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  #footer h2 {
+    color: white;
+    font-family: "kanit", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #e87c18;
+  }
+
+  #footer .footer-img img {
+    height: 20px;
+  }
+
+  #footer .footer-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: white;
+  }
+
+  #footer .footer-text p a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footer .footer-text a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .bulet {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bulet {
+    margin: 0px 3px 3px 0px;
+  }
+}
