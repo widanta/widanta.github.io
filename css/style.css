@@ -42,6 +42,10 @@ body {
 /* akhir navbar */
 
 /* about */
+.header-about {
+  margin-top: 170px;
+}
+
 .judul-atas {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -477,6 +481,9 @@ body {
   }
 
   /* font */
+  .header-about {
+    margin-top: 50px;
+  }
 
   .judul-about {
     font-size: 36px;
@@ -531,6 +538,7 @@ body {
     background-color: black;
     height: 50px;
     overflow: hidden;
+    margin-bottom: 50px;
   }
 
   #footer h2 {
