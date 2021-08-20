@@ -476,8 +476,12 @@ body {
     white-space: nowrap;
     -webkit-tap-highlight-color: transparent;
     font-size: 25px;
-    color: #e87c18;
+    color: #7d7d7d;
     font-weight: bold;
+  }
+
+  .home {
+    color: #e87c18;
   }
 
   /* font */
