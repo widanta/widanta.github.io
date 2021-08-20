@@ -266,6 +266,40 @@ body {
     margin-bottom: 2px;
   }
 
+  /* nav bar atas */
+  .navbar {
+    display: none;
+  }
+
+  .nav {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    z-index: 99999;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 25px;
+    color: #7d7d7d;
+    font-weight: bold;
+  }
+
+  .active {
+    color: #e87c18;
+  }
+
   .model {
     width: 300px;
     justify-content: center;
@@ -304,6 +338,7 @@ body {
     background-color: black;
     height: 50px;
     overflow: hidden;
+    margin-bottom: 50px;
   }
 
   #footer h2 {
