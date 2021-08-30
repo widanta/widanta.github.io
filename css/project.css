@@ -428,8 +428,8 @@ body {
   .judul-cta {
     font-size: 18px;
     text-align: center;
-    line-height: 50px;
-    margin-bottom: 0px;
+    line-height: 20px;
+    margin-top: 30px;
   }
   .button-cta {
     text-align: center;
