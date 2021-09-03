@@ -369,6 +369,10 @@ body {
   font-weight: bold;
 }
 
+.scroll-top.active {
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .model {
     width: 250px;

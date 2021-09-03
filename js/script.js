@@ -27,9 +27,12 @@ form.addEventListener("submit", (e) => {
 });
 
 // scroll top
-const scrollUp = document.getElementById("scroll-up");
-function scrollTop() {
-  if (this.scrollY >= 500) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
-}
-window.addEventListener("scroll", scrollUp);
+const scrollTop = document.getElementById("scroll-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollTop.classList.add("active");
+  } else {
+    scrollTop.classList.remove("active");
+  }
+});
