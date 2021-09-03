@@ -25,3 +25,11 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+// scroll top
+const scrollUp = document.getElementById("scroll-up");
+function scrollTop() {
+  if (this.scrollY >= 500) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
