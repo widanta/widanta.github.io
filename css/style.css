@@ -373,6 +373,8 @@ body {
   opacity: 1;
 }
 
+/* akhir */
+
 @media (max-width: 768px) {
   .model {
     width: 250px;

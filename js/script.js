@@ -27,7 +27,8 @@ form.addEventListener("submit", (e) => {
 });
 
 // scroll top
-const scrollTop = document.getElementById("scroll-top");
+
+const scrollTop = document.querySelector(".scroll-top");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 100) {
