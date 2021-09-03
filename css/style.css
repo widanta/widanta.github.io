@@ -349,7 +349,6 @@ body {
   text-decoration: none;
 }
 /* akhir footer */
-
 .scroll-top {
   background: #e87c18;
   position: fixed;
@@ -598,6 +597,22 @@ body {
 
   #footer .footer-text a {
     text-decoration: none;
+  }
+
+  .scroll-top {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    font-weight: bold;
+    right: 20px;
+  }
+
+  .scroll-top.active {
+    bottom: 60px;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
 

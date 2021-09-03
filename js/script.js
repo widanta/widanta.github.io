@@ -1,3 +1,14 @@
+// scroll top
+const scrollTop = document.querySelector(".scroll-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollTop.classList.add("active");
+  } else {
+    scrollTop.classList.remove("active");
+  }
+});
+
 // script contact form
 const scriptURL = "https://script.google.com/macros/s/AKfycbyrVWW2XxaTjYDGe3LlNBsiXRkB2gxM_5gpjno-kBWcrD9hL-uYJRlCG9T6DR2DHrjj/exec";
 const form = document.forms["Contact-Form"];
@@ -24,16 +35,4 @@ form.addEventListener("submit", (e) => {
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
-});
-
-// scroll top
-
-const scrollTop = document.querySelector(".scroll-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    scrollTop.classList.add("active");
-  } else {
-    scrollTop.classList.remove("active");
-  }
 });
