@@ -1,480 +1,482 @@
 body {
-  height: auto;
-  background-color: rgb(245, 245, 245);
+    height: auto;
+    background-color: rgb(245, 245, 245);
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 5px;
-  background-color: transparent;
+    width: 8px;
+    height: 5px;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e87c18;
-  height: 5px;
-  border-radius: 15px;
+    background-color: #e87c18;
+    height: 5px;
+    border-radius: 15px;
 }
 
 .navbar-color {
-  background-color: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
 }
 
 #navbarNav ul li a {
-  color: #e87c18;
-  font-size: 16px;
-  font-weight: bold;
+    color: #e87c18;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .nav {
-  display: none;
+    display: none;
 }
 /* akhir navbar */
 
 /* header */
 .header-content {
-  margin-top: 150px;
+    margin-top: 150px;
 }
 
 .judul-atas {
-  font-family: "kanit", sans-serif;
-  font-size: 36px;
-  color: #e87c18;
-  font-weight: bold;
+    font-family: "kanit", sans-serif;
+    font-size: 36px;
+    color: #e87c18;
+    font-weight: bold;
 }
 
 .sub-judul {
-  font-family: "kanit", sans-serif;
-  font-size: 32px;
+    font-family: "kanit", sans-serif;
+    font-size: 32px;
 }
 
 .p-header {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
 }
 
 .model-img {
-  margin-top: 120px;
+    margin-top: 120px;
 }
 .model {
-  width: 350px;
+    width: 350px;
 }
 /* akhir header */
 
 /* content */
 .card-content {
-  width: 100%;
-  height: auto;
-  margin: 0px auto 0px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px;
 }
 
 .judul-content {
-  font-size: 20px;
-  color: black;
-  font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
 .p-content {
-  font-size: 16px;
-  color: #8f8f8f;
-  font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #8f8f8f;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 /* akhir-content */
 
 /* cta */
 #cta {
-  margin-top: 80px;
-  margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .cta-wadah {
-  background-color: #7d7d7d;
-  width: 100%;
-  height: 100px;
-  margin: 0px auto 0px;
-  border-radius: 10px;
+    background-color: #7d7d7d;
+    width: 100%;
+    height: 100px;
+    margin: 0px auto 0px;
+    border-radius: 10px;
 }
 
 .judul-cta {
-  line-height: 100px;
-  color: white;
-  font-family: "kanit", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+    line-height: 100px;
+    color: white;
+    font-family: "kanit", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .button-cta {
-  line-height: 100px;
-  text-align: end;
+    line-height: 100px;
+    text-align: end;
 }
 
 .btn-dua {
-  background-color: #e87c18;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+    background-color: #e87c18;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
 .btn-satu {
-  background-color: #7d7d7d;
-  color: white;
-  border: 1px solid #e87c18;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+    background-color: #7d7d7d;
+    color: white;
+    border: 1px solid #e87c18;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 /* akhir-cta */
 
 /* footer */
 #footer {
-  background-color: black;
-  height: 165px;
-  overflow: hidden;
+    background-color: black;
+    height: 165px;
+    overflow: hidden;
 }
 
 #footer h2 {
-  color: white;
-  font-family: "kanit", sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  color: #e87c18;
+    color: white;
+    font-family: "kanit", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #e87c18;
 }
 
 .ceated-span {
-  color: white;
+    color: white;
 }
 
 .love-span {
-  color: red;
+    color: red;
 }
 
 .by-span {
-  color: white;
+    color: white;
 }
 
 #footer .footer-img img {
-  height: 40px;
+    height: 40px;
 }
 
 #footer .footer-text p {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: white;
 }
 
 #footer .footer-text p a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 #footer .footer-text a {
-  text-decoration: none;
+    text-decoration: none;
 }
 /* akhir footer */
 
 /* responsive-scren */
 
 @media (max-width: 1024px) {
-  .card-content {
-    width: 263px;
-    height: auto;
-  }
+    .card-content {
+        width: 263px;
+        height: auto;
+    }
 
-  .model {
-    width: 260px;
-    margin-top: 50px;
-  }
+    .model {
+        width: 260px;
+        margin-top: 50px;
+    }
 
-  .cta-wadah {
-    width: auto;
-    height: 100px;
-  }
+    .cta-wadah {
+        width: auto;
+        height: 100px;
+    }
 }
 
 @media (max-width: 768px) {
-  .model {
-    width: 200px;
-    margin-top: 80px;
-  }
-  .card-content {
-    width: 180px;
-    height: 90px;
-  }
+    .model {
+        width: 200px;
+        margin-top: 80px;
+    }
+    .card-content {
+        width: 180px;
+        height: 90px;
+    }
 
-  .cta-wadah {
-    width: auto;
-    height: 100px;
-  }
+    .cta-wadah {
+        width: auto;
+        height: 100px;
+    }
 
-  .judul-cta {
-    font-size: 24px;
-    text-align: start;
-    line-height: 100px;
-    margin-bottom: 0px;
-  }
-  .button-cta {
-    text-align: end;
-    line-height: 100px;
-  }
-  .btn-satu,
-  .btn-dua {
-    text-align: end;
-    font-size: 14px;
-  }
+    .judul-cta {
+        font-size: 24px;
+        text-align: start;
+        line-height: 100px;
+        margin-bottom: 0px;
+    }
+    .button-cta {
+        text-align: end;
+        line-height: 100px;
+    }
+    .btn-satu,
+    .btn-dua {
+        text-align: end;
+        font-size: 14px;
+    }
 
-  #footer {
-    background-color: black;
-  }
+    #footer {
+        background-color: black;
+    }
 
-  #footer h2 {
-    color: white;
-    font-family: "kanit", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: #e87c18;
-  }
+    #footer h2 {
+        color: white;
+        font-family: "kanit", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #e87c18;
+    }
 
-  #footer .footer-img img {
-    height: 25px;
-  }
+    #footer .footer-img img {
+        height: 25px;
+    }
 
-  #footer .footer-text p {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    color: white;
-  }
+    #footer .footer-text p {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        color: white;
+    }
 
-  #footer .footer-text p a {
-    text-decoration: none;
-    color: white;
-  }
+    #footer .footer-text p a {
+        text-decoration: none;
+        color: white;
+    }
 
-  #footer .footer-text a {
-    text-decoration: none;
-  }
+    #footer .footer-text a {
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 425px) {
-  body {
-    text-align: center;
-    margin: 0px auto;
-  }
-  p {
-    text-align: start;
-  }
+    body {
+        text-align: center;
+        margin: 0px auto;
+    }
+    p {
+        text-align: start;
+    }
 
-  h1 {
-    text-align: start;
-  }
+    h1 {
+        text-align: start;
+    }
 
-  h3 {
-    text-align: start;
-  }
+    h3 {
+        text-align: start;
+    }
 
-  .header-content {
-    margin-top: 50px;
-  }
+    .header-content {
+        margin-top: 50px;
+    }
 
-  .navbar-logo {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 2px;
-  }
+    .navbar-logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 2px;
+    }
 
-  /* nav bar atas */
-  .navbar {
-    display: none;
-  }
+    /* nav bar atas */
+    .navbar {
+        display: none;
+    }
 
-  .nav {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    z-index: 99999;
-  }
+    .nav {
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        z-index: 99999;
+    }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    min-width: 50px;
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-tap-highlight-color: transparent;
-    font-size: 25px;
-    color: #7d7d7d;
-    font-weight: bold;
-  }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        -webkit-tap-highlight-color: transparent;
+        font-size: 25px;
+        color: #7d7d7d;
+        font-weight: bold;
+    }
 
-  .active {
-    color: #e87c18;
-  }
+    .active {
+        color: #e87c18;
+    }
 
-  .model {
-    width: 300px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    overflow: hidden;
-    text-align: center;
-    margin: 0px auto;
-  }
+    .model {
+        width: 300px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+        margin: 0px auto;
+    }
 
-  .card-content {
-    width: 100%;
-    height: auto;
-  }
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
 
-  .cta-wadah {
-    width: auto;
-    height: auto;
-  }
+    .cta-wadah {
+        width: auto;
+        height: auto;
+    }
 
-  .judul-cta {
-    font-size: 18px;
-    text-align: center;
-    line-height: 50px;
-    margin-bottom: 0px;
-  }
-  .button-cta {
-    text-align: center;
-  }
-  .btn-satu,
-  .btn-dua {
-    text-align: center;
-  }
-  #footer {
-    background-color: black;
-    height: 50px;
-    overflow: hidden;
-    margin-bottom: 50px;
-  }
+    .judul-cta {
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 0px;
+    }
+    .button-cta {
+        text-align: center;
+    }
+    .btn-satu,
+    .btn-dua {
+        text-align: center;
+    }
+    #footer {
+        background-color: black;
+        height: 50px;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
 
-  #footer h2 {
-    color: white;
-    font-family: "kanit", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: #e87c18;
-  }
+    #footer h2 {
+        color: white;
+        font-family: "kanit", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #e87c18;
+    }
 
-  #footer .footer-img img {
-    height: 20px;
-  }
+    #footer .footer-img img {
+        height: 20px;
+    }
 
-  #footer .footer-text p {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    color: white;
-  }
+    #footer .footer-text p {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        color: white;
+    }
 
-  #footer .footer-text p a {
-    text-decoration: none;
-    color: white;
-  }
+    #footer .footer-text p a {
+        text-decoration: none;
+        color: white;
+    }
 
-  #footer .footer-text a {
-    text-decoration: none;
-  }
+    #footer .footer-text a {
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 375px) {
-  body {
-    text-align: center;
-    margin: 0px auto;
-  }
-  p {
-    text-align: start;
-  }
+    body {
+        text-align: center;
+        margin: 0px auto;
+    }
+    p {
+        text-align: start;
+    }
 
-  h1 {
-    text-align: start;
-  }
+    h1 {
+        text-align: start;
+    }
 
-  h3 {
-    text-align: start;
-  }
+    h3 {
+        text-align: start;
+    }
 
-  .navbar-logo {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 2px;
-  }
+    .navbar-logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 2px;
+    }
 
-  .model {
-    width: 300px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    overflow: hidden;
-    text-align: center;
-    margin: 0px auto;
-  }
+    .model {
+        width: 300px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+        margin: 0px auto;
+    }
 
-  .card-content {
-    width: 100%;
-    height: auto;
-  }
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
 
-  .cta-wadah {
-    width: auto;
-    height: auto;
-  }
+    .cta-wadah {
+        width: auto;
+        height: auto;
+    }
 
-  .judul-cta {
-    font-size: 18px;
-    text-align: center;
-    line-height: 20px;
-    margin-top: 30px;
-  }
-  .button-cta {
-    text-align: center;
-  }
-  .btn-satu,
-  .btn-dua {
-    text-align: center;
-  }
-  #footer {
-    background-color: black;
-    height: 50px;
-    overflow: hidden;
-  }
+    .judul-cta {
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    .button-cta {
+        text-align: center;
+    }
+    .btn-satu,
+    .btn-dua {
+        text-align: center;
+    }
+    #footer {
+        background-color: black;
+        height: 50px;
+        overflow: hidden;
+    }
 
-  #footer h2 {
-    color: white;
-    font-family: "kanit", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: #e87c18;
-  }
+    #footer h2 {
+        color: white;
+        font-family: "kanit", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #e87c18;
+    }
 
-  #footer .footer-img img {
-    height: 20px;
-  }
+    #footer .footer-img img {
+        height: 20px;
+    }
 
-  #footer .footer-text p {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    color: white;
-  }
+    #footer .footer-text p {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        color: white;
+    }
 
-  #footer .footer-text p a {
-    text-decoration: none;
-    color: white;
-  }
+    #footer .footer-text p a {
+        text-decoration: none;
+        color: white;
+    }
 
-  #footer .footer-text a {
-    text-decoration: none;
-  }
+    #footer .footer-text a {
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 320px) {
-  .card-content {
-    width: 100%;
-    height: auto;
-  }
+    .card-content {
+        width: 100%;
+        height: auto;
+    }
 }
