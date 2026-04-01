@@ -1,163 +1,181 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="I Made Widanta Abdi Nugraha" />
+        <title>Projects | Widanta Portfolio</title>
 
-        <!-- title icon -->
         <link rel="shortcut icon" type="image" href="gambar/logo-putih.png" />
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <!-- Bootstrap 5.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Kanit:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-        <!-- css -->
         <link rel="stylesheet" href="css/project.css" />
-
-        <!-- font link -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
-
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
-        <title>Project | Portfolio</title>
+        <link rel="shortcut icon" type="image" href="gambar/logo-putih.png" />
     </head>
     <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-color">
+        <!-- Background blobs -->
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold fs-4" href="#"><img src="gambar/logo-putih.png" alt="logo" width="40" class="navbar-logo" /></a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="index.html">
+                    <img src="gambar/logo-putih.png" alt="Widanta Logo" class="navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list" style="font-size: 1.5rem; color: var(--text)"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home <i class="bi bi-house-door"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Project <i class="bi bi-file-earmark-code"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog <i class="bi bi-newspaper"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact <i class="bi bi-telephone"></i></a>
-                        </li>
+                    <ul class="navbar-nav ms-auto align-items-center gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="ms-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-sun theme-icon" id="themeIconLight"></i>
+                        <div class="theme-toggle" id="themeToggle" title="Toggle dark mode"></div>
+                        <i class="bi bi-moon theme-icon" id="themeIconDark"></i>
+                    </div>
                 </div>
             </div>
         </nav>
-        <!-- akhir navbar -->
 
-        <!-- toggle-mobile -->
-        <nav class="nav">
-            <a href="index.html" class="nav-links">
-                <i class="bi bi-house-door"></i>
-            </a>
-            <a href="#" class="nav-links">
-                <i class="bi bi-newspaper"></i>
-            </a>
-            <a href="project.html" class="nav-links active">
-                <i class="bi bi-file-earmark-code-fill"></i>
-            </a>
-            <a href="#" class="nav-links">
-                <i class="bi bi-envelope"></i>
-            </a>
-            <a href="contact.html" class="nav-links">
-                <i class="bi bi-telephone"></i>
-            </a>
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-newspaper"></i></a>
+            <a href="project.html" class="active"><i class="bi bi-file-earmark-code-fill"></i></a>
+            <a href="contact.html"><i class="bi bi-envelope"></i></a>
+            <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
         </nav>
-        <!-- akhir -->
 
-        <!-- header -->
+        <!-- ── HEADER HERO ── -->
         <section id="header">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 header-content">
-                        <div class="jumbotron">
-                            <h1 class="judul-atas display-4 fs-4 mb-3">Project</h1>
-                            <p class="sub-judul lead-about lh-1 fw-bold mt-4">
-                                Beberapa hasil Karya yang <br />
-                                sudah kami selesaikan
-                            </p>
-                            <p class="p-header fw-0 mt-3">Pada section project saya menampilkan beberapa hasil karya yang pernah saya buat dan saya selesaikan. Terdapat dua kategori yaitu comerial project & personal project</p>
-                        </div>
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="hero-eyebrow">My Work</div>
+                        <h1 class="hero-title">Projects &amp; <span>Builds</span></h1>
+                        <p class="hero-subtitle">Commercial &amp; Personal</p>
+                        <p class="hero-bio">
+                            Pada section project saya menampilkan beberapa hasil karya yang pernah saya buat dan saya selesaikan. Terdapat dua kategori yaitu <strong>Commercial Project</strong> &amp; <strong>Personal Project</strong>.
+                        </p>
                     </div>
-                    <div class="col-md-5">
-                        <div class="model-img text-end">
-                            <img src="gambar/project-icons.png" alt="tata" class="model" />
-                        </div>
+                    <div class="col-lg-5 order-1 order-lg-2 text-center">
+                        <img src="gambar/project-icons.png" alt="Project Icons" class="header-img" />
                     </div>
                 </div>
             </div>
         </section>
-        <!-- akhir-header -->
 
-        <!-- content -->
-        <section id="comerial" style="margin-top: 100px">
+        <hr class="section-divider my-0" />
+
+        <!-- ── COMMERCIAL PROJECTS ── -->
+        <section id="comerial">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="judul-atas">Comercial Project</h1>
-                    </div>
+                <div class="fade-up">
+                    <div class="section-label">Commercial Work</div>
+                    <h2 class="section-title">Commercial Projects</h2>
                 </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/pintundangan-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Pintundangan</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Wedding Template</p>
+                <div class="row g-4">
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/pintundangan-horizontal.png" alt="Pintundangan" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2023</div>
+                                    <h3 class="project-title">Pintundangan</h3>
+                                    <p class="project-desc">Wedding Template</p>
+                                    <span class="project-tag">Web App</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/baliwatersport-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Bali Watersport</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Booking Engine Watersport</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/baliwatersport-horizontal.png" alt="Bali Watersport" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2023</div>
+                                    <h3 class="project-title">Bali Watersport</h3>
+                                    <p class="project-desc">Booking Engine Watersport</p>
+                                    <span class="project-tag">Landing Page</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/thesaku-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">The Saku Travel</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Travel Agency</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/thesaku-horizontal.png" alt="The Saku" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2022</div>
+                                    <h3 class="project-title">The Saku Travel</h3>
+                                    <p class="project-desc">Travel Agency</p>
+                                    <span class="project-tag">E-Commerce</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/balinechocholate-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Balinechocolate</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Ecommerce & Company Profile</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/balinechocholate-horizontal.png" alt="Balinechocolate" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2022</div>
+                                    <h3 class="project-title">Balinechocolate</h3>
+                                    <p class="project-desc">Ecommerce &amp; Company Profile</p>
+                                    <span class="project-tag">Branding</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/catandsashimi-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Cat & Sashimi</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Company Profile</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/catandsashimi-horizontal.png" alt="Cat & Sashimi" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2022</div>
+                                    <h3 class="project-title">Cat &amp; Sashimi</h3>
+                                    <p class="project-desc">Company Profile</p>
+                                    <span class="project-tag">Restaurant</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/weddingku-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Weddingku</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Wedding Templates</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/weddingku-horizontal.png" alt="Weddingku" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2021</div>
+                                    <h3 class="project-title">Weddingku</h3>
+                                    <p class="project-desc">Wedding Templates</p>
+                                    <span class="project-tag">Event</span>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -165,120 +183,174 @@
             </div>
         </section>
 
-        <section id="personal" style="margin-top: 100px">
+        <hr class="section-divider" />
+
+        <!-- ── PERSONAL PROJECTS ── -->
+        <section id="personal">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="judul-atas">Personal Project</h1>
-                    </div>
+                <div class="fade-up">
+                    <div class="section-label">Personal Work</div>
+                    <h2 class="section-title">Personal Projects</h2>
                 </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/silihnah-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Silihnah</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Sistem Manajemen Inventaris</p>
+                <div class="row g-4">
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/silihnah-horizontal.png" alt="Silihnah" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2021</div>
+                                    <h3 class="project-title">Silihnah</h3>
+                                    <p class="project-desc">Sistem Manajemen Inventaris</p>
+                                    <span class="project-tag">Web Design</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="#">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/paoon-horizontal.png" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Paoon POS</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Point Of sale</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="#" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/paoon-horizontal.png" alt="Paoon POS" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2021</div>
+                                    <h3 class="project-title">Paoon POS</h3>
+                                    <p class="project-desc">Point Of Sale</p>
+                                    <span class="project-tag">UI Design</span>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a class="text-decoration-none" href="case1.html">
-                            <div class="card border-0 shadow p-3 mb-5 bg-body rounded">
-                                <img src="gambar/result.jpg" alt="web" class="card-content" />
-                                <h3 class="judul-content card-title text-decoration-none fw-bold mt-5">Portfolio</h3>
-                                <p class="p-content card-text text-decoration-none fw-0 mt-2">Personal</p>
+                    <div class="col-md-4 fade-up">
+                        <a href="case1.html" class="text-decoration-none">
+                            <div class="glass-card project-card-v">
+                                <div class="project-thumb">
+                                    <img src="gambar/result.jpg" alt="Portfolio" />
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-year-tag">2024</div>
+                                    <h3 class="project-title">Portfolio</h3>
+                                    <p class="project-desc">Personal Portfolio Website</p>
+                                    <span class="project-tag">Personal</span>
+                                </div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- akhir-content -->
 
-        <!-- cta -->
+        <hr class="section-divider" />
+
+        <!-- ── CTA ── -->
         <section id="cta">
             <div class="container">
-                <div class="row justify-content-center cta-wadah">
-                    <div class="col-md-7">
-                        <h1 class="judul-cta">Do you want to work with me ?</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="button-cta">
-                            <a class="btn-satu btn-light btn-lg text-decoration-none fw-bold" href="mailto: widanta66@gmail.com" role="button"><i class="bi bi-envelope-fill"></i> Email Me</a>
-                            <a class="btn-dua btn-dark btn-lg text-decoration-none fw-bold btn-large" href="contact.html" role="button"><i class="bi bi-telephone"></i> Contact Me</a>
+                <div class="fade-up">
+                    <div class="glass-card cta-card">
+                        <div class="section-label d-inline-flex mb-3">Let's Connect</div>
+                        <h2 class="cta-title">Ingin bekerja sama?</h2>
+                        <p class="cta-sub">Baik itu proyek lepas, kolaborasi, atau sekadar mengobrol saya selalu terbuka.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="mailto:widanta66@gmail.com" class="btn-outline-custom"><i class="bi bi-envelope-fill"></i> Email Me</a>
+                            <a href="contact.html" class="btn-primary-custom"><i class="bi bi-send"></i> Contact Me</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- akhir-cta -->
-        <!-- footer -->
-        <section id="footer" style="margin-top: 100px">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center mt-3">
-                        <h2>
-                            <span class="ceated-span">Created With</span> <span class="love-span"><i class="bi bi-heart-fill"></i></span> <span class="by-span">By Widanta. </span>
-                        </h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-2">
-                    <div class="col-md-3">
-                        <div class="footer-img">
-                            <img src="gambar/footer_img.png" alt="logo" />
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>Terima kasih telah mau berkunjung di website yang sederhana ini</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Kunjungi</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <a href="https://goo.gl/maps/1AyDpHgoVP5MvUxQ8"
-                                ><p><i class="bi bi-geo-alt-fill"></i> Jalan Sulatri No 14 Kesiman, Derpasar Denpasar Timur, Bali</p></a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Buissnies</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>
-                                <a href="#"><i class="bi bi-envelope-fill"></i> Widanta66@gmail.com</a><br />
-                                <a href="https://wa.me/+6287784793721"><i class="bi bi-telephone-fill"></i> +62 87 784 793 721</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Follow</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>
-                                <a href="https://www.instagram.com/widantaa_"><i class="bi bi-instagram"></i> Widantaa_</a> <a href="https://www.facebook.com/imade.widanta.5"><i class="bi bi-facebook"></i> Made Widanta</a> <br />
-                                <a href="https://www.youtube.com/channel/UCT-EcPYl-tJ9elP_RKibUNg/featured?view_as=subscriber"><i class="bi bi-youtube"></i> Widanta 66</a>
-                                <a href="https://github.com/Widanta"><i class="bi bi-github"></i> Widanta</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- akhir footer -->
 
-        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- ── FOOTER ── -->
+        <section id="footer">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="footer-brand">
+                            <img src="gambar/logo-putih.png" class="navbar-logo" alt="" />
+                        </div>
+                        <div class="footer-tagline">Web Developer &amp; UI Designer<br />Based in Bali, Indonesia</div>
+                        <div>
+                            <a href="https://www.instagram.com/widantanugraha" class="social-chip" target="_blank"><i class="bi bi-instagram"></i> @widantanugraha</a>
+                            <a href="https://github.com/widanta" class="social-chip" target="_blank"><i class="bi bi-github"></i> widanta</a>
+                            <a href="https://www.youtube.com/channel/UCT-EcPYl-tJ9elP_RKibUNg" class="social-chip" target="_blank"><i class="bi bi-youtube"></i> widantanugraha</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-heading">Location</div>
+                        <a href="https://goo.gl/maps/1AyDpHgoVP5MvUxQ8" class="footer-link" target="_blank">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Jalan Sulatri No 14 Kesiman,<br />Denpasar Timur, Bali
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-heading">Get in Touch</div>
+                        <a href="mailto:widanta66@gmail.com" class="footer-link"><i class="bi bi-envelope-fill"></i> Widanta66@gmail.com</a>
+                        <a href="https://wa.me/+6287784793721" class="footer-link"><i class="bi bi-whatsapp"></i> +62 877 8479 3721</a>
+                        <a href="https://www.facebook.com/widantanugrahaa/" class="footer-link"><i class="bi bi-facebook"></i> widantanugraha</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">Created with <span>♥</span> by Widanta &nbsp;·&nbsp; &copy; <span id="currentYear"></span> All rights reserved</div>
+            </div>
+        </section>
+
+        <!-- Scroll to top -->
+        <a href="#" class="scroll-top" id="scrollTop">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+            const html = document.documentElement;
+            const toggle = document.getElementById("themeToggle");
+            const mobileThemeBtn = document.getElementById("mobileTheme");
+            const mobileThemeIcon = document.getElementById("mobileThemeIcon");
+
+            const saved = localStorage.getItem("theme") || "light";
+            html.setAttribute("data-theme", saved);
+            updateThemeIcon(saved);
+
+            function toggleTheme() {
+                const cur = html.getAttribute("data-theme");
+                const next = cur === "dark" ? "light" : "dark";
+                html.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+                updateThemeIcon(next);
+            }
+
+            function updateThemeIcon(t) {
+                mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+            }
+
+            toggle.addEventListener("click", toggleTheme);
+            mobileThemeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleTheme();
+            });
+
+            const scrollBtn = document.getElementById("scrollTop");
+            window.addEventListener("scroll", () => {
+                scrollBtn.classList.toggle("visible", window.scrollY > 400);
+            });
+
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            obs.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+
+            document.querySelectorAll(".fade-up").forEach((el, i) => {
+                el.style.transitionDelay = `${(i % 4) * 0.07}s`;
+                obs.observe(el);
+            });
+        </script>
     </body>
 </html>

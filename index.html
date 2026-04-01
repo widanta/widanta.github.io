@@ -1,426 +1,504 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta name="author" content="I Made Widanta Abdi Nugraha" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Perosal Webiste Widanta Sebagai Seorang Developer Dan UI Designer Pemula" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, UI Designer, Developer" />
-
-        <!-- title icon -->
-        <link rel="shortcut icon" type="image" href="gambar/logo-putih.png" />
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-
-        <!-- aos css -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-        <!-- css -->
-        <link rel="stylesheet" href="css/style.css" />
-
-        <!-- font link -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
-
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
+        <meta name="author" content="I Made Widanta Abdi Nugraha" />
+        <meta name="description" content="Portfolio of Widanta — Web Developer & UI Designer" />
         <title>Widanta | Portfolio</title>
+
+        <!-- Bootstrap 5.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image" href="gambar/logo-putih.png" />
     </head>
     <body id="home">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-color">
+        <!-- Background blobs -->
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold fs-4" href="#"><img src="gambar/logo-putih.png" alt="logo I Made Widanta Abdi Nugraha" width="40" class="navbar-logo" /></a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="#home">
+                    <img src="gambar/logo-putih.png" alt="Widanta Logo" class="navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list" style="font-size: 1.5rem; color: var(--text)"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home <i class="bi bi-house-door"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project <i class="bi bi-file-earmark-code"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog <i class="bi bi-newspaper"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact <i class="bi bi-telephone"></i></a>
-                        </li>
+                    <ul class="navbar-nav ms-auto align-items-center gap-1">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="ms-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-sun theme-icon" id="themeIconLight"></i>
+                        <div class="theme-toggle" id="themeToggle" title="Toggle dark mode"></div>
+                        <i class="bi bi-moon theme-icon" id="themeIconDark"></i>
+                    </div>
                 </div>
             </div>
         </nav>
-        <!-- akhir navbar -->
-        <!-- toggle-mobile -->
-        <nav class="nav">
-            <a href="index.html" class="nav-links active">
-                <i class="bi bi-house-door-fill"></i>
-            </a>
-            <a href="#" class="nav-links">
-                <i class="bi bi-newspaper"></i>
-            </a>
-            <a href="project.html" class="nav-links">
-                <i class="bi bi-file-earmark-code"></i>
-            </a>
-            <a href="#" class="nav-links">
-                <i class="bi bi-envelope"></i>
-            </a>
-            <a href="contact.html" class="nav-links">
-                <i class="bi bi-telephone"></i>
-            </a>
+
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-newspaper"></i></a>
+            <a href="project.html" class="active"><i class="bi bi-file-earmark-code-fill"></i></a>
+            <a href="contact.html"><i class="bi bi-envelope"></i></a>
+            <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
         </nav>
-        <!-- akhir -->
-        <!-- about -->
+
+        <!-- ── HERO ── -->
         <section id="about">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 header-content">
-                        <div class="jumbotron">
-                            <h1 class="display-4 fs-4 mb-3 fw-bold judul-atas">I'M Widanta</h1>
-                            <h1 class="lead-about lh-1 fw-bold judul-about">I'M Web Delopment and Web Designer.</h1>
-                            <p class="p-about fw-0"></p>
-                            <div class="button-about">
-                                <a class="btn-satu btn-dark btn-lg text-decoration-none fw-bold" href="#" role="button">Learn more</a>
-                                <a class="btn-dua btn-light btn-lg text-decoration-none fw-bold btn-large" href="https://www.bikincv.com/profil/widanta" role="button">Download CV</a>
-                            </div>
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="hero-eyebrow">Based in Bali, Indonesia</div>
+                        <h1 class="hero-title">I'm <span>Widanta</span></h1>
+                        <p class="hero-subtitle">Web Developer &amp; Web Designer</p>
+                        <p class="hero-bio" id="heroBio">
+                            Hai saya I Made Widanta Abdi Nugraha. Saya seorang mahasiswa yang menggambil program studi sistem informasi. Di sebuah salah satu universitas teknologi di denpasar. Saya lahir di Denpasar, Bali. Yang memiliki
+                            minat pada pengembangan perangkat lunak pemrograman web. Berpengalaman melalui magang dan proyek freelance sebagai Web Developer dengan spesialisasi pada pengembangan web aplikasi berbasis Laravel. Mampu
+                            mengintegrasikan e-commerce menggunakan WooCommerce pada Wordpress. Mampu dalam mengelola database MySQL dengan menerapkan arsitektur aplikasi berbasis PHP. Mengoptimalkan UI yang dibuat responsif, serta terbiasa
+                            menggunakan version control system Git dan Github dalam kolaborasi. Senang bisa berkenalan dengan mu.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="project.html" class="btn-primary-custom"><i class="bi bi-grid-3x3-gap"></i> View Projects</a>
+                            <a href="https://www.bikincv.com/profil/widanta" class="btn-outline-custom" target="_blank"><i class="bi bi-download"></i> Download CV</a>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <div class="model-img text-end">
-                            <img src="gambar/model.png" alt="I Made Widanta Abdi Nugraha" class="model" />
+                    <div class="col-lg-4 order-1 order-lg-2">
+                        <div class="hero-img-wrap">
+                            <div class="hero-badge badge-tl">
+                                <div class="dot-online"></div>
+                                Available for work
+                            </div>
+                            <div class="hero-img-glass">
+                                <img src="gambar/model.png" alt="I Made Widanta Abdi Nugraha" onerror="this.src = 'https://ui-avatars.com/api/?name=Widanta&background=e87c18&color=fff&size=400&font-size=0.4'" />
+                            </div>
+                            <div class="hero-badge badge-br"><i class="bi bi-stars"></i> 3+ Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="row mt-5 fade-up">
+                    <div class="col-12">
+                        <div class="glass-card">
+                            <div class="row g-0">
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item" style="border-right: 1px solid var(--surface-border)">
+                                        <div class="stat-number">8+</div>
+                                        <div class="stat-label">Projects Completed</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item" style="border-right: 1px solid var(--surface-border)">
+                                        <div class="stat-number">3+</div>
+                                        <div class="stat-label">Years Learning</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item" style="border-right: 1px solid var(--surface-border)">
+                                        <div class="stat-number">3</div>
+                                        <div class="stat-label">Services Offered</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <div class="stat-number">∞</div>
+                                        <div class="stat-label">Willingness to Learn</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- akhir about -->
-        <!-- project -->
+
+        <hr class="section-divider my-0" />
+
+        <!-- ── PROJECTS ── -->
         <section id="project">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col mb-3">
-                        <h3 class="semua-judul fw-bold" data-aos="fade-up" data-aos-duration="1000">Our Project</h3>
-                        <p class="semua-p fw-bold lh-sm" data-aos="fade-up" data-aos-duration="1000">
-                            Beberapa Project Yang <br />
-                            Kami Selesaikan
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/pintundangan.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/baliwatersport.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/thesaku.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/balinechocolate.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/catandsashimi.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/weddingku.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/silihnah.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <img src="gambar/paoon.png" alt="I Made Widanta Abdi Nugraha" data-aos="fade-up" data-aos-duration="1000" class="project-img" />
-                        </a>
-                    </div>
-                    <div class="button-project text-center" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="btn-satu btn-dark btn-lg text-decoration-none fw-bold" href="project.html" role="button">View More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- akhir project -->
-        <!-- services -->
-        <section id="services" style="margin-top: 100px">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="semua-judul fw-bold" data-aos="fade-up" data-aos-duration="1000">Our Services</h3>
-                        <p class="semua-p fw-bold lh-sm" data-aos="fade-up" data-aos-duration="1000">
-                            Beberapa Layanan Yang <br />
-                            Kami Tawarkan
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <div class="card-container card p-3 mt-3 border-0">
-                                <img src="gambar/web2.png" class="card-img-top card-services ms-3 mt-3" alt="I Made Widanta Abdi Nugraha" />
-                                <div class="card-body">
-                                    <p class="judul-services mt-4">Web Development</p>
-                                    <p class="p-services">Front-End Development</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <div class="card-container card p-3 mt-3 border-0">
-                                <img src="gambar/ui2.png" class="card-img-top card-services ms-3 mt-3" alt="I Made Widanta Abdi Nugraha" />
-                                <div class="card-body">
-                                    <p class="judul-services mt-4">Ui Designer</p>
-                                    <p class="p-services">Web & Mobile App</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="text-decoration-none">
-                            <div class="card-container card p-3 mt-3 border-0">
-                                <img src="gambar/graphic2.png" class="card-img-top card-services ms-3 mt-3" alt="I Made Widanta Abdi Nugraha" />
-                                <div class="card-body">
-                                    <p class="judul-services mt-4">Graphic Designer</p>
-                                    <p class="p-services">Simple Design</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- akhir services -->
-        <!-- skills -->
-        <section id="skills" style="margin-top: 100px">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="semua-judul fw-bold" data-aos="fade-up" data-aos-duration="1000">Skills & Tools</h3>
-                        <p class="semua-p fw-bold lh-sm" data-aos="fade-up" data-aos-duration="1000">
-                            Keahlian Dan Alat <br />
-                            Yang Kami Gunakan
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
+                <div class="row fade-up">
                     <div class="col-12">
-                        <div class="card-skill text-center">
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/vscode.jpg" alt="vscode" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Visual Studio</p>
-                                </div>
+                        <div class="section-label">Selected Work</div>
+                        <h2 class="section-title">Projects &amp; Builds</h2>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <!-- Project cards with year badges -->
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/pintundangan.png"
+                                alt="Pintu Undangan"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2023</div>
+                                <div class="project-name">Pintu Undangan</div>
+                                <div class="project-tag">Web App</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/html.jpg" alt="html" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">HTML</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/baliwatersport.png"
+                                alt="Bali Watersport"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2023</div>
+                                <div class="project-name">Bali Watersport</div>
+                                <div class="project-tag">Landing Page</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/css.jpg" alt="css" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">CSS</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/thesaku.png"
+                                alt="The Saku"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2022</div>
+                                <div class="project-name">The Saku</div>
+                                <div class="project-tag">E-Commerce</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/js.jpg" alt="js" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Java Script</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/balinechocolate.png"
+                                alt="Baline Chocolate"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2022</div>
+                                <div class="project-name">Baline Chocolate</div>
+                                <div class="project-tag">Branding</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/bootstraps.jpg" alt="bootstrap" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Bootstrap</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/catandsashimi.png"
+                                alt="Cat and Sashimi"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2022</div>
+                                <div class="project-name">Cat &amp; Sashimi</div>
+                                <div class="project-tag">Restaurant</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/figma.jpg" alt="figma" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Figma</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/weddingku.png"
+                                alt="Weddingku"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2021</div>
+                                <div class="project-name">Weddingku</div>
+                                <div class="project-tag">Event</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/ai.jpg" alt="ai" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Adobe Ilustrator</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/silihnah.png"
+                                alt="Silihnah"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2021</div>
+                                <div class="project-name">Silihnah</div>
+                                <div class="project-tag">Web Design</div>
                             </div>
-                            <div class="container-card">
-                                <div class="skill-card">
-                                    <img src="gambar/corel.jpg" alt="corel" class="skill-img" />
-                                </div>
-                                <div class="skill-text">
-                                    <p class="skill-p">Corel Draw</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fade-up">
+                        <div class="project-card project-border">
+                            <img
+                                src="gambar/paoon.png"
+                                alt="Paoon"
+                                onerror="
+                                    this.style = 'background:#2a1a0a';
+                                    this.src = '';
+                                "
+                            />
+                            <div class="project-overlay">
+                                <div class="project-year">2021</div>
+                                <div class="project-name">Paoon</div>
+                                <div class="project-tag">UI Design</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="gambar/skill_icons.png" alt="I Made Widanta Abdi Nugraha" class="skill-isons" />
-                    </div>
-                    <div class="col-md-7 mt-5" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="semua-judul fw-bold" data-aos="fade-up" data-aos-duration="1000">Experience</h3>
-                        <p class="semua-p fw-bold lh-sm" data-aos="fade-up" data-aos-duration="1000">
-                            Pengalaman <br />
-                            Belajar
-                        </p>
-                        <p class="ms-md-5 p-skills">
-                            Saya memulai belajar Programing dan Design ketika kelas pertama SMK. Tepatnya programing ketika bulan Oktober 2020 dan belajar UI Design ketika bulan Mei 2021. Saya memulai pembelajaran secara autodidak. Dengan
-                            mempelajarinya dari kanal chanel You Tube. Dan langsung saya praktekan. Saya masih pemula dalam bidang yang saya geluti sekarang. Karena saya percaya bahwa hidup tidak akan pernah berhenti belajar.
-                        </p>
-                    </div>
+                <div class="text-center mt-5 fade-up">
+                    <a href="project.html" class="btn-primary-custom"><i class="bi bi-grid-3x3-gap"></i> View All Projects</a>
                 </div>
             </div>
         </section>
-        <!-- akhir skills -->
-        <!-- contact -->
-        <section id="contact" style="margin-top: 100px">
+
+        <hr class="section-divider my-0" />
+
+        <!-- ── SERVICES ── -->
+        <section id="services">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="lh-1 fw-bold text-center semua-judul" data-aos="fade-up" data-aos-duration="1000">Contact</h3>
-                        <p class="fw-bold text-center lh-sm semua-p" data-aos="fade-up" data-aos-duration="1000">
-                            Tempat Dan Informasi <br />
-                            Kontak Kami
-                        </p>
+                <div class="fade-up">
+                    <div class="section-label">What I Do</div>
+                    <h2 class="section-title">Services</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4 fade-up">
+                        <div class="glass-card service-card h-100">
+                            <div class="service-icon-wrap">
+                                <img src="gambar/web2.png" alt="Web Development" onerror="this.parentElement.innerHTML = '<i class=\'bi bi-code-slash\' style=\'font-size:1.5rem; color:var(--primary)\'></i>'" />
+                            </div>
+                            <div class="service-title">Web Development</div>
+                            <div class="service-desc">Building fast, responsive front-end web applications with clean, maintainable code using HTML, CSS, JavaScript, and Laravel.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fade-up">
+                        <div class="glass-card service-card h-100">
+                            <div class="service-icon-wrap">
+                                <img src="gambar/ui2.png" alt="UI Design" onerror="this.parentElement.innerHTML = '<i class=\'bi bi-palette\' style=\'font-size:1.5rem; color:var(--primary)\'></i>'" />
+                            </div>
+                            <div class="service-title">UI Design</div>
+                            <div class="service-desc">Crafting intuitive, beautiful interfaces for web and mobile apps — from wireframes to polished prototypes in Figma.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fade-up">
+                        <div class="glass-card service-card h-100">
+                            <div class="service-icon-wrap">
+                                <img src="gambar/graphic2.png" alt="Graphic Design" onerror="this.parentElement.innerHTML = '<i class=\'bi bi-vector-pen\' style=\'font-size:1.5rem; color:var(--primary)\'></i>'" />
+                            </div>
+                            <div class="service-title">Graphic Design</div>
+                            <div class="service-desc">Creating clean, impactful visual assets — logos, branding materials, and marketing graphics with Adobe Illustrator and CorelDRAW.</div>
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <img src="gambar/bali.png" alt="bali" data-aos="fade-up" data-aos-duration="1000" class="contact-img" />
-                        <div class="cta mt-2">
-                            <h2 class="judul-cta text-center">Do you want to work with me ?</h2>
-                            <div class="button-cta text-center mt-4">
-                                <a class="btn-satu-cta btn-light btn-lg text-decoration-none fw-bold" href="project.html" role="button"><i class="bi bi-journal-code"></i> View Project</a>
-                                <a class="btn-dua-cta btn-dark btn-lg text-decoration-none fw-bold btn-large" href="contact.html" role="button"><i class="bi bi-telephone"></i> Contact Me</a>
+            </div>
+        </section>
+
+        <hr class="section-divider my-0" />
+
+        <!-- ── SKILLS ── -->
+        <section id="skills">
+            <div class="container">
+                <div class="fade-up">
+                    <div class="section-label">Toolkit</div>
+                    <h2 class="section-title">Skills &amp; Tools</h2>
+                </div>
+
+                <div class="fade-up mb-5">
+                    <div class="skill-chip"><img src="gambar/vscode.jpg" alt="VS Code" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'" /><span>VS Code</span></div>
+                    <div class="skill-chip"><img src="gambar/html.jpg" alt="HTML" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'" /><span>HTML5</span></div>
+                    <div class="skill-chip"><img src="gambar/css.jpg" alt="CSS" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'" /><span>CSS3</span></div>
+                    <div class="skill-chip"><img src="gambar/js.jpg" alt="JavaScript" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'" /><span>JavaScript</span></div>
+                    <div class="skill-chip"><img src="gambar/bootstraps.jpg" alt="Bootstrap" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'" /><span>Bootstrap</span></div>
+                    <div class="skill-chip"><img src="gambar/figma.jpg" alt="Figma" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'" /><span>Figma</span></div>
+                    <div class="skill-chip"><img src="gambar/ai.jpg" alt="Adobe Illustrator" onerror="this.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg'" /><span>Illustrator</span></div>
+                    <div class="skill-chip"><img src="gambar/corel.jpg" alt="CorelDRAW" onerror="this.style.display = 'none'" /><span>CorelDRAW</span></div>
+                </div>
+
+                <div class="row g-4 fade-up">
+                    <div class="col-md-4">
+                        <div class="hero-img-glass">
+                            <img src="gambar/skill_icons.png" alt="Skills Icons" />
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="exp-card h-100">
+                            <div class="section-label">Experience</div>
+                            <h2 class="section-title">Journey</h2>
+                            <p class="exp-text">
+                                Saya memulai belajar Programing dan Design ketika kelas pertama SMK. Tepatnya programing ketika bulan Oktober 2020 dan belajar UI Design ketika bulan Mei 2021. Saya memulai pembelajaran secara autodidak.
+                                Dengan mempelajarinya dari kanal chanel You Tube. Dan langsung saya praktekan. Saya masih pemula dalam bidang yang saya geluti sekarang. Karena saya percaya bahwa hidup tidak akan pernah berhenti belajar.
+                            </p>
+                            <div class="mt-3">
+                                <span class="exp-tag">Laravel</span>
+                                <span class="exp-tag">WooCommerce</span>
+                                <span class="exp-tag">MySQL</span>
+                                <span class="exp-tag">PHP</span>
+                                <span class="exp-tag">Git / GitHub</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- akhir contact -->
-        <!-- footer -->
+
+        <hr class="section-divider my-0" />
+
+        <!-- ── CTA / CONTACT ── -->
+        <section id="contact">
+            <div class="container">
+                <div class="fade-up">
+                    <div class="glass-card cta-card">
+                        <div class="section-label d-inline-flex mb-3">Let's Connect</div>
+                        <h2 class="cta-title">Ingin bekerja sama?</h2>
+                        <p class="cta-sub">Baik itu proyek lepas, kolaborasi, atau sekadar mengobrol saya selalu terbuka.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="project.html" class="btn-outline-custom"><i class="bi bi-journal-code"></i> View Projects</a>
+                            <a href="contact.html" class="btn-primary-custom"><i class="bi bi-send"></i> Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FOOTER ── -->
         <section id="footer">
             <div class="container">
-                it
-                <div class="row">
-                    <div class="col text-center mt-3">
-                        <h2>
-                            <span class="ceated-span">Created With</span> <span class="love-span"><i class="bi bi-heart-fill"></i></span> <span class="by-span">By Widanta. </span>
-                        </h2>
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <div class="footer-brand">
+                            <img src="gambar/logo-putih.png" class="navbar-logo" alt="" />
+                        </div>
+                        <div class="footer-tagline">Web Developer &amp; UI Designer<br />Based in Bali, Indonesia</div>
+                        <div>
+                            <a href="https://www.instagram.com/widantanugraha" class="social-chip" target="_blank"><i class="bi bi-instagram"></i> @widantanugraha</a>
+                            <a href="https://github.com/widanta" class="social-chip" target="_blank"><i class="bi bi-github"></i> widanta</a>
+                            <a href="https://www.youtube.com/channel/UCT-EcPYl-tJ9elP_RKibUNg" class="social-chip" target="_blank"><i class="bi bi-youtube"></i> widantanugraha</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-heading">Location</div>
+                        <a href="https://goo.gl/maps/1AyDpHgoVP5MvUxQ8" class="footer-link" target="_blank">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Jalan Sulatri No 14 Kesiman,<br />Denpasar Timur, Bali
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-heading">Get in Touch</div>
+                        <a href="mailto:widanta66@gmail.com" class="footer-link"><i class="bi bi-envelope-fill"></i> Widanta66@gmail.com</a>
+                        <a href="https://wa.me/+6287784793721" class="footer-link"><i class="bi bi-whatsapp"></i> +62 877 8479 3721</a>
+                        <a href="https://www.facebook.com/widantanugrahaa/" class="footer-link"><i class="bi bi-facebook"></i> widantanugraha</a>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-2">
-                    <div class="col-md-3">
-                        <div class="footer-img">
-                            <img src="gambar/footer_img.png" alt="I Made Widanta Abdi Nugraha" />
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>Terima kasih telah mau berkunjung di website yang sederhana ini</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Kunjungi</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <a href="https://goo.gl/maps/1AyDpHgoVP5MvUxQ8"
-                                ><p><i class="bi bi-geo-alt-fill"></i> Jalan Sulatri No 12 Kesiman, Derpasar Denpasar Timur, Bali</p></a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Buissnies</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>
-                                <a href="#"><i class="bi bi-envelope-fill"></i> Widanta66@gmail.com</a><br />
-                                <a href="https://wa.me/+6287784793721"><i class="bi bi-telephone-fill"></i> +62 87 784 793 721</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="footer-judul mt-1">
-                            <h2>Follow</h2>
-                        </div>
-                        <div class="footer-text mt-3">
-                            <p>
-                                <a href="https://www.instagram.com/widantaa_"><i class="bi bi-instagram"></i> Widantaa_</a> <a href="https://www.facebook.com/widanta66"><i class="bi bi-facebook"></i> I Made Widanta</a> <br />
-                                <a href="https://www.youtube.com/channel/UCT-EcPYl-tJ9elP_RKibUNg/featured?view_as=subscriber"><i class="bi bi-youtube"></i> Widanta 66</a>
-                                <a href="https://github.com/Widanta"><i class="bi bi-github"></i> Widanta</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div class="footer-bottom">Created with <span>♥</span> by Widanta &nbsp;·&nbsp; &copy; <span id="currentYear"></span> All rights reserved</div>
             </div>
         </section>
-        <!-- akhir footer -->
-        <!-- scroll-top -->
-        <a href="#" class="scroll-top">
+
+        <!-- Scroll to top -->
+        <a href="#home" class="scroll-top" id="scrollTop">
             <i class="bi bi-arrow-up-short"></i>
         </a>
-        <!-- akhir -->
-        <!-- script -->
-        <script src="js/script.js"></script>
-        <!-- java script aos -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
         <script>
-            AOS.init({
-                once: true,
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+            // Theme toggle
+            const html = document.documentElement;
+            const toggle = document.getElementById("themeToggle");
+            const mobileThemeBtn = document.getElementById("mobileTheme");
+            const mobileThemeIcon = document.getElementById("mobileThemeIcon");
+
+            const saved = localStorage.getItem("theme") || "light";
+            html.setAttribute("data-theme", saved);
+            updateThemeIcon(saved);
+
+            function toggleTheme() {
+                const cur = html.getAttribute("data-theme");
+                const next = cur === "dark" ? "light" : "dark";
+                html.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+                updateThemeIcon(next);
+            }
+
+            function updateThemeIcon(t) {
+                mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+            }
+
+            toggle.addEventListener("click", toggleTheme);
+            mobileThemeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleTheme();
             });
-        </script>
-        <!-- akhir java script aos -->
-        <!-- java script jsap -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-        <script>
-            gsap.registerPlugin(TextPlugin);
-            gsap.to(".p-about", {
-                duration: 10,
-                text: "Hai saya I Made Widanta Abdi Nugraha. Saya seorang mahasiswa yang menggambil program studi sistem informasi. Di sebuah salah satu universitas teknologi di denpasar. Saya lahir di Denpasar, Bali. Yang memiliki minat pada pengembangan perangkat lunak pemrograman web. Berpengalaman melalui magang dan proyek freelance sebagai Web Developer dengan spesialisasi pada pengembangan web aplikasi berbasis Laravel. Mampu mengintegrasikan e-commerce menggunakan WooCommerce pada Wordpress. Mampu dalam mengelola database MySQL dengan menerapkan arsitektur aplikasi berbasis PHP. Mengoptimalkan UI yang dibuat responsif, serta terbiasa menggunakan version control system Git dan Github dalam kolaborasi. Senang bisa berkenalan dengan mu.",
+
+            // Scroll to top
+            const scrollBtn = document.getElementById("scrollTop");
+            window.addEventListener("scroll", () => {
+                scrollBtn.classList.toggle("visible", window.scrollY > 400);
             });
+
+            // Scroll reveal
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            obs.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+
+            document.querySelectorAll(".fade-up").forEach((el, i) => {
+                el.style.transitionDelay = `${(i % 4) * 0.07}s`;
+                obs.observe(el);
+            });
+
+            // Typing effect for bio
+            const bioEl = document.getElementById("heroBio");
+            const bioText = bioEl.textContent.trim();
+            bioEl.textContent = "";
+            let bioIdx = 0;
+            const typeInterval = setInterval(() => {
+                if (bioIdx < bioText.length) {
+                    bioEl.textContent += bioText[bioIdx++];
+                } else {
+                    clearInterval(typeInterval);
+                }
+            }, 14);
         </script>
     </body>
 </html>
