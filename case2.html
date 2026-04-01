@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="I Made Widanta Abdi Nugraha" />
+        <meta name="description" content="Case Study — Pintundangan, Platform Undangan Digital Berbasis Web" />
+        <title>Case Study | Pintundangan — Widanta</title>
+
+        <!-- Bootstrap 5.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/case1.css" />
+        <link rel="shortcut icon" type="image" href="gambar/logo-putih.png" />
+    </head>
+    <body id="top">
+        <!-- Background blobs -->
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="gambar/logo-putih.png" alt="Widanta Logo" class="navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list" style="font-size: 1.5rem; color: var(--text)"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ms-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-sun theme-icon" id="themeIconLight"></i>
+                        <div class="theme-toggle" id="themeToggle" title="Toggle dark mode"></div>
+                        <i class="bi bi-moon theme-icon" id="themeIconDark"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile nav -->
+        <nav class="mobile-nav">
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-newspaper"></i></a>
+            <a href="project.html" class="active"><i class="bi bi-file-earmark-code-fill"></i></a>
+            <a href="contact.html"><i class="bi bi-envelope"></i></a>
+            <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
+        </nav>
+
+        <!-- ── HERO ── -->
+        <section id="case-hero">
+            <div class="container">
+                <div class="case-eyebrow fade-up">Case Study</div>
+                <h1 class="case-title fade-up">Pintundangan — Platform Undangan Digital Berbasis Web</h1>
+                <div class="case-meta fade-up">
+                    <span class="case-badge"><i class="bi bi-calendar3"></i> 2023</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> Web Development</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> UI/UX Design</span>
+                    <span class="case-badge"><i class="bi bi-globe"></i> SaaS Platform</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── BODY ── -->
+        <section id="case-body">
+            <div class="container">
+                <!-- Hero image — mockup multi-device -->
+                <div class="row justify-content-center fade-up mb-5">
+                    <div class="col-lg-10">
+                        <div class="hero-image-wrap">
+                            <img
+                                src="gambar/pintundangan-horizontal.png"
+                                alt="Pintundangan — Multi-device Mockup"
+                                onerror="
+                                    this.style.background = '#2a1a0a';
+                                    this.style.minHeight = '340px';
+                                    this.removeAttribute('src');
+                                "
+                            />
+                        </div>
+                        <p class="hero-image-caption">Pintundangan.com — Landing Page, tampil di Laptop, Tablet &amp; Smartphone</p>
+                    </div>
+                </div>
+
+                <!-- Pendahuluan -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5 content-block">
+                            <div class="section-label">Pendahuluan</div>
+                            <h2 class="judul">Tradisi Bertemu Teknologi</h2>
+                            <p class="p-text">
+                                Indonesia merupakan negara yang kaya akan budaya dan tradisi luhur yang diwariskan secara turun-temurun. Salah satu bentuk pelestarian tradisi tersebut terlihat pada pelaksanaan berbagai acara sakral, seperti
+                                upacara pernikahan adat Bali, perayaan pernikahan Islami, pemberkatan Kristen, hingga upacara Manusa Yadnya yang meliputi Otonan dan Mepandes atau potong gigi. Dalam setiap perayaan tersebut, proses
+                                mengundang kerabat dan keluarga besar merupakan sebuah kewajiban etis serta bentuk penghormatan tertinggi untuk menjalin tali persaudaraan.
+                            </p>
+                            <div class="callout">
+                                <p>
+                                    Pada masa lalu, undangan selalu dicetak menggunakan kertas premium dan diantarkan langsung dari pintu ke pintu. Akan tetapi, pada era digital dengan tingkat mobilitas masyarakat yang sangat tinggi, metode
+                                    distribusi fisik mulai memunculkan berbagai kendala logistik dan finansial. Pintundangan hadir sebagai solusi inovatif yang merangkul teknologi untuk mengatasi tantangan tersebut, sekaligus menjaga esensi
+                                    budaya yang melekat pada proses mengundang.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <h2 class="judul mb-4">Latar belakang</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Ketergantungan pada undangan fisik pada era modern menghadirkan tiga masalah utama. Pertama, inefisiensi waktu dan tenaga dalam proses distribusi, terutama bagi tamu undangan yang berdomisili di luar kota atau
+                            luar pulau. Kedua, tingginya biaya produksi cetak kertas yang membebani anggaran penyelenggara acara. Ketiga, meskipun undangan digital mulai bermunculan, sebagian besar platform yang ada di pasaran hanya
+                            menawarkan desain minimalis kebarat-baratan. Desain yang terlalu umum tersebut sering kali menghilangkan esensi kesakralan, tata krama, dan nilai filosofis dari budaya lokal yang sangat dijunjung tinggi oleh
+                            masyarakat Indonesia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Apa itu Pintundangan -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Platform</div>
+                        <h2 class="judul mb-4">Apa Itu Pintundangan?</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            <strong>Pintundangan</strong> adalah sebuah platform penyedia layanan undangan digital interaktif yang dirancang secara khusus untuk memfasilitasi kebutuhan seremonial di Indonesia. Platform ini bertindak sebagai
+                            jembatan yang mengubah medium komunikasi tradisional menjadi format digital tanpa mengurangi nilai kesopanan dan estetika budaya. Pintundangan mengakomodasi kompleksitas acara adat dengan menyediakan tata letak
+                            informasi yang berlapis, galeri visual yang dinamis, serta pengelolaan daftar tamu yang terpusat dalam satu tautan eksklusif.
+                        </p>
+                        <div class="tag-list mt-3">
+                            <span class="exp-tag">SaaS Platform</span>
+                            <span class="exp-tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Eksekusi Teknis -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Eksekusi Teknis</div>
+                        <h2 class="judul mb-4">Web Development &amp; UI/UX Design</h2>
+                        <p class="p-text">
+                            Dari sudut pandang pengembangan produk, pelestarian budaya ini dicapai melalui proses rekayasa perangkat lunak dan perancangan antarmuka pengguna yang terstruktur. Sebagai pengembang web sekaligus desainer
+                            antarmuka, saya membagi proses ini ke dalam dua pilar utama.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="row justify-content-center fade-up mt-2">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">1. Desain Kultural Berbasis Digital (UI/UX)</h3>
+                        <p class="p-text">
+                            Pendekatan desain antarmuka pengguna digunakan untuk mendigitalkan elemen-elemen tradisional agar dapat dinikmati di layar gawai. Proses perancangan dilakukan secara presisi menggunakan perangkat lunak Figma,
+                            mulai dari pembuatan kerangka dasar hingga purwarupa interaktif.
+                        </p>
+
+                        <div class="callout">
+                            <p>
+                                <strong>Tipografi dan Hierarki Visual:</strong> Saya menggunakan kombinasi huruf serif klasik untuk menonjolkan nama pemilik acara. Huruf tersebut disandingkan dengan huruf sans-serif yang modern untuk detail
+                                waktu dan lokasi. Kombinasi ini bertujuan untuk mencapai tingkat keterbacaan yang maksimal pada layar telepon pintar. <br />
+
+                                <strong>Digitalisasi Ornamen Lokal:</strong> Motif tradisional, seperti pola ukiran Bali maupun motif geometris Islami, dirancang ulang menjadi aset vektor beresolusi tinggi. Hal ini memastikan ornamen tidak
+                                pecah atau buram ketika dimuat pada berbagai resolusi layar. <br />
+
+                                <strong>Pendekatan Berbasis Seluler:</strong> Mengingat lebih dari sembilan puluh persen tamu akan membuka tautan melalui perangkat seluler, tata letak setiap tema undangan dioptimalkan untuk navigasi satu
+                                tangan.
+                            </p>
+                        </div>
+                        <!-- image: Figma style guide + hasil di HP -->
+                        <img
+                            src="gambar/figma-pintundangan.jpg"
+                            alt="Figma Style Guide Pintundangan"
+                            class="content-img"
+                            onerror="
+                                this.style.background = '#2a1a0a';
+                                this.style.minHeight = '200px';
+                                this.removeAttribute('src');
+                            "
+                        />
+                        <p class="img-caption">Figma Style Guide (kiri) → Hasil antarmuka undangan di smartphone (kanan)</p>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">2. Integrasi Sistem &amp; Arsitektur Database</h3>
+                        <p class="p-text">
+                            Pintundangan mengimplementasikan arsitektur <strong>Model-View-Controller (MVC)</strong> menggunakan PHP (Laravel) dan pengelolaan database relasional MySQL, diperkuat dengan integrasi layanan eksternal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Fitur Silaturahmi -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Fitur Unggulan</div>
+                        <h2 class="judul mb-4">Papan Ucapan Virtual</h2>
+                        <p class="p-text">
+                            Pintundangan meredefinisi cara masyarakat bersilaturahmi dengan menghadirkan fitur-fitur yang solutif. Salah satu tantangan terbesar dalam digitalisasi acara adat adalah memfasilitasi tradisi pemberian tali kasih
+                            yang dikenal dengan istilah kondangan atau metanjung. Pintundangan mengakomodasi tradisi ini melalui integrasi teknologi finansial.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <!-- image: papan ucapan / guestbook -->
+                        <img
+                            src="gambar/guestbook-pintundangan.jpg"
+                            alt="Papan Ucapan Digital Pintundangan"
+                            class="content-img"
+                            onerror="
+                                this.style.background = '#2a1a0a';
+                                this.style.minHeight = '220px';
+                                this.removeAttribute('src');
+                            "
+                        />
+                        <p class="img-caption">Fitur Papan Ucapan Digital — Chat-bubble elegan dengan timestamp</p>
+                        <p class="p-text mt-3">
+                            Tamu yang berhalangan hadir karena kendala geografis tetap dapat mengirimkan doa restu. Pesan tersebut akan langsung tampil dan bergulir pada halaman undangan beserta keterangan waktu pengiriman.
+                        </p>
+                        <div class="tag-list mt-3">
+                            <span class="exp-tag">Distribusi Massal via WA</span>
+                            <span class="exp-tag">Personalized URL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Amplop Digital -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Studi Kasus</div>
+                        <h2 class="judul mb-4">Amplop Digital</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Fitur ini mengintegrasikan kode pindai QRIS, nomor rekening bank, dan dompet digital. Untuk menjaga etika kesopanan adat ketimuran, informasi perbankan tersebut disembunyikan di dalam kotak dialog yang hanya akan
+                            muncul apabila tamu menekan tombol hadiah.
+                        </p>
+                        <!-- image: amplop digital / QRIS modal -->
+                        <img
+                            src="gambar/amplop-pintundangan.jpg"
+                            alt="Amplop Digital QRIS Pintundangan"
+                            class="content-img"
+                            onerror="
+                                this.style.background = '#2a1a0a';
+                                this.style.minHeight = '220px';
+                                this.removeAttribute('src');
+                            "
+                        />
+                        <p class="img-caption">Fitur Amplop Digital — QRIS disajikan dalam modal pop-up yang sopan dan elegan</p>
+                        <div class="callout mt-3">
+                            <p><strong>Cashless Gift:</strong> Barcode QRIS, Virtual Account, dan E-Wallet dibungkus dalam desain pop-up yang discreet — hanya tampil saat tamu mengklik tombol, menjaga etika kesopanan adat ketimuran.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Dampak & Kesimpulan -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Dampak</div>
+                        <h2 class="judul mb-4">Dampak &amp; Kesimpulan</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="row g-4">
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">💰</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Cost Efficiency</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Memangkas biaya cetak undangan fisik premium hingga jutaan rupiah.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">🌿</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Eco-Friendly</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Menekan penggunaan kertas dan plastik sekali pakai secara drastis.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">⚡</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Fleksibilitas Data</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Perubahan jadwal atau ralat dapat diperbarui secara live tanpa cetak ulang.</p>
+                                </div>
+                            </div>
+                            <hr style="border-color: var(--surface-border); margin: 24px 0" />
+                            <p class="p-text">
+                                Implementasi sistem informasi pada Pintundangan membuktikan bahwa teknologi hadir bukan sebagai disrupsi yang merusak tradisi, melainkan sebagai instrumen yang melestarikannya. Dengan menggabungkan pemahaman
+                                System Architecture, Database Management, dan UI/UX Design — kearifan lokal dalam tata cara mengundang kini telah berevolusi menjadi lebih terstruktur, inklusif, dan relevan di era digital.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 text-center mt-4">
+                        <a href="project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projects</a>
+                        <a href="index.html" class="btn-outline-custom mb-2"><i class="bi bi-house-door"></i> Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll to top -->
+        <a href="#top" class="scroll-top" id="scrollTop">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script>
+            // Theme toggle
+            const html = document.documentElement;
+            const toggle = document.getElementById("themeToggle");
+            const mobileThemeBtn = document.getElementById("mobileTheme");
+            const mobileThemeIcon = document.getElementById("mobileThemeIcon");
+
+            const saved = localStorage.getItem("theme") || "light";
+            html.setAttribute("data-theme", saved);
+            updateThemeIcon(saved);
+
+            function toggleTheme() {
+                const cur = html.getAttribute("data-theme");
+                const next = cur === "dark" ? "light" : "dark";
+                html.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+                updateThemeIcon(next);
+            }
+            function updateThemeIcon(t) {
+                mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+            }
+
+            toggle.addEventListener("click", toggleTheme);
+            mobileThemeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleTheme();
+            });
+
+            // Scroll to top
+            const scrollBtn = document.getElementById("scrollTop");
+            window.addEventListener("scroll", () => {
+                scrollBtn.classList.toggle("visible", window.scrollY > 400);
+            });
+
+            // Scroll reveal
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            obs.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+            document.querySelectorAll(".fade-up").forEach((el, i) => {
+                el.style.transitionDelay = `${(i % 4) * 0.07}s`;
+                obs.observe(el);
+            });
+        </script>
+    </body>
+</html>
