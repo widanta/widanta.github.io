@@ -559,7 +559,10 @@ section {
 }
 
 /* ── Responsive ── */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
     .mobile-nav {
         display: flex;
     }
@@ -571,11 +574,5 @@ section {
     }
     .case-title {
         font-size: clamp(1.5rem, 6vw, 2.2rem);
-    }
-}
-
-@media (max-width: 425px) {
-    .navbar {
-        display: none;
     }
 }

@@ -620,7 +620,10 @@ section {
 }
 
 /* ── Responsive ── */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
     .mobile-nav {
         display: flex;
     }
@@ -636,9 +639,6 @@ section {
 }
 
 @media (max-width: 425px) {
-    .navbar {
-        display: none;
-    }
     #header {
         padding-top: 60px;
     }

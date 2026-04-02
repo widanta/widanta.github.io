@@ -810,7 +810,10 @@ section {
     transform: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+    }
     .mobile-nav {
         display: flex;
     }
@@ -833,11 +836,5 @@ section {
     }
     .project-card {
         height: 352px;
-    }
-}
-
-@media (max-width: 425px) {
-    .navbar {
-        display: none;
     }
 }
