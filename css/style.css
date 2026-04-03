@@ -132,7 +132,7 @@ body {
 .nav-link {
     color: var(--text) !important;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem !important;
     border-radius: 8px;
     transition: all 0.2s;
@@ -183,7 +183,7 @@ body {
     transform: translateX(20px);
 }
 .theme-icon {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--primary);
 }
 
@@ -258,7 +258,7 @@ section {
     margin-bottom: 1.5rem;
 }
 .hero-bio {
-    font-size: 0.92rem;
+    font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -276,7 +276,7 @@ section {
     border-radius: 10px;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s;
     display: inline-flex;
@@ -298,7 +298,7 @@ section {
     border-radius: 10px;
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s;
     display: inline-flex;
@@ -341,7 +341,7 @@ section {
     align-items: center;
     gap: 10px;
     box-shadow: var(--card-shadow);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--text);
     white-space: nowrap;
@@ -380,7 +380,7 @@ section {
 
 /* ── Section headers ── */
 .section-label {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--primary);
     letter-spacing: 0.15em;
@@ -582,7 +582,7 @@ section {
     margin-bottom: 1rem;
 }
 .exp-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.85;
 }
@@ -650,7 +650,7 @@ section {
 .footer-heading {
     font-family: "kanit", sans-serif;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--text);
@@ -671,7 +671,7 @@ section {
 }
 .footer-link i {
     color: var(--primary);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .footer-bottom {
     border-top: 1px solid var(--surface-border);
@@ -707,7 +707,7 @@ section {
     background: var(--primary-subtle);
 }
 .social-chip i {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* ── Scroll to top ── */

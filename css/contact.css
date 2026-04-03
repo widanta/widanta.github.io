@@ -148,7 +148,7 @@ body {
 .nav-link {
     color: var(--text) !important;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem !important;
     border-radius: 8px;
     transition: all 0.2s;
@@ -248,7 +248,7 @@ section {
     margin-bottom: 1.2rem;
 }
 .hero-bio {
-    font-size: 0.92rem;
+    font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.8;
 }
@@ -367,7 +367,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     flex-shrink: 0;
 }
 .contact-link-icon i {
@@ -392,7 +392,7 @@ section {
     justify-content: center;
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: all 0.2s;
 }
 .social-ball:hover {
@@ -449,7 +449,7 @@ section {
     border-radius: 10px;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s;
@@ -486,7 +486,7 @@ section {
 .footer-heading {
     font-family: "Kanit", sans-serif;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--text);
@@ -507,7 +507,7 @@ section {
 }
 .footer-link i {
     color: var(--primary);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .footer-bottom {
     border-top: 1px solid var(--surface-border);
@@ -543,7 +543,7 @@ section {
     background: var(--primary-subtle);
 }
 .social-chip i {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* ── Scroll to top ── */
