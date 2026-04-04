@@ -837,4 +837,8 @@ section {
     .project-card {
         height: 352px;
     }
+
+    .scroll-top {
+        bottom: 72px;
+    }
 }

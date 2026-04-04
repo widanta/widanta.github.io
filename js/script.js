@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(TextPlugin);
     gsap.to(".p-about", {
         duration: 8,
-        text: "Hai saya I Made Widanta Abdi Nugraha. Saya seorang mahasiswa Sistem Informasi di Denpasar, Bali. Berpengalaman melalui magang dan proyek *freelance* sebagai Web Developer dengan spesialisasi pengembangan Laravel & Integrasi API. Mampu mengoptimalkan UI yang responsif, terbiasa dengan Git/Github, dan selalu antusias merancang desain digital. Mari berkolaborasi!",
+        text: "Hai saya I Made Widanta Abdi Nugraha. Saya seorang mahasiswa Sistem Informasi di Denpasar, Bali. Berpengalaman melalui magang dan Projects *freelance* sebagai Web Developer dengan spesialisasi pengembangan Laravel & Integrasi API. Mampu mengoptimalkan UI yang responsif, terbiasa dengan Git/Github, dan selalu antusias merancang desain digital. Mari berkolaborasi!",
         ease: "none",
     });
 });

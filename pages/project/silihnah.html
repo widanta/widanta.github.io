@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="I Made Widanta Abdi Nugraha" />
+        <meta name="description" content="Case Study — Silihnah, Sistem Manajemen Inventaris Berbasis Web" />
+        <title>Case Study | Silihnah — Widanta</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="../../css/case1.css" />
+        <link rel="shortcut icon" type="image" href="../../gambar/logo-putih.png" />
+    </head>
+    <body id="top">
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../gambar/logo-putih.png" alt="Widanta Logo" class="navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list" style="font-size: 1.5rem; color: var(--text)"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center gap-1">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ms-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-sun theme-icon" id="themeIconLight"></i>
+                        <div class="theme-toggle" id="themeToggle" title="Toggle dark mode"></div>
+                        <i class="bi bi-moon theme-icon" id="themeIconDark"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav">
+            <a href="../../index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-newspaper"></i></a>
+            <a href="../project.html" class="active"><i class="bi bi-file-earmark-code-fill"></i></a>
+            <a href="../contact.html"><i class="bi bi-envelope"></i></a>
+            <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
+        </nav>
+
+        <section id="case-hero" class="pt-5 mt-5">
+            <div class="container pt-5">
+                <div class="case-eyebrow fade-up">Case Study</div>
+                <h1 class="case-title fade-up">Silihnah: Sistem Manajemen Inventaris dan Sirkulasi Barang Terpadu</h1>
+                <p class="p-text fade-up" style="max-width: 760px; margin: 0 auto">
+                    Kehilangan aset dan ketidakjelasan riwayat peminjaman barang merupakan celah kritis dalam manajemen inventaris institusi. Silihnah dirancang untuk mengautomasi pencatatan stok, melacak sirkulasi peminjaman, dan
+                    mengamankan data aset melalui satu dasbor terpusat yang presisi.
+                </p>
+                <div class="case-meta fade-up mt-4">
+                    <span class="case-badge"><i class="bi bi-calendar3"></i> 2021</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> Web Application</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> UI/UX Design</span>
+                    <span class="case-badge"><i class="bi bi-box-seam"></i> Inventory Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-body">
+            <div class="container">
+                <div class="row justify-content-center fade-up mb-5">
+                    <div class="col-lg-10">
+                        <div class="hero-image-wrap">
+                            <img
+                                src="../../gambar/silihnah-horizontal.png"
+                                alt="Silihnah — Sistem Manajemen Inventaris"
+                                class="img-fluid rounded-4 shadow-lg w-100"
+                                onerror="
+                                    this.style.background = '#2a1a0a';
+                                    this.style.minHeight = '340px';
+                                    this.removeAttribute('src');
+                                "
+                            />
+                        </div>
+                        <p class="hero-image-caption text-center mt-3 text-muted" style="font-size: 0.85rem">Pratinjau antarmuka Silihnah: Modul Autentikasi, Pemilihan Barang, dan Arsitektur Dasbor Manajerial.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5 content-block">
+                            <div class="section-label">Identifikasi Masalah</div>
+                            <h2 class="judul mb-4">Inkonsistensi Data pada Pencatatan Aset Fisik</h2>
+                            <p class="p-text">
+                                Institusi seperti kampus, laboratorium, maupun gudang logistik sering kali mengandalkan buku catatan manual untuk mengelola sirkulasi barang inventaris. Metode ini tidak hanya memakan waktu
+                                (*time-consuming*), tetapi juga memicu masalah serius: hilangnya riwayat peminjam, ketidaksesuaian jumlah stok fisik dengan catatan, serta lambatnya proses audit aset.
+                            </p>
+                            <p class="p-text">
+                                Tanpa sistem pengawasan yang terpusat (*centralized tracking*), administrator kesulitan untuk melacak siapa yang meminjam barang bernilai tinggi (seperti laptop atau perangkat elektronik), kapan batas waktu
+                                pengembaliannya, dan memantau status kelayakan barang tersebut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Solusi Platform</div>
+                        <h2 class="judul mb-4">Automasi Sirkulasi Melalui Silihnah</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            <strong>Silihnah</strong> dikembangkan sebagai aplikasi web *Inventory Management System* untuk mengeliminasi faktor kesalahan manusiawi (*human error*) dalam pengelolaan aset. Melalui Silihnah, proses pendataan
+                            barang (stok masuk), pembuatan formulir peminjaman (keluar), hingga konfirmasi pengembalian diintegrasikan ke dalam satu alur komputasi.
+                        </p>
+                        <div class="tag-list mt-3">
+                            <span class="exp-tag">Asset Tracking</span>
+                            <span class="exp-tag">Role-based Access Control</span>
+                            <span class="exp-tag">Real-time Stock</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Fase Pengembangan 1</div>
+                        <h2 class="judul mb-4">Perancangan Arsitektur Antarmuka (UI/UX)</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up mt-2">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">Aplikasi manajerial membutuhkan antarmuka yang mampu menyajikan data padat tanpa membebani kognisi pengguna (*cognitive overload*).</p>
+
+                        <div class="callout">
+                            <p>
+                                <strong>Struktur Dasbor (Dashboard Layout):</strong> Saya menggunakan pendekatan tata letak kolom ganda (bilah navigasi di sisi kiri dan area konten di sisi kanan). Susunan ini memudahkan administrator
+                                berpindah antar modul—seperti "Master Peminjaman", "Persetujuan", dan "Pengembalian"—secara efisien. <br /><br />
+
+                                <strong>Modul Peminjaman Visual:</strong> Berbeda dengan aplikasi inventaris klasik yang hanya menampilkan tabel teks, Silihnah menyajikan barang pinjaman (seperti Laptop, *Mouse*, Spidol) dalam bentuk *Card
+                                UI* yang memuat informasi stok ketersediaan secara langsung (*real-time*), lengkap dengan form penentuan "Tanggal Peminjaman" dan "Tanggal Pengembalian". <br /><br />
+
+                                <strong>Skema Autentikasi:</strong> Halaman *Login* didesain menggunakan ilustrasi keamanan vektor untuk membangun impresi sistem yang solid. Ruang input dirancang lebar dengan fokus (*focus state*) yang
+                                kontras untuk mempercepat proses masuk pengguna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Fase Pengembangan 2</div>
+                        <h2 class="judul mb-4">Pengembangan Sistem dan Basis Data (Web Dev)</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Silihnah beroperasi mengandalkan logika kondisional (CRUD) yang ketat pada sisi *back-end*. Infrastruktur basis data (*database*) relasional dirancang untuk menautkan tabel Pengguna, tabel Barang, dan tabel
+                            Transaksi Peminjaman.
+                        </p>
+                        <p class="p-text mt-3">
+                            Sistem mengunci (*lock*) ketersediaan stok secara komputasional ketika sebuah barang sedang berstatus "Dipinjam", dan secara otomatis mengembalikan jumlah stok ke dalam sistem pangkalan data ketika administrator
+                            memverifikasi status "Dikembalikan". Implementasi sistem hak akses (*Role-based Access Control*) juga diterapkan untuk membedakan otoritas antara akun peminjam (mahasiswa/staf) dan akun administrator gudang.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Dampak & Kesimpulan</div>
+                        <h2 class="judul mb-4">Digitalisasi sebagai Fondasi Keamanan Aset</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="row g-4">
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">🔒</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Keamanan Data</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Mencegah manipulasi data stok dan hilangnya riwayat peminjaman.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">⏱️</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Efisiensi Audit</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Mempercepat proses pelaporan inventaris akhir bulan melalui dasbor.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">📊</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Pemantauan Presisi</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Perhitungan keluar-masuk barang yang dikalkulasi secara komputasi.</p>
+                                </div>
+                            </div>
+                            <hr style="border-color: var(--surface-border); margin: 24px 0" />
+                            <p class="p-text">
+                                Kesimpulannya, pengembangan Silihnah menegaskan bahwa kompleksitas sirkulasi barang dapat disederhanakan melalui perancangan antarmuka yang bersih (*clean UI*) dan skema basis data yang terstruktur. Aplikasi
+                                ini mentransformasi prosedur manual menjadi alur kerja digital yang transparan dan dapat diandalkan oleh institusi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 text-center mt-5">
+                        <a href="../project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projects</a>
+                        <a href="../../index.html" class="btn-outline-custom mb-2"><i class="bi bi-house-door"></i> Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#top" class="scroll-top" id="scrollTop">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script>
+            // Theme toggle
+            const html = document.documentElement;
+            const toggle = document.getElementById("themeToggle");
+            const mobileThemeBtn = document.getElementById("mobileTheme");
+            const mobileThemeIcon = document.getElementById("mobileThemeIcon");
+
+            const saved = localStorage.getItem("theme") || "light";
+            html.setAttribute("data-theme", saved);
+            updateThemeIcon(saved);
+
+            function toggleTheme() {
+                const cur = html.getAttribute("data-theme");
+                const next = cur === "dark" ? "light" : "dark";
+                html.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+                updateThemeIcon(next);
+            }
+
+            function updateThemeIcon(t) {
+                mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+            }
+
+            toggle.addEventListener("click", toggleTheme);
+            mobileThemeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleTheme();
+            });
+
+            // Scroll to top
+            const scrollBtn = document.getElementById("scrollTop");
+            window.addEventListener("scroll", () => {
+                scrollBtn.classList.toggle("visible", window.scrollY > 400);
+            });
+
+            // Scroll reveal
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            obs.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+            document.querySelectorAll(".fade-up").forEach((el, i) => {
+                el.style.transitionDelay = `${(i % 4) * 0.07}s`;
+                obs.observe(el);
+            });
+        </script>
+    </body>
+</html>

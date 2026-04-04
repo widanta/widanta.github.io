@@ -575,4 +575,8 @@ section {
     .case-title {
         font-size: clamp(1.5rem, 6vw, 2.2rem);
     }
+
+    .scroll-top {
+        bottom: 72px;
+    }
 }

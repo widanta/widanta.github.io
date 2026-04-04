@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="I Made Widanta Abdi Nugraha" />
+        <meta name="description" content="Studi Kasus Water Sport Bali, Sistem Pemesanan Aktivitas Pariwisata Berbasis Web" />
+        <title>Studi Kasus | Water Sport Bali | Widanta</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="../../css/case1.css" />
+        <link rel="shortcut icon" type="image" href="../../gambar/logo-putih.png" />
+    </head>
+    <body id="top">
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../gambar/logo-putih.png" alt="Logo Widanta" class="navbar-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="bi bi-list" style="font-size: 1.5rem; color: var(--text)"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center gap-1">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ms-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-sun theme-icon" id="themeIconLight"></i>
+                        <div class="theme-toggle" id="themeToggle" title="Ganti mode gelap"></div>
+                        <i class="bi bi-moon theme-icon" id="themeIconDark"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav">
+            <a href="../../index.html"><i class="bi bi-house-door-fill"></i></a>
+            <a href="#"><i class="bi bi-newspaper"></i></a>
+            <a href="../project.html" class="active"><i class="bi bi-file-earmark-code-fill"></i></a>
+            <a href="../contact.html"><i class="bi bi-envelope"></i></a>
+            <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
+        </nav>
+
+        <section id="case-hero" class="pt-5 mt-5">
+            <div class="container pt-5">
+                <div class="case-eyebrow fade-up">Studi Kasus</div>
+                <h1 class="case-title fade-up">Water Sport Bali: Automasi Pemesanan Aktivitas Pariwisata Bahari Terpadu</h1>
+                <p class="p-text fade-up" style="max-width: 760px; margin: 0 auto">
+                    Kawasan pariwisata bahari di Bali membutuhkan sistem operasional yang serba cepat dan akurat. Water Sport Bali hadir dengan mengimplementasikan mesin pemesanan daring yang meredefinisi cara wisatawan mengatur jadwal
+                    liburan mereka secara mandiri, transparan, dan efisien sebelum tiba di lokasi tujuan.
+                </p>
+                <div class="case-meta fade-up mt-4">
+                    <span class="case-badge"><i class="bi bi-calendar3"></i> 2023</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> Booking Engine</span>
+                    <span class="case-badge"><i class="bi bi-tag"></i> Web Development</span>
+                    <span class="case-badge"><i class="bi bi-water"></i> Tourism Industry</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-body">
+            <div class="container">
+                <div class="row justify-content-center fade-up mb-5">
+                    <div class="col-lg-10">
+                        <div class="hero-image-wrap">
+                            <img
+                                src="../../gambar/baliwatersport-horizontal.png"
+                                alt="Tampilan Antarmuka Platform Water Sport Bali"
+                                class="img-fluid rounded-4 shadow-lg w-100"
+                                onerror="
+                                    this.style.background = '#2a1a0a';
+                                    this.style.minHeight = '340px';
+                                    this.removeAttribute('src');
+                                "
+                            />
+                        </div>
+                        <p class="hero-image-caption text-center mt-3 text-muted" style="font-size: 0.85rem">Pratinjau antarmuka sistem pemesanan mandiri pada platform Water Sport Bali.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5 content-block">
+                            <div class="section-label">Identifikasi Masalah</div>
+                            <h2 class="judul mb-4">Kendala Operasional pada Pemesanan Konvensional</h2>
+                            <p class="p-text">
+                                Pengelolaan aktivitas pariwisata yang mengandalkan pemesanan manual melalui panggilan telepon atau aplikasi pesan instan sering kali menimbulkan berbagai masalah operasional. Pada musim liburan puncak,
+                                operator wahana air kewalahan menghadapi lonjakan permintaan yang berujung pada antrean panjang, penumpukan jadwal, serta risiko pemesanan ganda yang merugikan wisatawan.
+                            </p>
+                            <p class="p-text">
+                                Di sisi lain, wisatawan domestik maupun mancanegara mendambakan transparansi harga dan kemudahan akses informasi. Praktik penawaran harga yang tidak konsisten di lapangan sering kali menurunkan tingkat
+                                kepercayaan wisatawan terhadap penyedia layanan pariwisata bahari tersebut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Solusi Platform</div>
+                        <h2 class="judul mb-4">Sistem Pemesanan Berbasis Komputasi Waktu Nyata</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Platform <strong>watersport-bali.com</strong> dibangun untuk menyelesaikan masalah efisiensi tersebut. Melalui penerapan mesin pemesanan yang terintegrasi secara langsung, wisatawan diberikan kendali penuh untuk
+                            menelusuri berbagai paket aktivitas, memilih tanggal pelaksanaan, meninjau rincian biaya yang transparan, dan menyelesaikan pemesanan dalam satu alur kerja yang terpusat.
+                        </p>
+                        <div class="tag-list mt-3">
+                            <span class="exp-tag">Automasi Jadwal</span>
+                            <span class="exp-tag">Transparansi Harga</span>
+                            <span class="exp-tag">Keranjang Belanja Dinamis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Fase Pengembangan 1</div>
+                        <h2 class="judul mb-4">Perancangan Antarmuka Penyajian Data (UI/UX)</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up mt-2">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">Sistem yang menyajikan banyak variabel harga dan rincian paket memerlukan tata letak visual yang terstruktur agar pengunjung tidak mengalami beban kognitif saat mengambil keputusan pembelian.</p>
+
+                        <div class="callout">
+                            <p>
+                                <strong>Psikologi Warna Samudra:</strong> Desain antarmuka memprioritaskan penggunaan spektrum warna biru dan putih bersih. Pilihan warna ini dirancang untuk merepresentasikan elemen air laut dan langit
+                                tropis sehingga pengunjung langsung merasakan nuansa liburan sejak pandangan pertama. <br /><br />
+
+                                <strong>Keterbacaan Data Kuantitatif:</strong> Pada halaman utama, saya menerapkan struktur tabel yang minimalis untuk menyajikan daftar aktivitas beserta durasi dan harganya. Penempatan tabel ini bertujuan
+                                untuk memberikan informasi yang padat secara langsung tanpa mengharuskan pengguna menavigasi terlalu banyak halaman. <br /><br />
+
+                                <strong>Modul Pemesanan Interaktif:</strong> Jendela dialog pemesanan dirancang secara detail namun tetap ringkas. Modul ini menyajikan pilihan tanggal kalender, rincian kelengkapan yang harus dibawa,
+                                kebijakan pembatalan, serta perhitungan total harga otomatis berdasarkan jumlah peserta yang dimasukkan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Fase Pengembangan 2</div>
+                        <h2 class="judul mb-4">Pengembangan Arsitektur Mesin Pemesanan</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Kekuatan utama dari platform ini bertumpu pada logika sisi peladen yang menangani proses keranjang belanja dan penjadwalan. Sebagai pengembang web, saya harus merangkai algoritma yang mampu memproses ketersediaan
+                            kuota aktivitas secara presisi.
+                        </p>
+                        <p class="p-text mt-3">
+                            Implementasi fitur keranjang belanja dikembangkan untuk dapat menampung berbagai aktivitas pariwisata yang berbeda dalam satu kali sesi pemesanan. Sistem akan mengakumulasi total tagihan berdasarkan jumlah
+                            partisipan dan menerapkan logika pemotongan harga otomatis apabila pengguna memasukkan kode promosi yang sah.
+                        </p>
+                        <p class="p-text mt-3">
+                            Tahap akhir dari alur transaksi ini disempurnakan melalui perancangan formulir informasi tamu. Data masukan pengguna dirancang agar tervalidasi secara ketat di sisi peramban web dan peladen untuk mencegah
+                            terjadinya kekosongan data. Informasi ini kemudian diteruskan secara aman ke dalam basis data operator wahana air guna mempermudah proses pendataan sebelum wisatawan tiba di lokasi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">Dampak & Kesimpulan</div>
+                        <h2 class="judul mb-4">Mengoptimalkan Ekosistem Bisnis Pariwisata</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="row g-4">
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">📈</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Peningkatan Konversi</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Transparansi harga mempercepat proses pengambilan keputusan oleh calon wisatawan.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">⚙️</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Efisiensi Manajerial</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Automasi penjadwalan secara signifikan mengurangi risiko pemesanan ganda di lapangan.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">🌟</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Peningkatan Layanan</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Data reservasi terpusat membantu staf memberikan pelayanan optimal sejak wisatawan tiba.</p>
+                                </div>
+                            </div>
+                            <hr style="border-color: var(--surface-border); margin: 24px 0" />
+                            <p class="p-text">
+                                Secara keseluruhan, perancangan platform Water Sport Bali mengukuhkan pemahaman bahwa modernisasi operasional adalah kunci keberhasilan bisnis pariwisata. Dengan memadukan desain antarmuka yang ramah pengguna
+                                dan arsitektur mesin pemesanan yang canggih, operator wahana air tidak hanya mempermudah transaksi, tetapi juga berhasil meningkatkan standar mutu pelayanan pariwisata secara menyeluruh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 text-center mt-5">
+                        <a href="../project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projectss</a>
+                        <a href="../../index.html" class="btn-outline-custom mb-2"><i class="bi bi-house-door"></i> Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#top" class="scroll-top" id="scrollTop">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script>
+            // Logika pengaturan tema warna
+            const html = document.documentElement;
+            const toggle = document.getElementById("themeToggle");
+            const mobileThemeBtn = document.getElementById("mobileTheme");
+            const mobileThemeIcon = document.getElementById("mobileThemeIcon");
+
+            const saved = localStorage.getItem("theme") || "light";
+            html.setAttribute("data-theme", saved);
+            updateThemeIcon(saved);
+
+            function toggleTheme() {
+                const cur = html.getAttribute("data-theme");
+                const next = cur === "dark" ? "light" : "dark";
+                html.setAttribute("data-theme", next);
+                localStorage.setItem("theme", next);
+                updateThemeIcon(next);
+            }
+
+            function updateThemeIcon(t) {
+                mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+            }
+
+            toggle.addEventListener("click", toggleTheme);
+            mobileThemeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                toggleTheme();
+            });
+
+            // Logika tombol gulir ke atas
+            const scrollBtn = document.getElementById("scrollTop");
+            window.addEventListener("scroll", () => {
+                scrollBtn.classList.toggle("visible", window.scrollY > 400);
+            });
+
+            // Logika efek animasi
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            obs.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+            );
+            document.querySelectorAll(".fade-up").forEach((el, i) => {
+                el.style.transitionDelay = `${(i % 4) * 0.07}s`;
+                obs.observe(el);
+            });
+        </script>
+    </body>
+</html>
