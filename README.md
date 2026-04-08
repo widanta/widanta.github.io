@@ -2,7 +2,7 @@
   <img src="https://widanta.github.io/gambar/logo-putih.png" alt="Logo Widanta - Monogram W" width="120" />
 </div>
 
-<h1 align="center">I Made Widanta Abdi Nugraha (Turah)</h1>
+<h1 align="center">I Made Widanta Abdi Nugraha</h1>
 <h3 align="center">Web Developer & UI/UX Designer dari Bali, Indonesia</h3>
 
 <div align="center">
@@ -14,7 +14,7 @@
 
 ## 📖 Filosofi Logo
 
-Logo di atas bukan sekadar tanda visual, melainkan sebuah monogram yang dirancang secara saksama untuk merepresentasikan inisial **"W"** dari Widanta. Garis-garis yang menyambung dan dinamis melambangkan pendekatan saya dalam menciptakan produk digital—di mana arsitektur sistem yang logis (Web Development) harus terhubung secara mulus dengan empati terhadap pengguna manusia (UI/UX Design). Geometrinya yang bersih dan minimalis mencerminkan komitmen saya dalam menulis kode yang rapi serta merancang antarmuka yang intuitif.
+Logo di atas bukan sekadar tanda visual, melainkan sebuah monogram yang dirancang secara saksama untuk merepresentasikan inisial **"W"** dari Widanta. Garis-garis yang menyambung dan dinamis melambangkan pendekatan saya dalam menciptakan produk digital di mana arsitektur sistem yang logis (Web Development) harus terhubung secara mulus dengan empati terhadap pengguna manusia (UI/UX Design). Geometrinya yang bersih dan minimalis mencerminkan komitmen saya dalam menulis kode yang rapi serta merancang antarmuka yang intuitif.
 
 ---
 
@@ -38,12 +38,12 @@ Berikut adalah beberapa sorotan dari karya komersial dan personal saya. Anda dap
 
 **Karya Komersial:**
 
-- **Pintundangan** - Platform SaaS (_Software as a Service_) untuk Undangan Pernikahan Digital.
+- **Pintundangan** - Templat Undangan Pernikahan Digital.
 - **Bali Watersport** - _Landing Page_ dan _Booking Engine_ untuk wisata bahari.
 - **The Saku Travel** - Website Agensi Perjalanan & Pariwisata.
 - **Baline Chocolate** - E-Commerce dan Profil Perusahaan.
 - **Cat & Sashimi** - Desain UI Profil Perusahaan Restoran.
-- **Weddingku** - Templat Undangan Pernikahan Daring.
+- **Weddingku** - Templat Undangan Pernikahan Digital.
 
 **Karya Personal:**
 
