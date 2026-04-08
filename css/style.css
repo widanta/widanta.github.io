@@ -311,71 +311,161 @@ section {
     color: var(--primary);
     background: var(--primary-subtle);
 }
-
-/* Hero image / avatar */
+/* --- HERO IMAGE / AVATAR WRAPPER --- */
 .hero-img-wrap {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: 2rem 0;
+    min-height: 420px; /* Memastikan ada ruang yang cukup */
 }
+
+/* Container kaca utama */
 .hero-img-glass {
-    background: transparent;
-    max-width: 360px;
+    position: relative;
+    max-width: 380px;
     width: 100%;
+    aspect-ratio: 1 / 1; /* Membuat area kerja berbentuk kotak sempurna */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+/* === LAYERS & SHAPES === */
+
+/* Layer 1: Titik-titik Dekorasi */
+.shape-dots {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    background-image: radial-gradient(var(--text) 2.5px, transparent 2.5px);
+    background-size: 20px 20px;
+    opacity: 0.15;
+}
+
+.dots-top-left {
+    top: -20px;
+    right: -20px;
+}
+
+.dots-bottom-right {
+    bottom: -10px;
+    left: -20px;
+}
+
+/* Layer 2: Shape Dasar Gelap (Berada di belakang foto) */
+.shape-secondary {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 35px;
+    left: 15px;
+    background-color: var(--text);
+    clip-path: url(#secondary-blob); /* ← ganti ini saja */
+    z-index: 1;
+    opacity: 0.9;
+    /* transform: rotate(-15deg) scale(0.95); */
+}
+
+/* Layer 3 & 4: Container Masking Utama */
+.avatar-mask-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 5%;
+    right: 0;
+    z-index: 2;
+    clip-path: url(#organic-blob); /* Pemotong Vektor SVG (Sama persis) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     overflow: hidden;
 }
-.hero-img-glass img {
+
+/* Background Orange / Primary */
+.shape-primary {
+    position: absolute;
     width: 100%;
-    border-radius: 18px;
-    display: block;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
 }
+
+/* Gambar Profile */
+.profile-avatar {
+    /* Lebar dilebihkan menjadi 105% untuk mencegah garis orange (sub-pixel bleeding) */
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 3;
+    /* Gambar sedikit didorong ke bawah agar baju terpotong sempurna */
+    transform: translateY(12px) scale(1.02);
+}
+
+/* === BADGE STYLING === */
 .hero-badge {
     position: absolute;
     background: var(--surface);
     border: 1px solid var(--surface-border);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;
     padding: 10px 16px;
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: var(--card-shadow);
-    font-size: 1rem;
-    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--text);
     white-space: nowrap;
+    z-index: 10;
 }
+
 .hero-badge i {
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
+
+.dot-online {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+}
+
+/* Posisi & Animasi Badge */
 .badge-tl {
-    top: 30px;
-    left: -20px;
+    top: 20%;
+    left: -10%;
     animation: badgeFloat 4s ease-in-out infinite;
 }
+
 .badge-br {
-    bottom: 40px;
-    right: -20px;
+    bottom: 10%;
+    right: -10%;
     animation: badgeFloat 4s ease-in-out infinite reverse;
 }
+
+/* Animasi Mengambang Naik-Turun */
 @keyframes badgeFloat {
     0%,
     100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-12px); /* Bergerak ke atas 12px */
     }
-}
-.dot-online {
-    width: 8px;
-    height: 8px;
-    background: #22c55e;
-    border-radius: 50%;
-    flex-shrink: 0;
-    box-shadow: 0 0 6px #22c55e;
 }
 
 /* ── Section headers ── */
@@ -568,6 +658,21 @@ section {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--text);
+}
+
+.skill-image-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.skill-image-wrap img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* experience */
@@ -830,15 +935,26 @@ section {
     .badge-br {
         display: none;
     }
-    .hero-img-glass {
-        max-width: 260px;
-        margin: 0 auto;
-    }
     .project-card {
         height: 352px;
     }
 
     .scroll-top {
         bottom: 72px;
+    }
+
+    .skill-image-wrap img {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 576px) {
+    .badge-tl {
+        left: 0;
+        top: 0;
+    }
+    .badge-br {
+        right: 0;
+        bottom: 0;
     }
 }
