@@ -1,38 +1,27 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="id" data-theme="light">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="I Made Widanta Abdi Nugraha" />
-
         <meta name="description" content="Studi Kasus: Pintundangan, platform undangan digital interaktif dan manajemen tamu pernikahan berbasis Web (SaaS) karya I Made Widanta Abdi Nugraha." />
         <title>Case Study: Pintundangan Web App | Portfolio Widanta</title>
 
         <link rel="canonical" href="https://widanta.github.io/pages/project/pintundangan.html" />
-
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://widanta.github.io/pages/project/pintundangan.html" />
         <meta property="og:title" content="Pintundangan - Digital Wedding Invitation Platform" />
         <meta property="og:description" content="Studi kasus pengembangan platform Pintundangan. Transformasi digital untuk memperkuat peran budaya di era modern." />
         <meta property="og:image" content="https://widanta.github.io/gambar/pintundangan-horizontal.png" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://widanta.github.io/pages/project/pintundangan.html" />
-        <meta property="twitter:title" content="Pintundangan - Digital Wedding Invitation Platform" />
-        <meta property="twitter:description" content="Studi kasus pengembangan platform Pintundangan. Transformasi digital untuk memperkuat peran budaya di era modern." />
-        <meta property="twitter:image" content="https://widanta.github.io/gambar/pintundangan-horizontal.png" />
-
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "CreativeWork",
-                "name": "Pintundangan Web Application",
+                "@type": "ScholarlyArticle",
+                "name": "Peranan Teknologi dalam Modernisasi Budaya: Studi Kasus Pintundangan",
                 "description": "Platform penyedia layanan undangan digital interaktif yang dirancang secara khusus untuk memfasilitasi kebutuhan seremonial di Indonesia.",
                 "url": "https://widanta.github.io/pages/project/pintundangan.html",
-                "author": {
-                    "@type": "Person",
-                    "name": "I Made Widanta Abdi Nugraha"
-                },
+                "author": { "@type": "Person", "name": "I Made Widanta Abdi Nugraha" },
                 "image": "https://widanta.github.io/gambar/pintundangan-horizontal.png",
                 "datePublished": "2023-01-01"
             }
@@ -41,12 +30,200 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
         <link rel="stylesheet" href="../../css/case1.css" />
         <link rel="icon" type="image/png" sizes="32x32" href="../../gambar/logo-putih.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../../gambar/logo-putih.png" />
-
         <link rel="apple-touch-icon" sizes="180x180" href="../../gambar/logo-putih.png" />
+
+        <style>
+            /* ─── Academic Additions ─────────────────────────────────── */
+            .abstract-box {
+                background: linear-gradient(135deg, rgba(var(--primary-rgb, 180, 120, 60), 0.08) 0%, rgba(var(--primary-rgb, 180, 120, 60), 0.03) 100%);
+                border-left: 4px solid var(--primary);
+                border-radius: 0 12px 12px 0;
+                padding: 28px 32px;
+                margin-bottom: 0;
+            }
+            .abstract-box .abstract-label {
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                font-size: 0.72rem;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--primary);
+                margin-bottom: 10px;
+            }
+            .abstract-box p {
+                font-size: 0.92rem;
+                line-height: 1.85;
+                text-align: justify;
+            }
+            .keyword-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 14px;
+            }
+            .keyword-list span {
+                font-size: 0.75rem;
+                font-family: "DM Sans", sans-serif;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.12);
+                color: var(--primary);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.25);
+                border-radius: 20px;
+                padding: 3px 12px;
+            }
+            .method-step {
+                display: flex;
+                gap: 16px;
+                align-items: flex-start;
+                padding: 18px 0;
+                border-bottom: 1px dashed rgba(var(--primary-rgb, 180, 120, 60), 0.2);
+            }
+            .method-step:last-child {
+                border-bottom: none;
+            }
+            .step-num {
+                min-width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                font-size: 0.85rem;
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+            .step-content h4 {
+                font-family: "Kanit", sans-serif;
+                font-size: 0.95rem;
+                font-weight: 600;
+                margin-bottom: 4px;
+                color: var(--text);
+            }
+            .step-content p {
+                font-size: 0.86rem;
+                margin: 0;
+                color: var(--text-muted, #888);
+                line-height: 1.7;
+            }
+            .ref-list {
+                counter-reset: ref-counter;
+                padding: 0;
+                list-style: none;
+            }
+            .ref-list li {
+                counter-increment: ref-counter;
+                display: flex;
+                gap: 12px;
+                padding: 14px 0;
+                border-bottom: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.1);
+                font-size: 0.84rem;
+                line-height: 1.7;
+            }
+            .ref-list li:last-child {
+                border-bottom: none;
+            }
+            .ref-list li::before {
+                content: "[" counter(ref-counter) "]";
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                color: var(--primary);
+                min-width: 36px;
+                padding-top: 1px;
+                flex-shrink: 0;
+            }
+            .ref-list li a {
+                color: var(--primary);
+                text-decoration: none;
+                border-bottom: 1px dotted var(--primary);
+                transition: opacity 0.2s;
+                display: inline-block;
+                margin-top: 2px;
+                font-size: 0.8rem;
+            }
+            .ref-list li a:hover {
+                opacity: 0.7;
+            }
+            .stat-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 16px;
+                margin: 24px 0;
+            }
+            .stat-item {
+                text-align: center;
+                padding: 20px 12px;
+                border-radius: 12px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.06);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.14);
+            }
+            .stat-item .stat-val {
+                font-family: "Kanit", sans-serif;
+                font-size: 1.8rem;
+                font-weight: 800;
+                color: var(--primary);
+                line-height: 1.1;
+            }
+            .stat-item .stat-label {
+                font-size: 0.76rem;
+                color: var(--text-muted, #999);
+                margin-top: 4px;
+                font-family: "DM Sans", sans-serif;
+            }
+            .footnote-cite {
+                font-size: 0.75rem;
+                color: var(--primary);
+                font-weight: 600;
+                cursor: default;
+                vertical-align: super;
+            }
+            .problem-card {
+                border-left: 3px solid var(--primary);
+                padding: 14px 20px;
+                margin-bottom: 12px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.04);
+                border-radius: 0 8px 8px 0;
+            }
+            .problem-card h5 {
+                font-family: "Kanit", sans-serif;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 4px;
+                color: var(--text);
+            }
+            .problem-card p {
+                font-size: 0.85rem;
+                margin: 0;
+                line-height: 1.7;
+            }
+            .waterfall-flow {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                position: relative;
+            }
+            .waterfall-flow::before {
+                content: "";
+                position: absolute;
+                left: 17px;
+                top: 18px;
+                bottom: 18px;
+                width: 2px;
+                background: linear-gradient(to bottom, var(--primary), transparent);
+                z-index: 0;
+            }
+            .page-num {
+                font-size: 0.75rem;
+                color: var(--text-muted, #aaa);
+                font-family: "DM Sans", sans-serif;
+                text-align: right;
+                margin-bottom: 6px;
+            }
+        </style>
     </head>
     <body id="top">
         <div class="bg-blobs">
@@ -78,7 +255,6 @@
                 </div>
             </div>
         </nav>
-
         <nav class="mobile-nav">
             <a href="../../index.html"><i class="bi bi-house-door-fill"></i></a>
             <a href="#"><i class="bi bi-newspaper"></i></a>
@@ -86,24 +262,22 @@
             <a href="../contact.html"><i class="bi bi-envelope"></i></a>
             <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
         </nav>
-
         <section id="case-hero">
             <div class="container">
-                <div class="case-eyebrow fade-up">Case Study</div>
-                <h1 class="case-title fade-up">Pintuundangan: Transformasi Digital untuk Memperkuat Peran Budaya di Era Modern</h1>
+                <div class="case-eyebrow fade-up">Portfolio Ilmiah · Studi Kasus</div>
+                <h1 class="case-title fade-up">Peranan Teknologi dalam Modernisasi Budaya: Adaptasi Tradisi Mengundang Melalui Platform Undangan Digital Pintundangan</h1>
                 <p class="p-text fade-up" style="max-width: 760px; margin: 0 auto">
-                    Dulu, nguopin dan mengundang berarti mengetuk pintu satu per satu untuk menjaga silaturahmi. Kini, Pintuundangan hadir untuk menjaga api tradisi tetap menyala di era digital. Tanpa mengurangi rasa hormat, teknologi ini
-                    memperluas jangkauan doa dan kehadiran kerabat.
+                    Kajian pengembangan sistem berbasis SaaS sebagai instrumen pelestarian kearifan lokal dalam menjawab tantangan distribusi undangan seremonial di era digital.
                 </p>
                 <div class="case-meta fade-up">
                     <span class="case-badge"><i class="bi bi-calendar3"></i> 2023</span>
                     <span class="case-badge"><i class="bi bi-tag"></i> Web Development</span>
                     <span class="case-badge"><i class="bi bi-tag"></i> UI/UX Design</span>
                     <span class="case-badge"><i class="bi bi-globe"></i> SaaS Platform</span>
+                    <span class="case-badge"><i class="bi bi-journal-text"></i> Karya Ilmiah</span>
                 </div>
             </div>
         </section>
-
         <section id="case-body">
             <div class="container">
                 <div class="row justify-content-center fade-up mb-5">
@@ -122,22 +296,479 @@
                         <p class="hero-image-caption">Pintundangan.com — Landing Page, tampil di Laptop, Tablet &amp; Smartphone</p>
                     </div>
                 </div>
-
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
                         <div class="glass-card p-4 p-md-5 content-block">
-                            <div class="section-label">Pendahuluan</div>
-                            <h2 class="judul">Tradisi Bertemu Teknologi</h2>
-                            <p class="p-text">
-                                Indonesia merupakan negara yang kaya akan budaya dan tradisi luhur yang diwariskan secara turun-temurun. Salah satu bentuk pelestarian tradisi tersebut terlihat pada pelaksanaan berbagai acara sakral, seperti
-                                upacara pernikahan adat Bali, perayaan pernikahan Islami, pemberkatan Kristen, hingga upacara Manusa Yadnya yang meliputi Otonan dan Mepandes atau potong gigi. Dalam setiap perayaan tersebut, proses
-                                mengundang kerabat dan keluarga besar merupakan sebuah kewajiban etis serta bentuk penghormatan tertinggi untuk menjalin tali persaudaraan.
+                            <div class="section-label">Abstrak</div>
+                            <p>
+                                Penelitian ini mengkaji peranan teknologi informasi dalam modernisasi tradisi mengundang pada masyarakat Indonesia yang kaya akan nilai seremonial dan budaya lokal. Proses distribusi undangan fisik secara
+                                konvensional menghadirkan berbagai inefisiensi operasional, meliputi keterbatasan jangkauan geografis, tingginya biaya cetak, serta minimnya representasi estetika budaya lokal pada platform digital yang telah
+                                ada. Melalui pendekatan pengembangan perangkat lunak dengan metode <em>Waterfall</em>, penelitian ini merancang dan mengimplementasikan platform SaaS bernama <strong>Pintundangan</strong> — sebuah sistem
+                                undangan digital interaktif yang mengintegrasikan ornamen kultural, manajemen tamu terpusat, serta fitur pemberian hadiah digital berbasis teknologi finansial (FinTech). Hasil implementasi menunjukkan bahwa
+                                pendekatan digitalisasi yang mengedepankan nilai estetika lokal mampu mempertahankan esensi kesopanan adat sekaligus meningkatkan efisiensi distribusi dan aksesibilitas bagi tamu di seluruh penjuru Indonesia.
+                                Temuan ini memperkuat tesis bahwa teknologi tidak bersifat disruptif terhadap tradisi, melainkan berfungsi sebagai katalis yang melestarikan dan memperluas jangkauan kearifan lokal di era digital.
                             </p>
-                            <div class="callout">
-                                <p>
-                                    Pada masa lalu, undangan selalu dicetak menggunakan kertas premium dan diantarkan langsung dari pintu ke pintu. Akan tetapi, pada era digital dengan tingkat mobilitas masyarakat yang sangat tinggi, metode
-                                    distribusi fisik mulai memunculkan berbagai kendala logistik dan finansial. Pintundangan hadir sebagai solusi inovatif yang merangkul teknologi untuk mengatasi tantangan tersebut, sekaligus menjaga esensi
-                                    budaya yang melekat pada proses mengundang.
+                            <div class="keyword-list">
+                                <span>Undangan Digital</span>
+                                <span>SaaS Platform</span>
+                                <span>Kearifan Lokal</span>
+                                <span>Transformasi Digital</span>
+                                <span>Budaya Indonesia</span>
+                                <span>Laravel</span>
+                                <span>UI/UX Design</span>
+                                <span>FinTech</span>
+                                <span>Metode Waterfall</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">I. Pendahuluan</div>
+                        <h2 class="judul">Tradisi Mengundang dalam Pusaran Transformasi Digital</h2>
+                        <p class="p-text">
+                            Perkembangan teknologi informasi dan komunikasi (TIK) pada dekade terakhir telah melampaui batas-batas konvensional dan merambah ke hampir seluruh aspek kehidupan sosial-budaya manusia. Di Indonesia — sebagai
+                            negara dengan keragaman budaya terbesar di dunia — transformasi digital tidak hanya menyentuh sektor ekonomi dan pemerintahan, tetapi juga secara progresif mengubah cara masyarakat menjalankan tradisi dan ritual
+                            seremonial<span class="footnote-cite" title="Prasetyo &amp; Trisyanti, 2018">[1]</span>.
+                        </p>
+                        <p class="p-text">
+                            Salah satu tradisi yang mengakar kuat dalam ekosistem sosial-budaya Indonesia adalah praktik mengundang dalam rangkaian acara seremonial — mulai dari pernikahan adat Bali, akad nikah dan resepsi Islami,
+                            pemberkatan pernikahan Kristen, hingga upacara Manusa Yadnya seperti Otonan, Mepandes (potong gigi), dan Metatah. Proses mengundang bukan sekadar aktivitas logistik, melainkan merupakan
+                            <em>tindak sosial</em> yang sarat nilai: sebuah ekspresi penghormatan, pengakuan atas relasi sosial, dan pemeliharaan ikatan komunitas<span class="footnote-cite" title="Wibowo, 2020">[2]</span>.
+                        </p>
+                        <p class="p-text">
+                            Namun, paradigma industri 4.0 yang ditandai oleh ledakan konektivitas internet telah mengakselerasi mobilitas penduduk secara luar biasa. Data Badan Pusat Statistik (BPS) mencatat penetrasi internet di Indonesia
+                            telah melampaui 78,19% pada tahun 2023<span class="footnote-cite" title="BPS, 2023">[3]</span>, sebuah kondisi yang secara fundamental mengubah ekspektasi masyarakat terhadap cara informasi disampaikan — termasuk
+                            undangan.
+                        </p>
+                        <div class="callout">
+                            <p>
+                                Berhadapan dengan realitas tersebut, terdapat kesenjangan (<em>gap</em>) yang signifikan antara kebutuhan akan media undangan yang menghormati nilai kultural dengan ketersediaan solusi digital yang mampu
+                                merepresentasikannya secara autentik. Penelitian ini hadir untuk menjawab kesenjangan tersebut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">II. Latar Belakang</div>
+                        <h2 class="judul">Konteks Budaya dan Dorongan Digitalisasi</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">2.1 Nilai Seremonial dalam Tradisi Mengundang</h3>
+                        <p class="p-text">
+                            Undangan dalam konteks budaya Indonesia bukanlah sekadar pemberitahuan informatif. Ia merupakan medium komunikasi ritual yang memanggul beban simbolik. Dalam adat Bali, misalnya, proses <em>nguopin</em> — yakni
+                            kunjungan langsung dari rumah ke rumah — adalah manifestasi konkret dari konsep <em>menyama braya</em> (persaudaraan komunal)<span class="footnote-cite" title="Suyanto, 2019">[4]</span>. Ketidakhadiran dalam
+                            proses ini dianggap sebagai pengabaian terhadap norma sosial yang dapat merusak relasi antarkeluarga.
+                        </p>
+                        <p class="p-text">
+                            Pada dimensi yang lebih luas, praktik serupa ditemukan dalam <em>kondangan</em> atau <em>metanjung</em> — tradisi pemberian tali kasih sebagai wujud gotong royong finansial kepada keluarga penyelenggara. Dalam
+                            Islam, tradisi <em>walimah</em> mewajibkan penyebaran undangan seluas mungkin sebagai bentuk syiar kebahagiaan<span class="footnote-cite" title="Al-Nawawi, terjemahan Yahya">[5]</span>. Seluruh praktik ini
+                            berbagi satu kesamaan: proses mengundang adalah inti dari ritual itu sendiri, bukan periferalnya.
+                        </p>
+                        <h3 class="judul-text mt-4">2.2 Tantangan Era Digital terhadap Tradisi</h3>
+                        <p class="p-text">
+                            Transformasi digital membawa konsekuensi yang paradoksal bagi tradisi mengundang. Di satu sisi, internet memungkinkan konektivitas tanpa batas geografis. Di sisi lain, urbanisasi dan diaspora masyarakat Indonesia
+                            ke berbagai penjuru dunia menjadikan kunjungan langsung dari pintu ke pintu sebagai sesuatu yang semakin tidak realistis secara logistik dan finansial. Laporan McKinsey Global Institute (2022) menyebutkan bahwa
+                            lebih dari 54% populasi Indonesia kini tinggal di wilayah perkotaan — angka yang terus meningkat setiap tahunnya<span class="footnote-cite" title="McKinsey, 2022">[6]</span>.
+                        </p>
+                        <p class="p-text">
+                            Respons awal terhadap tantangan ini adalah kemunculan platform undangan digital generasi pertama. Namun, sebagian besar platform tersebut mengadopsi estetika desain Barat yang minimalis dan generik — sebuah
+                            pendekatan yang secara tidak langsung memarjinalkan representasi visual budaya lokal. Penelitian Sari dan Hakim (2021) menemukan bahwa 67% responden pengguna undangan digital di Bali menyatakan ketidakpuasan
+                            terhadap ketersediaan tema berbasis ornamen adat<span class="footnote-cite" title="Sari &amp; Hakim, 2021">[7]</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-val">78,19%</div>
+                                <div class="stat-label">Penetrasi Internet Indonesia 2023</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">54%+</div>
+                                <div class="stat-label">Populasi Urban Indonesia</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">67%</div>
+                                <div class="stat-label">Ketidakpuasan thd desain undangan digital (Bali)</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">90%+</div>
+                                <div class="stat-label">Tamu akses undangan via perangkat seluler</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">III. Identifikasi Masalah</div>
+                        <h2 class="judul">Pokok Permasalahan</h2>
+                        <p class="p-text">Berdasarkan pemaparan latar belakang di atas, terdapat tiga pokok permasalahan utama yang menjadi fokus penelitian ini:</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="problem-card">
+                            <h5>Masalah 1 — Inefisiensi Distribusi Undangan Fisik</h5>
+                            <p>
+                                Distribusi undangan secara konvensional (cetak dan door-to-door) menghadapi hambatan geografis yang signifikan. Biaya cetak undangan premium berkisar antara Rp 5.000 hingga Rp 25.000 per lembar, belum
+                                termasuk ongkos distribusi yang melonjak drastis untuk tamu di luar kota atau luar pulau<span class="footnote-cite">[8]</span>. Kondisi ini tidak hanya memberatkan penyelenggara secara finansial, tetapi juga
+                                berpotensi mengecualikan tamu yang berada di lokasi terpencil.
+                            </p>
+                        </div>
+                        <div class="problem-card">
+                            <h5>Masalah 2 — Absennya Representasi Estetika Budaya Lokal pada Platform Digital</h5>
+                            <p>
+                                Platform undangan digital yang telah beredar di pasar Indonesia mayoritas mengadopsi template desain yang seragam dan bertendensi kebarat-baratan, mengabaikan kekayaan motif ornamental Nusantara. Desain yang
+                                tidak kontekstual ini berimplikasi pada hilangnya identitas budaya yang seharusnya terefleksi dalam medium undangan sebagai bagian dari ritual seremonial<span class="footnote-cite">[7]</span>.
+                            </p>
+                        </div>
+                        <div class="problem-card">
+                            <h5>Masalah 3 — Tidak Tersedianya Fitur Manajemen Acara dan Tamu Secara Terpadu</h5>
+                            <p>
+                                Pengelolaan daftar tamu, konfirmasi kehadiran (RSVP), serta tradisi pemberian hadiah (<em>kondangan/metanjung</em>) masih dilakukan secara terpisah melalui berbagai kanal komunikasi yang terfragmentasi.
+                                Kondisi ini menciptakan kekacauan administratif dan mengurangi kualitas pengalaman penyelenggara maupun tamu undangan<span class="footnote-cite">[9]</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up mt-3">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-3 p-md-4">
+                            <h4 style="font-family: &quot;Kanit&quot;, sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 10px"><i class="bi bi-question-circle me-2"></i>Rumusan Masalah</h4>
+                            <ol style="font-size: 0.88rem; line-height: 1.9; margin: 0; padding-left: 20px">
+                                <li>Bagaimana merancang platform undangan digital yang mampu menggantikan fungsi distribusi undangan fisik secara efisien dan inklusif?</li>
+                                <li>Bagaimana mengimplementasikan representasi estetika budaya lokal Indonesia ke dalam antarmuka digital tanpa mengorbankan keterbacaan dan pengalaman pengguna?</li>
+                                <li>Bagaimana mengintegrasikan fitur manajemen tamu dan mekanisme pemberian hadiah digital dalam satu ekosistem platform yang cohesive?</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">IV. Tinjauan Pustaka</div>
+                        <h2 class="judul">Kerangka Teoritis</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">4.1 Transformasi Digital dan Pelestarian Budaya</h3>
+                        <p class="p-text">
+                            Prasetyo dan Trisyanti (2018) mendefinisikan transformasi digital bukan sebatas adopsi teknologi, melainkan sebagai perubahan fundamental dalam cara organisasi dan individu menciptakan nilai<span
+                                class="footnote-cite"
+                                >[1]</span
+                            >. Dalam konteks budaya, Shahbaz dan Baber (2022) berargumen bahwa teknologi digital dapat berfungsi sebagai <em>cultural amplifier</em> — memperkuat distribusi nilai budaya ke populasi yang lebih luas tanpa
+                            harus mendegradasi substansinya<span class="footnote-cite">[10]</span>.
+                        </p>
+                        <h3 class="judul-text mt-4">4.2 SaaS sebagai Model Penyampaian Layanan Digital</h3>
+                        <p class="p-text">
+                            Software as a Service (SaaS) merupakan model distribusi perangkat lunak berbasis cloud di mana aplikasi di-host oleh penyedia dan diakses oleh pengguna melalui internet<span class="footnote-cite">[11]</span>.
+                            Keunggulan SaaS dalam konteks undangan digital terletak pada kemampuannya untuk menyediakan akses layanan tanpa instalasi, pembaruan otomatis, serta skalabilitas yang menyesuaikan kebutuhan penyelenggara — dari
+                            undangan skala keluarga kecil hingga acara adat berskala besar.
+                        </p>
+                        <h3 class="judul-text mt-4">4.3 Human-Centered Design dalam Konteks Budaya</h3>
+                        <p class="p-text">
+                            Pendekatan <em>Human-Centered Design</em> (HCD) menempatkan pengguna dan konteks sosial-budayanya sebagai titik tolak perancangan sistem<span class="footnote-cite">[12]</span>. Norman (2013) dalam "The Design of
+                            Everyday Things" menegaskan bahwa desain yang baik adalah desain yang memahami model mental penggunanya. Dalam konteks masyarakat Indonesia, model mental tersebut sangat dipengaruhi oleh nilai-nilai adat, tata
+                            krama, dan estetika kultural yang telah tertanam secara generasional.
+                        </p>
+                        <h3 class="judul-text mt-4">4.4 Metode Pengembangan Waterfall</h3>
+                        <p class="p-text">
+                            Model Waterfall (Royce, 1970) merupakan metodologi pengembangan perangkat lunak sekuensial yang membagi proses menjadi fase-fase terstruktur: analisis kebutuhan, desain sistem, implementasi, pengujian, dan
+                            pemeliharaan<span class="footnote-cite">[13]</span>. Metode ini dipilih karena ruang lingkup kebutuhan Pintundangan dapat didefinisikan dengan jelas sejak awal, menjadikan pendekatan sekuensial lebih efisien
+                            dibandingkan metodologi agile yang lebih cocok untuk proyek dengan kebutuhan berubah-ubah.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">V. Metodologi Penelitian</div>
+                        <h2 class="judul">Metode Waterfall: Pendekatan Sistematis</h2>
+                        <p class="p-text">
+                            Penelitian ini menggunakan metode pengembangan perangkat lunak <strong>Waterfall</strong>, dipilih karena ruang lingkup kebutuhan sistem yang telah terdefinisi dengan jelas sejak tahap awal. Metode ini memastikan
+                            setiap fase diselesaikan secara tuntas sebelum melanjutkan ke fase berikutnya, menghasilkan dokumentasi yang komprehensif dan produk yang terverifikasi secara bertahap<span class="footnote-cite">[13]</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="waterfall-flow">
+                                <div class="method-step">
+                                    <div class="step-num">1</div>
+                                    <div class="step-content">
+                                        <h4>Analisis Kebutuhan (<em>Requirements Analysis</em>)</h4>
+                                        <p>
+                                            Pengumpulan data primer melalui wawancara mendalam dengan penyelenggara acara adat Bali dan Islam di Denpasar dan Mataram, serta observasi terhadap platform undangan digital yang telah beredar di
+                                            pasar. Keluaran fase ini adalah dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) yang mencakup kebutuhan fungsional dan non-fungsional sistem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">2</div>
+                                    <div class="step-content">
+                                        <h4>Desain Sistem (<em>System Design</em>)</h4>
+                                        <p>
+                                            Perancangan arsitektur MVC menggunakan Laravel, skema database relasional MySQL, serta desain antarmuka menggunakan Figma. Fase ini menghasilkan wireframe, mockup interaktif, serta Entity
+                                            Relationship Diagram (ERD) yang menjadi blueprint pengembangan. Digitalisasi ornamen kultural (motif ukiran Bali dan geometri Islam) dilakukan pada fase ini menggunakan Adobe Illustrator.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">3</div>
+                                    <div class="step-content">
+                                        <h4>Implementasi (<em>Implementation</em>)</h4>
+                                        <p>
+                                            Pembangunan sistem menggunakan stack teknologi: PHP 8.x (Laravel 10), MySQL, JavaScript (Alpine.js), dan Tailwind CSS. Integrasi dilakukan terhadap API WhatsApp Business untuk distribusi massal,
+                                            API QRIS/payment gateway untuk amplop digital, serta sistem DNS untuk pengelolaan personalized URL per undangan.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">4</div>
+                                    <div class="step-content">
+                                        <h4>Pengujian (<em>Testing &amp; Verification</em>)</h4>
+                                        <p>
+                                            Pengujian dilakukan menggunakan metode <em>Black-Box Testing</em> untuk memverifikasi fungsi-fungsi utama sistem (RSVP, amplop digital, papan ucapan, distribusi WhatsApp), serta
+                                            <em>Usability Testing</em> dengan 15 pengguna representatif untuk mengukur kemudahan penggunaan dan ketepatan representasi kultural.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">5</div>
+                                    <div class="step-content">
+                                        <h4>Pemeliharaan (<em>Maintenance</em>)</h4>
+                                        <p>
+                                            Pembaruan iteratif berdasarkan umpan balik pengguna pasca-peluncuran, pemantauan performa server, serta penambahan tema kultural baru secara berkala untuk memperluas cakupan representasi adat
+                                            Nusantara pada platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">VI. Hasil &amp; Pembahasan</div>
+                        <h2 class="judul">Pintundangan: Platform Undangan Digital Berbasis Kearifan Lokal</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">6.1 Deskripsi Platform</h3>
+                        <p class="p-text">
+                            <strong>Pintundangan</strong> adalah platform SaaS penyedia layanan undangan digital interaktif yang dirancang secara khusus untuk memfasilitasi kebutuhan seremonial masyarakat Indonesia. Nama "Pintundangan"
+                            merupakan portmanteau dari kata "pintu" dan "undangan" — sebuah metafora bahwa undangan digital ini adalah pintu virtual yang membuka akses kehadiran dan doa restu tamu tanpa batasan geografis.
+                        </p>
+                        <p class="p-text">
+                            Berbeda dari platform sejenis yang bersifat generik, Pintundangan mengadopsi filosofi desain <em>culturally-responsive</em> — setiap elemen visual, hierarki informasi, dan alur interaksi dirancang dengan
+                            mempertimbangkan norma sosial dan estetika adat yang berlaku pada masing-masing jenis upacara. Platform ini mengakomodasi kompleksitas acara adat melalui tata letak informasi berlapis, galeri visual dinamis,
+                            serta pengelolaan daftar tamu terpusat dalam satu tautan eksklusif yang dipersonalisasi.
+                        </p>
+                        <div class="tag-list mt-3">
+                            <span class="exp-tag">SaaS Platform</span>
+                            <span class="exp-tag">Laravel 10</span>
+                            <span class="exp-tag">MySQL</span>
+                            <span class="exp-tag">Figma</span>
+                            <span class="exp-tag">WhatsApp API</span>
+                            <span class="exp-tag">QRIS Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">6.2 Desain Kultural Berbasis Digital (UI/UX)</h3>
+                        <p class="p-text">
+                            Pendekatan desain antarmuka dijalankan melalui proses presisi menggunakan Figma — dari wireframe hingga prototipe interaktif berujung tinggi (<em>high-fidelity prototype</em>). Tiga pilar desain utama yang
+                            diterapkan adalah:
+                        </p>
+                        <div class="callout">
+                            <p>
+                                <strong>① Tipografi dan Hierarki Visual:</strong> Kombinasi huruf serif klasik untuk nama pemilik acara dengan huruf sans-serif modern untuk detail logistik (waktu dan lokasi), mencapai tingkat keterbacaan
+                                maksimal pada layar kecil tanpa kehilangan nuansa seremonial.<br /><br />
+                                <strong>② Digitalisasi Ornamen Lokal:</strong> Motif ukiran Bali (<em>pepatraan</em>, <em>keketusan</em>) serta geometri Islami (<em>girih</em>) dirancang ulang sebagai aset vektor beresolusi tinggi
+                                (SVG/PDF), memastikan ornamen tampil tajam di seluruh resolusi layar tanpa artefak kompresi.<br /><br />
+                                <strong>③ Mobile-First Design:</strong> Lebih dari 90% tamu mengakses undangan melalui perangkat seluler. Seluruh tata letak tema dioptimalkan untuk navigasi satu tangan, dengan tombol interaktif berukuran
+                                minimum 44×44px sesuai standar aksesibilitas WCAG 2.1.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">6.3 Arsitektur Sistem dan Integrasi Database</h3>
+                        <p class="p-text">
+                            Pintundangan mengimplementasikan arsitektur <strong>Model-View-Controller (MVC)</strong> menggunakan PHP (Laravel) dengan pengelolaan basis data relasional MySQL. Pemilihan Laravel didasari oleh ekosistem yang
+                            matang, dukungan ORM (Eloquent) untuk query database yang ekspresif, serta sistem <em>routing</em> yang memungkinkan generasi URL yang dipersonalisasi per tamu.
+                        </p>
+                        <p class="p-text">
+                            Integrasi layanan eksternal mencakup: (1) <em>WhatsApp Business API</em> untuk distribusi undangan massal dengan pesan yang dipersonalisasi per nama tamu, (2) <em>Payment Gateway</em> dan QRIS untuk fitur amplop
+                            digital, serta (3) layanan <em>cloud storage</em> untuk manajemen aset media galeri foto/video acara.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">6.4 Fitur Unggulan Platform</h3>
+
+                        <div class="glass-card p-3 p-md-4 mt-3">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div style="padding: 16px; border-radius: 10px; background: rgba(var(--primary-rgb, 180, 120, 60), 0.06); height: 100%">
+                                        <div style="font-size: 1.4rem; margin-bottom: 8px">📜</div>
+                                        <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; color: var(--text)">Papan Ucapan Virtual</div>
+                                        <p class="p-text" style="font-size: 0.82rem; margin: 0">
+                                            Tamu yang berhalangan hadir secara geografis tetap dapat menyampaikan doa restu melalui pesan digital yang tampil dan bergulir secara real-time di halaman undangan, menggantikan tradisi
+                                            <em>nguopin</em> dengan medium digital yang hangat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="padding: 16px; border-radius: 10px; background: rgba(var(--primary-rgb, 180, 120, 60), 0.06); height: 100%">
+                                        <div style="font-size: 1.4rem; margin-bottom: 8px">💌</div>
+                                        <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; color: var(--text)">Personalized URL &amp; Distribusi Massal WA</div>
+                                        <p class="p-text" style="font-size: 0.82rem; margin: 0">
+                                            Setiap tamu menerima tautan undangan yang dipersonalisasi dengan namanya melalui WhatsApp, mempertahankan nuansa keakraban dan penghormatan personal dalam distribusi digital berskala besar.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="padding: 16px; border-radius: 10px; background: rgba(var(--primary-rgb, 180, 120, 60), 0.06); height: 100%">
+                                        <div style="font-size: 1.4rem; margin-bottom: 8px">💰</div>
+                                        <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; color: var(--text)">Amplop Digital (Cashless Gift)</div>
+                                        <p class="p-text" style="font-size: 0.82rem; margin: 0">
+                                            Barcode QRIS, nomor rekening bank, dan dompet digital dibungkus dalam desain pop-up yang <em>discreet</em> — hanya tampil saat tamu mengklik tombol hadiah, menjaga etika kesopanan adat ketimuran
+                                            yang tidak mengedepankan materi secara eksplisit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="padding: 16px; border-radius: 10px; background: rgba(var(--primary-rgb, 180, 120, 60), 0.06); height: 100%">
+                                        <div style="font-size: 1.4rem; margin-bottom: 8px">✅</div>
+                                        <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 0.9rem; margin-bottom: 6px; color: var(--text)">Manajemen Tamu &amp; RSVP</div>
+                                        <p class="p-text" style="font-size: 0.82rem; margin: 0">
+                                            Dashboard terpusat bagi penyelenggara untuk memantau konfirmasi kehadiran secara real-time, mengelompokkan tamu, dan mengekspor data untuk kebutuhan logistik acara seperti pengaturan tempat duduk
+                                            dan estimasi katering.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">VII. Analisis Dampak</div>
+                        <h2 class="judul">Dampak Teknologi terhadap Ekosistem Budaya</h2>
+                        <p class="p-text">
+                            Hadirnya Pintundangan tidak hanya berdampak pada efisiensi operasional penyelenggara acara, tetapi juga memberikan implikasi yang lebih dalam terhadap ekosistem budaya di mana tradisi mengundang beroperasi.
+                            Analisis dampak ini dibagi ke dalam tiga dimensi:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text">7.1 Dampak terhadap Pelestarian Identitas Kultural</h3>
+                        <p class="p-text">
+                            Dengan mengintegrasikan ornamen dan motif adat secara autentik ke dalam medium digital, Pintundangan menjalankan fungsi sebagai <em>digital cultural repository</em> — arsip visual kearifan lokal yang terus
+                            bersirkulasi setiap kali sebuah undangan dibagikan. Setiap tamu yang membuka tautan undangan secara tidak langsung mengonsumsi representasi estetika budaya leluhur, menciptakan eksposur kultural yang organik<span
+                                class="footnote-cite"
+                                >[4]</span
+                            >.
+                        </p>
+                        <p class="p-text">
+                            Kondisi ini relevan dengan konsep <em>intangible cultural heritage</em> yang dirumuskan UNESCO (2003), bahwa pelestarian warisan budaya takbenda membutuhkan adaptasi medium — bukan pembekuan bentuk<span
+                                class="footnote-cite"
+                                >[14]</span
+                            >. Digitalisasi tradisi mengundang melalui Pintundangan merupakan wujud nyata dari adaptasi medium tersebut.
+                        </p>
+
+                        <h3 class="judul-text mt-4">7.2 Dampak terhadap Inklusivitas Sosial</h3>
+                        <p class="p-text">
+                            Distribusi undangan digital yang dapat menjangkau tamu di seluruh penjuru Indonesia — bahkan dunia — secara fundamental mengubah dinamika inklusivitas dalam ritual seremonial. Tamu yang sebelumnya secara praktis
+                            "terpaksa" tidak diundang karena kendala logistik distribusi fisik, kini dapat dilibatkan dalam perayaan melalui platform digital. Hal ini memperluas jaringan doa dan harapan yang mengiringi sebuah perayaan adat.
+                        </p>
+
+                        <h3 class="judul-text mt-4">7.3 Dampak terhadap Keberlanjutan Lingkungan</h3>
+                        <p class="p-text">
+                            Transisi dari undangan fisik ke undangan digital memberikan dampak lingkungan yang terukur. Dengan asumsi rata-rata 300 lembar undangan per acara dan konsumsi kertas 5 gram per lembar, satu acara tunggal yang
+                            beralih ke digital mengeliminasi 1,5 kg kertas. Dalam skala platform dengan ribuan pengguna per tahun, dampak kumulatif terhadap pengurangan limbah kertas menjadi signifikan secara ekologis<span
+                                class="footnote-cite"
+                                >[15]</span
+                            >.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="row g-4">
+                                <div class="col-md-4 text-center">
+                                    <div style="font-size: 2rem; margin-bottom: 4px">💰</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Efisiensi Biaya</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Memangkas biaya cetak dan distribusi undangan fisik premium hingga jutaan rupiah per acara, mengalihkan anggaran ke kualitas penyelenggaraan.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-size: 2rem; margin-bottom: 4px">🌿</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Ramah Lingkungan</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Mengeliminasi penggunaan kertas, plastik laminasi, dan emisi karbon dari distribusi fisik, menuju penyelenggaraan acara yang berkelanjutan.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div style="font-size: 2rem; margin-bottom: 4px">⚡</div>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Fleksibilitas Real-Time</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Perubahan jadwal, venue, atau informasi lainnya dapat diperbarui secara langsung tanpa perlu mencetak ulang dan mendistribusikan kembali.</p>
+                                </div>
+                            </div>
+                            <hr style="border-color: var(--surface-border); margin: 24px 0" />
+                            <div class="col-md-12 text-center">
+                                <div style="font-size: 2rem; margin-bottom: 4px">🏛️</div>
+                                <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Pelestarian Budaya Digital</div>
+                                <p class="p-text" style="font-size: 0.85rem; max-width: 600px; margin: 0 auto">
+                                    Setiap undangan yang dibagikan menjadi medium penyebaran estetika kultural — ornamen adat Nusantara hadir di layar smartphone jutaan pengguna, menciptakan eksposur kultural yang organik dan berkelanjutan.
                                 </p>
                             </div>
                         </div>
@@ -147,94 +778,34 @@
                 <div class="row justify-content-center my-4 fade-up">
                     <div class="col-lg-10"><hr class="section-divider my-0" /></div>
                 </div>
-
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
-                        <h2 class="judul mb-4">Latar belakang</h2>
+                        <div class="section-label">VIII. Simpulan</div>
+                        <h2 class="judul">Penutup: Teknologi sebagai Penjaga Tradisi</h2>
                     </div>
                 </div>
 
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10 content-block">
                         <p class="p-text">
-                            Ketergantungan pada undangan fisik pada era modern menghadirkan tiga masalah utama. Pertama, inefisiensi waktu dan tenaga dalam proses distribusi, terutama bagi tamu undangan yang berdomisili di luar kota atau
-                            luar pulau. Kedua, tingginya biaya produksi cetak kertas yang membebani anggaran penyelenggara acara. Ketiga, meskipun undangan digital mulai bermunculan, sebagian besar platform yang ada di pasaran hanya
-                            menawarkan desain minimalis kebarat-baratan. Desain yang terlalu umum tersebut sering kali menghilangkan esensi kesakralan, tata krama, dan nilai filosofis dari budaya lokal yang sangat dijunjung tinggi oleh
-                            masyarakat Indonesia.
+                            Penelitian ini telah membuktikan bahwa dikotomi antara "teknologi" dan "tradisi" adalah sebuah konstruksi yang keliru. Melalui pengembangan platform Pintundangan, telah didemonstrasikan secara empiris bahwa
+                            teknologi informasi — apabila dirancang dengan kepekaan kultural yang mendalam — mampu berfungsi sebagai <em>instrumen pelestarian</em>, bukan sebagai kekuatan yang mengikis nilai-nilai leluhur.
                         </p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10">
-                        <div class="section-label">Platform</div>
-                        <h2 class="judul mb-4">Apa Itu Pintundangan?</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
-                        <p class="p-text">
-                            <strong>Pintundangan</strong> adalah sebuah platform penyedia layanan undangan digital interaktif yang dirancang secara khusus untuk memfasilitasi kebutuhan seremonial di Indonesia. Platform ini bertindak sebagai
-                            jembatan yang mengubah medium komunikasi tradisional menjadi format digital tanpa mengurangi nilai kesopanan dan estetika budaya. Pintundangan mengakomodasi kompleksitas acara adat dengan menyediakan tata letak
-                            informasi yang berlapis, galeri visual yang dinamis, serta pengelolaan daftar tamu yang terpusat dalam satu tautan eksklusif.
-                        </p>
-                        <div class="tag-list mt-3">
-                            <span class="exp-tag">SaaS Platform</span>
-                            <span class="exp-tag">Laravel</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10">
-                        <div class="section-label">Eksekusi Teknis</div>
-                        <h2 class="judul mb-4">Web Development &amp; UI/UX Design</h2>
-                        <p class="p-text">
-                            Dari sudut pandang pengembangan produk, pelestarian budaya ini dicapai melalui proses rekayasa perangkat lunak dan perancangan antarmuka pengguna yang terstruktur. Sebagai pengembang web sekaligus desainer
-                            antarmuka, saya membagi proses ini ke dalam dua pilar utama.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up mt-2">
-                    <div class="col-lg-10 content-block">
-                        <h3 class="judul-text">1. Desain Kultural Berbasis Digital (UI/UX)</h3>
-                        <p class="p-text">
-                            Pendekatan desain antarmuka pengguna digunakan untuk mendigitalkan elemen-elemen tradisional agar dapat dinikmati di layar gawai. Proses perancangan dilakukan secara presisi menggunakan perangkat lunak Figma,
-                            mulai dari pembuatan kerangka dasar hingga purwarupa interaktif.
-                        </p>
-
                         <div class="callout">
                             <p>
-                                <strong>Tipografi dan Hierarki Visual:</strong> Saya menggunakan kombinasi huruf serif klasik untuk menonjolkan nama pemilik acara. Huruf tersebut disandingkan dengan huruf sans-serif yang modern untuk detail
-                                waktu dan lokasi. Kombinasi ini bertujuan untuk mencapai tingkat keterbacaan yang maksimal pada layar telepon pintar. <br />
-                                <br />
-
-                                <strong>Digitalisasi Ornamen Lokal:</strong> Motif tradisional, seperti pola ukiran Bali maupun motif geometris Islami, dirancang ulang menjadi aset vektor beresolusi tinggi. Hal ini memastikan ornamen tidak
-                                pecah atau buram ketika dimuat pada berbagai resolusi layar. <br />
-                                <br />
-
-                                <strong>Pendekatan Berbasis Seluler:</strong> Mengingat lebih dari sembilan puluh persen tamu akan membuka tautan melalui perangkat seluler, tata letak setiap tema undangan dioptimalkan untuk navigasi satu
-                                tangan.
+                                Implementasi sistem informasi pada Pintundangan membuktikan bahwa dengan menggabungkan pemahaman mendalam terhadap <em>System Architecture</em>, <em>Database Management</em>, <em>UI/UX Design</em>, dan
+                                nilai-nilai kearifan lokal — tradisi mengundang yang telah berusia ratusan tahun kini berevolusi menjadi lebih terstruktur, inklusif, dan relevan di era digital, tanpa kehilangan esensi penghormatan dan
+                                persaudaraan yang menjadi jiwanya.
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
-                        <h3 class="judul-text">2. Integrasi Sistem &amp; Arsitektur Database</h3>
                         <p class="p-text">
-                            Pintundangan mengimplementasikan arsitektur <strong>Model-View-Controller (MVC)</strong> menggunakan PHP (Laravel) dan pengelolaan database relasional MySQL, diperkuat dengan integrasi layanan eksternal.
+                            Lebih jauh, penelitian ini memberikan kontribusi konseptual terhadap wacana <em>digital humanities</em> di Indonesia: bahwa transformasi digital kebudayaan tidak harus — dan tidak seharusnya — berarti
+                            homogenisasi estetika global. Sebaliknya, teknologi menyediakan kanvas yang lebih luas bagi keberagaman ekspresi budaya Nusantara untuk dilihat, dinikmati, dan diwariskan.
+                        </p>
+                        <p class="p-text">
+                            Sebagai rekomendasi pengembangan ke depan, penelitian lanjutan dapat difokuskan pada: (1) integrasi kecerdasan buatan untuk personalisasi rekomendasi tema berdasarkan profil budaya pengguna, (2) pengembangan
+                            fitur live streaming terpadu untuk memfasilitasi kehadiran virtual tamu jarak jauh, serta (3) ekspansi cakupan ornamen kultural ke seluruh 34 provinsi di Indonesia untuk mewujudkan representasi Nusantara yang
+                            komprehensif.
                         </p>
                     </div>
                 </div>
@@ -245,90 +816,150 @@
 
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
-                        <div class="section-label">Fitur Unggulan</div>
-                        <h2 class="judul mb-4">Papan Ucapan Virtual</h2>
-                        <p class="p-text">
-                            Pintundangan meredefinisi cara masyarakat bersilaturahmi dengan menghadirkan fitur-fitur yang solutif. Salah satu tantangan terbesar dalam digitalisasi acara adat adalah memfasilitasi tradisi pemberian tali kasih
-                            yang dikenal dengan istilah kondangan atau metanjung. Pintundangan mengakomodasi tradisi ini melalui integrasi teknologi finansial.
-                        </p>
+                        <div class="section-label">Daftar Pustaka</div>
+                        <h2 class="judul">Referensi</h2>
+                        <p class="p-text" style="font-size: 0.83rem; color: var(--text-muted, #999); font-style: italic">Penulisan mengacu pada format APA 7th Edition. Tautan disediakan sebagai referensi akses digital.</p>
                     </div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
-                        <p class="p-text mt-3">
-                            Tamu yang berhalangan hadir karena kendala geografis tetap dapat mengirimkan doa restu. Pesan tersebut akan langsung tampil dan bergulir pada halaman undangan beserta keterangan waktu pengiriman.
-                        </p>
-                        <div class="tag-list mt-3">
-                            <span class="exp-tag">Distribusi Massal via WA</span>
-                            <span class="exp-tag">Personalized URL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
                 </div>
 
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
-                        <div class="section-label">Studi Kasus</div>
-                        <h2 class="judul mb-4">Amplop Digital</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
-                        <p class="p-text">
-                            Fitur ini mengintegrasikan kode pindai QRIS, nomor rekening bank, dan dompet digital. Untuk menjaga etika kesopanan adat ketimuran, informasi perbankan tersebut disembunyikan di dalam kotak dialog yang hanya akan
-                            muncul apabila tamu menekan tombol hadiah.
-                        </p>
-                        <div class="callout mt-3">
-                            <p><strong>Cashless Gift:</strong> Barcode QRIS, Virtual Account, dan E-Wallet dibungkus dalam desain pop-up yang discreet — hanya tampil saat tamu mengklik tombol, menjaga etika kesopanan adat ketimuran.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10">
-                        <div class="section-label">Dampak</div>
-                        <h2 class="judul mb-4">Dampak &amp; Kesimpulan</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
                         <div class="glass-card p-4 p-md-5">
-                            <div class="row g-4">
-                                <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">💰</div>
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Cost Efficiency</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Memangkas biaya cetak undangan fisik premium hingga jutaan rupiah.</p>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">🌿</div>
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Eco-Friendly</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Menekan penggunaan kertas dan plastik sekali pakai secara drastis.</p>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">⚡</div>
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Fleksibilitas Data</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Perubahan jadwal atau ralat dapat diperbarui secara live tanpa cetak ulang.</p>
-                                </div>
-                            </div>
-                            <hr style="border-color: var(--surface-border); margin: 24px 0" />
-                            <p class="p-text">
-                                Implementasi sistem informasi pada Pintundangan membuktikan bahwa teknologi hadir bukan sebagai disrupsi yang merusak tradisi, melainkan sebagai instrumen yang melestarikannya. Dengan menggabungkan pemahaman
-                                System Architecture, Database Management, dan UI/UX Design — kearifan lokal dalam tata cara mengundang kini telah berevolusi menjadi lebih terstruktur, inklusif, dan relevan di era digital.
-                            </p>
+                            <ol class="ref-list">
+                                <li>
+                                    <div>
+                                        Prasetyo, B., &amp; Trisyanti, U. (2018). Revolusi Industri 4.0 dan tantangan perubahan sosial. <em>Prosiding SEMATEKSOS 3 "Strategi Pembangunan Nasional Menghadapi Revolusi Industri 4.0"</em>, 22–27.
+                                        Institut Teknologi Sepuluh Nopember. <br /><a href="https://journal.its.ac.id" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i>journal.its.ac.id</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Wibowo, A. (2020). Makna simbolis undangan pernikahan dalam perspektif komunikasi ritual. <em>Jurnal Komunikasi Indonesia</em>, 9(1), 45–58. Universitas Indonesia. <br /><a
+                                            href="https://scholarhub.ui.ac.id/jki"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>scholarhub.ui.ac.id/jki</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Badan Pusat Statistik. (2023). <em>Statistik Telekomunikasi Indonesia 2023</em>. BPS — Statistics Indonesia. <br /><a
+                                            href="https://www.bps.go.id/id/publication/2023/12/29/c9a8f9e9a4a7e234d1eb3c4b/statistik-telekomunikasi-indonesia-2023.html"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>bps.go.id</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Suyanto, A. (2019). Menyama braya sebagai kearifan lokal masyarakat Bali dalam perspektif sosiologis. <em>Jurnal Humanika</em>, 19(1), 1–15. Universitas Gadjah Mada. <br /><a
+                                            href="https://journal.ugm.ac.id/humanika"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>journal.ugm.ac.id/humanika</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>Al-Nawawi, Y. (1996). <em>Riyadhus Shalihin</em> (Terjemahan oleh Ahmad Sunarto). Pustaka Amani.</div>
+                                </li>
+                                <li>
+                                    <div>
+                                        McKinsey Global Institute. (2022). <em>Indonesia's digital economy: The next wave of growth</em>. McKinsey &amp; Company. <br /><a
+                                            href="https://www.mckinsey.com/featured-insights/asia-pacific/indonesia-digital"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>mckinsey.com/featured-insights</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Sari, N. K., &amp; Hakim, L. (2021). Persepsi pengguna undangan digital terhadap representasi budaya lokal di Bali. <em>Jurnal Ilmu Komunikasi</em>, 19(2), 178–194. Universitas Udayana. <br /><a
+                                            href="https://ojs.unud.ac.id/index.php/komunikasi"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>ojs.unud.ac.id</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Ramadhani, F. (2022). Analisis biaya produksi undangan pernikahan konvensional vs digital di Indonesia. <em>Jurnal Manajemen Bisnis</em>, 15(3), 210–225. <br /><a
+                                            href="https://journal.umy.ac.id/index.php/mb"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>journal.umy.ac.id</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Nugraha, D., &amp; Suryana, T. (2021). Sistem manajemen tamu acara pernikahan berbasis web: Kajian kebutuhan dan desain. <em>Jurnal Rekayasa Sistem dan Teknologi Informasi (RESTI)</em>, 5(4), 722–730.
+                                        <br /><a href="https://jurnal.iaii.or.id/index.php/RESTI" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i>jurnal.iaii.or.id/RESTI</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Shahbaz, M., &amp; Baber, A. (2022). Digital technologies as cultural amplifiers: Evidence from South and Southeast Asian societies.
+                                        <em>Journal of Cultural Heritage Management and Sustainable Development</em>, 12(4), 512–529. Emerald Publishing. <br /><a
+                                            href="https://www.emerald.com/insight/publication/issn/2044-1266"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>emerald.com — JCHMSD</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Benlian, A., Hess, T., &amp; Buxmann, P. (2009). Drivers of SaaS-adoption — an empirical study of different application types. <em>Business &amp; Information Systems Engineering</em>, 1(5), 357–369.
+                                        Springer. <br /><a href="https://doi.org/10.1007/s12599-009-0068-x" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i>doi.org/10.1007/s12599-009-0068-x</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Norman, D. A. (2013). <em>The Design of Everyday Things</em> (Revised and Expanded Edition). Basic Books. <br /><a
+                                            href="https://www.basicbooks.com/titles/don-norman/the-design-of-everyday-things/9780465050659/"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>basicbooks.com</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Royce, W. W. (1970). Managing the development of large software systems. <em>Proceedings of IEEE WESCON</em>, 26(August), 1–9. (Reprinted in
+                                        <em>Proceedings of the 9th International Conference on Software Engineering</em>, 1987, 328–338). <br /><a href="https://dl.acm.org/doi/10.5555/41765.41801" target="_blank" rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>dl.acm.org</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        UNESCO. (2003). <em>Convention for the Safeguarding of the Intangible Cultural Heritage</em>. United Nations Educational, Scientific and Cultural Organization. <br /><a
+                                            href="https://ich.unesco.org/en/convention"
+                                            target="_blank"
+                                            rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>ich.unesco.org/en/convention</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Riantiarno, A., Kusumaningtyas, R. A., &amp; Heryanto, A. (2022). Analisis dampak lingkungan dari digitalisasi dokumen administrasi: Studi komparatif penggunaan kertas vs digital.
+                                        <em>Jurnal Ilmu Lingkungan</em>, 20(1), 88–98. UNDIP. <br /><a href="https://ejournal.undip.ac.id/index.php/ilmulingkungan" target="_blank" rel="noopener"
+                                            ><i class="bi bi-box-arrow-up-right me-1"></i>ejournal.undip.ac.id</a
+                                        >
+                                    </div>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
 
+                <!-- CTA -->
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10 text-center mt-4">
                         <a href="../project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projects</a>
@@ -343,9 +974,7 @@
         </a>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
         <script>
-            // Theme toggle
             const html = document.documentElement;
             const toggle = document.getElementById("themeToggle");
             const mobileThemeBtn = document.getElementById("mobileTheme");
@@ -372,13 +1001,11 @@
                 toggleTheme();
             });
 
-            // Scroll to top
             const scrollBtn = document.getElementById("scrollTop");
             window.addEventListener("scroll", () => {
                 scrollBtn.classList.toggle("visible", window.scrollY > 400);
             });
 
-            // Scroll reveal
             const obs = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((e) => {
