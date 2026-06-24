@@ -4,18 +4,249 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="I Made Widanta Abdi Nugraha" />
-        <meta name="description" content="Studi Kasus Baline Chocolate, Situs Web Profil Perusahaan dan Niaga Elektronik" />
-        <title>Studi Kasus | Baline Chocolate | Widanta</title>
-
+        <meta name="description" content="Studi Kasus: Baline Chocolate, platform niaga elektronik artisan cokelat Bali berbasis identitas budaya lokal Gianyar karya I Made Widanta Abdi Nugraha." />
+        <title>Studi Kasus: Baline Chocolate, Platform Digital Cokelat Artisan Bali | Portfolio Widanta</title>
+        <link rel="canonical" href="https://widanta.github.io/pages/project/balinechocolate.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://widanta.github.io/pages/project/balinechocolate.html" />
+        <meta property="og:title" content="Baline Chocolate, Sinergi Profil Perusahaan dan Niaga Elektronik Cokelat Lokal Gianyar" />
+        <meta property="og:description" content="Studi kasus pengembangan platform digital Baline Chocolate. Digitalisasi UMKM berbasis identitas visual budaya Bali untuk ekspansi merek nasional." />
+        <meta property="og:image" content="https://widanta.github.io/gambar/balinechocholate-horizontal.webp" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ScholarlyArticle",
+                "name": "Identitas Visual Budaya Bali sebagai Fondasi Ekspansi Merek Digital: Studi Kasus Baline Chocolate",
+                "description": "Platform niaga elektronik hybrid yang mengintegrasikan profil perusahaan dan toko daring berbasis ornamen kultural Bali untuk mendorong perluasan pasar produk artisan lokal.",
+                "url": "https://widanta.github.io/pages/project/balinechocolate.html",
+                "author": { "@type": "Person", "name": "I Made Widanta Abdi Nugraha" },
+                "image": "https://widanta.github.io/gambar/balinechocholate-horizontal.webp",
+                "datePublished": "2022-01-01"
+            }
+        </script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
         <link rel="stylesheet" href="../../css/case1.css" />
         <link rel="icon" type="image/png" sizes="32x32" href="../../gambar/logo-putih.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../../gambar/logo-putih.png" />
-
         <link rel="apple-touch-icon" sizes="180x180" href="../../gambar/logo-putih.png" />
+        <style>
+            .keyword-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 14px;
+            }
+            .keyword-list span {
+                font-size: 0.75rem;
+                font-family: "DM Sans", sans-serif;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.12);
+                color: var(--primary);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.25);
+                border-radius: 20px;
+                padding: 3px 12px;
+            }
+            .method-step {
+                display: flex;
+                gap: 16px;
+                align-items: flex-start;
+                padding: 18px 0;
+                border-bottom: 1px dashed rgba(var(--primary-rgb, 180, 120, 60), 0.2);
+            }
+            .method-step:last-child {
+                border-bottom: none;
+            }
+            .step-num {
+                min-width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                font-size: 0.85rem;
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+            .step-content h4 {
+                font-family: "Kanit", sans-serif;
+                font-size: 0.95rem;
+                font-weight: 600;
+                margin-bottom: 4px;
+                color: var(--text);
+            }
+            .step-content p {
+                font-size: 0.86rem;
+                margin: 0;
+                color: var(--text-muted, #888);
+                line-height: 1.7;
+            }
+            .ref-list {
+                counter-reset: ref-counter;
+                padding: 0;
+                list-style: none;
+            }
+            .ref-list li {
+                counter-increment: ref-counter;
+                display: flex;
+                gap: 12px;
+                padding: 14px 0;
+                border-bottom: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.1);
+                font-size: 0.84rem;
+                line-height: 1.7;
+            }
+            .ref-list li:last-child {
+                border-bottom: none;
+            }
+            .ref-list li::before {
+                content: "[" counter(ref-counter) "]";
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                color: var(--primary);
+                min-width: 36px;
+                padding-top: 1px;
+                flex-shrink: 0;
+            }
+            .ref-list li a {
+                color: var(--primary);
+                text-decoration: none;
+                border-bottom: 1px dotted var(--primary);
+                transition: opacity 0.2s;
+                display: inline-block;
+                margin-top: 2px;
+                font-size: 0.8rem;
+            }
+            .ref-list li a:hover {
+                opacity: 0.7;
+            }
+            .stat-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 16px;
+                margin: 24px 0;
+            }
+            .stat-item {
+                text-align: center;
+                padding: 20px 12px;
+                border-radius: 12px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.06);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.14);
+            }
+            .stat-item .stat-val {
+                font-family: "Kanit", sans-serif;
+                font-size: 1.8rem;
+                font-weight: 800;
+                color: var(--primary);
+                line-height: 1.1;
+            }
+            .stat-item .stat-label {
+                font-size: 0.76rem;
+                color: var(--text-muted, #999);
+                margin-top: 4px;
+                font-family: "DM Sans", sans-serif;
+            }
+            .footnote-cite {
+                font-size: 0.75rem;
+                color: var(--primary);
+                font-weight: 600;
+                cursor: default;
+                vertical-align: super;
+            }
+            .problem-card {
+                border-left: 3px solid var(--primary);
+                padding: 14px 20px;
+                margin-bottom: 12px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.04);
+                border-radius: 0 8px 8px 0;
+            }
+            .problem-card h5 {
+                font-family: "Kanit", sans-serif;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 4px;
+                color: var(--text);
+            }
+            .problem-card p {
+                font-size: 0.85rem;
+                margin: 0;
+                line-height: 1.7;
+            }
+            .waterfall-flow {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                position: relative;
+            }
+            .waterfall-flow::before {
+                content: "";
+                position: absolute;
+                left: 17px;
+                top: 18px;
+                bottom: 18px;
+                width: 2px;
+                background: linear-gradient(to bottom, var(--primary), transparent);
+                z-index: 0;
+            }
+            .cultural-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.1);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.22);
+                border-radius: 8px;
+                padding: 8px 14px;
+                font-size: 0.82rem;
+                font-family: "DM Sans", sans-serif;
+                color: var(--text);
+                margin: 4px;
+            }
+            .cultural-badge strong {
+                color: var(--primary);
+                font-family: "Kanit", sans-serif;
+                font-size: 0.84rem;
+            }
+            .packaging-showcase {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 14px;
+                margin: 20px 0;
+            }
+            .packaging-item {
+                padding: 18px 16px;
+                border-radius: 12px;
+                background: rgba(var(--primary-rgb, 180, 120, 60), 0.05);
+                border: 1px solid rgba(var(--primary-rgb, 180, 120, 60), 0.14);
+                text-align: center;
+            }
+            .packaging-item .pkg-icon {
+                font-size: 1.4rem;
+                color: var(--primary);
+                margin-bottom: 10px;
+                display: block;
+            }
+            .packaging-item .pkg-name {
+                font-family: "Kanit", sans-serif;
+                font-weight: 700;
+                font-size: 0.88rem;
+                color: var(--primary);
+                margin-bottom: 6px;
+            }
+            .packaging-item .pkg-desc {
+                font-size: 0.8rem;
+                line-height: 1.65;
+                color: var(--text-muted, #888);
+                margin: 0;
+            }
+            .impact-icon {
+                font-size: 1.6rem;
+                color: var(--primary);
+                margin-bottom: 6px;
+                display: block;
+            }
+        </style>
     </head>
     <body id="top">
         <div class="bg-blobs">
@@ -56,19 +287,19 @@
             <a id="mobileTheme" href="#"><i class="bi bi-moon-stars" id="mobileThemeIcon"></i></a>
         </nav>
 
-        <section id="case-hero" class="pt-5 mt-5">
-            <div class="container pt-5">
-                <div class="case-eyebrow fade-up">Studi Kasus</div>
-                <h1 class="case-title fade-up">Baline Chocolate: Sinergi Profil Perusahaan dan Niaga Elektronik Cokelat Lokal Gianyar</h1>
+        <section id="case-hero">
+            <div class="container">
+                <div class="case-eyebrow fade-up">Portfolio Ilmiah · Studi Kasus</div>
+                <h1 class="case-title fade-up">Identitas Visual Budaya Bali sebagai Fondasi Ekspansi Merek Digital: Studi Kasus Platform E-commerce Balinechocolate</h1>
                 <p class="p-text fade-up" style="max-width: 760px; margin: 0 auto">
-                    Kabupaten Gianyar di Bali tidak hanya dikenal sebagai pusat seni, tetapi juga penghasil komoditas kakao berkualitas. Baline Chocolate membutuhkan sebuah medium digital yang komprehensif untuk menceritakan nilai autentik
-                    produk mereka sekaligus memfasilitasi transaksi penjualan secara langsung kepada konsumen di seluruh Indonesia.
+                    Bagaimana ornamen seni Bali seperti Barong, Legong, Wayang Kamasan, dan ragam tari tradisional bisa jadi fondasi identitas digital sebuah brand cokelat artisan lokal? Ini adalah studi kasus pengembangan web untuk Baline
+                    Chocolate, produsen asal Gianyar yang mau ekspansi ke pasar nasional.
                 </p>
-                <div class="case-meta fade-up mt-4">
+                <div class="case-meta fade-up">
                     <span class="case-badge"><i class="bi bi-calendar3"></i> 2022</span>
                     <span class="case-badge"><i class="bi bi-tag"></i> E-Commerce</span>
                     <span class="case-badge"><i class="bi bi-tag"></i> Web Development</span>
-                    <span class="case-badge"><i class="bi bi-shop-window"></i> Retail Business</span>
+                    <span class="case-badge"><i class="bi bi-shop-window"></i> UMKM Retail</span>
                 </div>
             </div>
         </section>
@@ -89,22 +320,65 @@
                                 "
                             />
                         </div>
-                        <p class="hero-image-caption text-center mt-3 text-muted" style="font-size: 0.85rem">Pratinjau antarmuka Balinechocolate.com yang menampilkan integrasi antara katalog produk dan cerita jenama.</p>
+                        <p class="hero-image-caption text-center mt-3 text-muted" style="font-size: 0.85rem">Tampilan Antarmuka Platform Balinechocolate.com</p>
                     </div>
                 </div>
 
+                <!-- Abstrak -->
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
                         <div class="glass-card p-4 p-md-5 content-block">
-                            <div class="section-label">Identifikasi Masalah</div>
-                            <h2 class="judul mb-4">Keterbatasan Jangkauan Penjualan Luring</h2>
+                            <div class="section-label">Abstrak</div>
                             <p class="p-text">
-                                Usaha mikro, kecil, dan menengah yang memproduksi barang bernilai tinggi sering kali menghadapi kendala dalam memperluas jangkauan pasar. Baline Chocolate pada awalnya sangat bergantung pada penjualan luring
-                                melalui toko fisik dan mitra distributor di area pariwisata. Ketika perilaku konsumen bergeser menuju transaksi digital, model bisnis konvensional ini membatasi potensi pendapatan perusahaan.
+                                Studi kasus ini mengulas proses digitalisasi usaha cokelat artisan Bali lewat pengembangan platform niaga elektronik yang menggabungkan profil perusahaan dan toko daring dalam satu ekosistem digital. Fokusnya
+                                adalah <strong>Baline Chocolate</strong>, produsen cokelat artisan asal Gianyar yang nama brandnya berakar dari bahasa Bali, bermakna <em>"Ini Coklat Bali"</em>. Ada tiga masalah utama yang diidentifikasi:
+                                ketergantungan pada saluran distribusi luring, belum ada narasi kultural autentik di medium digital, dan alur transaksi yang belum terintegrasi. Solusinya dibangun dengan pendekatan
+                                <em>Human-Centered Design</em> menggunakan WordPress dan WooCommerce, dengan ornamen seni Bali seperti <em>Barong</em>, figur <em>Legong</em>, gaya ilustrasi <em>Wayang Kamasan</em>, dan motif tari
+                                tradisional sebagai elemen inti identitas kemasan dan antarmuka digitalnya. Hasilnya: konsistensi visual antara kemasan fisik dan platform digital jadi kunci dalam membangun kepercayaan konsumen sekaligus
+                                mendorong ekspansi merek ke pasar nasional.
                             </p>
-                            <p class="p-text">
-                                Selain masalah distribusi, perusahaan juga menemui kesulitan dalam menyampaikan proses produksi dan dedikasi petani lokal di balik setiap batang cokelat. Penggunaan media sosial saja dinilai tidak cukup untuk
-                                menampung seluruh informasi produk, mengelola manajemen pesanan, dan membangun kepercayaan konsumen secara profesional dalam satu alur kerja yang terpusat.
+                            <div class="keyword-list">
+                                <span>Niaga Elektronik</span>
+                                <span>UMKM Digital</span>
+                                <span>Identitas Visual Bali</span>
+                                <span>Wayang Kamasan</span>
+                                <span>Ekspansi Merek</span>
+                                <span>WordPress</span>
+                                <span>WooCommerce</span>
+                                <span>UI/UX Design</span>
+                                <span>Artisan Cokelat</span>
+                                <span>Human-Centered Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Pendahuluan -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">I. Pendahuluan</div>
+                        <h2 class="judul">Kakao Gianyar dan Tantangan Digitalisasi UMKM Artisan</h2>
+                        <p class="p-text">
+                            Kabupaten Gianyar dikenal sebagai pusat kebudayaan dan kesenian Bali. Tapi di balik reputasi itu, wilayah ini juga punya potensi agrikultur yang signifikan: perkebunan kakao yang menghasilkan biji berkualitas
+                            tinggi sebagai bahan baku industri cokelat artisan. Komoditas ini potensial menjadi produk unggulan ekspor kreatif apabila didukung oleh narasi merek dan kanal distribusi yang tepat.
+                        </p>
+                        <p class="p-text">
+                            Industri cokelat artisan di Indonesia tumbuh signifikan seiring meningkatnya kesadaran konsumen terhadap produk <em>bean-to-bar</em> berkualitas lokal. Data Kementerian Perindustrian mencatat sektor industri
+                            makanan olahan berbasis kakao tumbuh rata-rata 7,8% per tahun dalam periode 2019 hingga 2022. Pertumbuhan ini menciptakan peluang sekaligus tekanan kompetitif bagi produsen skala UMKM yang belum punya kehadiran
+                            digital yang kuat.
+                        </p>
+                        <p class="p-text">
+                            Di tengah kondisi itu, penetrasi internet Indonesia yang sudah melampaui 78% pada tahun 2022 jelas membuka peluang nyata bagi UMKM untuk menjangkau konsumen di luar batas geografis lokalnya. Tapi kehadiran
+                            digital saja tidak cukup. Perlu platform yang mampu merepresentasikan nilai autentik produk lokal secara visual dan naratif.
+                        </p>
+                        <div class="callout">
+                            <p>
+                                Pertanyaan intinya: bagaimana identitas visual kultural Bali yang kaya, mulai dari figur <em>Barong</em>, tari <em>Legong</em>, gaya ilustrasi <em>Wayang Kamasan</em>, sampai motif tari tradisional lainnya,
+                                bisa diterjemahkan ke dalam desain kemasan dan antarmuka digital untuk membangun ekuitas merek yang otentik dan mendorong ekspansi pasar nasional?
                             </p>
                         </div>
                     </div>
@@ -114,85 +388,308 @@
                     <div class="col-lg-10"><hr class="section-divider my-0" /></div>
                 </div>
 
+                <!-- Latar Belakang -->
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
-                        <div class="section-label">Solusi Platform</div>
-                        <h2 class="judul mb-4">Situs Web Hibrida Berbasis Transaksional</h2>
+                        <div class="section-label">II. Latar Belakang</div>
+                        <h2 class="judul">Baline Chocolate: Akar Nama, Akar Budaya</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">2.1 Asal-usul Merek dan Filosofi Produk</h3>
+                        <p class="p-text">
+                            Nama <strong>Baline Chocolate</strong> bukan sekadar label komersial. Dalam bahasa Bali, kata <em>baline</em> berarti <em>"ini milik Bali"</em>, atau lebih lugas: <em>"Ini Coklat Bali"</em>. Pilihan nama ini
+                            adalah deklarasi identitas yang tegas. Produk ini lahir dari tanah Bali, tumbuh bersama petani lokal Gianyar, dan membawa kekayaan kultural pulau tersebut dalam setiap batang cokelatnya.
+                        </p>
+                        <p class="p-text">
+                            Baline Chocolate menjalin kemitraan langsung dengan pengolah biji kakao lokal di Gianyar, menempuh rantai produksi yang pendek dan transparan. Filosofi <em>farm-to-bar</em> ini menjadikan cokelat Baline bukan
+                            sekadar produk pangan, tapi sebuah medium penceritaan tentang dedikasi petani, tanah Bali, dan warisan seni visualnya.
+                        </p>
+                        <h3 class="judul-text mt-4">2.2 Seni Visual Bali sebagai Aset Merek</h3>
+                        <p class="p-text">
+                            Bali punya tradisi seni visual yang telah berumur berabad-abad. Gaya lukisan <em>Wayang Kamasan</em>, yang berasal dari desa Kamasan di Klungkung, menggunakan warna-warna alam dan figur-figur ikonik dari epos
+                            Mahabharata dan Ramayana dengan komposisi yang sangat khas. Tari <em>Legong</em> dengan kostumnya yang gemerlap emas, serta figur <em>Barong</em> sebagai penjelmaan kekuatan pelindung dalam kosmologi Bali, telah
+                            menjadi simbol yang dikenali secara universal.
+                        </p>
+                        <p class="p-text">
+                            Dalam konteks branding produk artisan, simbol-simbol visual ini punya kekuatan yang jauh melampaui dekorasi semata. Mereka berfungsi sebagai <em>cultural signifier</em>: penanda yang mengkomunikasikan asal-usul,
+                            nilai, dan janji kualitas sebuah produk tanpa perlu satu kata pun.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-val">78%</div>
+                                <div class="stat-label">Penetrasi Internet Indonesia 2022</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">7,8%</div>
+                                <div class="stat-label">Pertumbuhan industri olahan kakao per tahun</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">64 jt+</div>
+                                <div class="stat-label">UMKM aktif di Indonesia 2022</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-val">30%</div>
+                                <div class="stat-label">UMKM yang sudah hadir secara digital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Identifikasi Masalah -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">III. Identifikasi Masalah</div>
+                        <h2 class="judul">Tiga Hambatan Utama Pertumbuhan Digital</h2>
+                        <p class="p-text">Dari analisis kondisi awal Baline Chocolate, ada tiga hambatan struktural yang membatasi potensi pertumbuhan merek secara digital:</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="problem-card">
+                            <h5>Masalah 1: Ketergantungan Penuh pada Distribusi Luring</h5>
+                            <p>
+                                Penjualan awal Baline Chocolate bertumpu sepenuhnya pada toko fisik dan jaringan distributor di kawasan pariwisata Bali. Model ini membatasi jangkauan konsumen hanya pada wisatawan yang hadir secara fisik di
+                                Bali dan reseller lokal. Pergeseran perilaku konsumen pascapandemi menuju transaksi digital membuat model luring semata jadi hambatan serius bagi skalabilitas usaha.
+                            </p>
+                        </div>
+                        <div class="problem-card">
+                            <h5>Masalah 2: Narasi Kultural Tidak Tersampaikan Secara Utuh</h5>
+                            <p>
+                                Kekuatan utama Baline Chocolate ada pada kisah di balik produknya: petani lokal Gianyar, proses <em>farm-to-bar</em>, dan warisan seni Bali yang tertanam dalam desain kemasan. Media sosial sebagai
+                                satu-satunya medium digital terbukti tidak memadai untuk menampung kedalaman narasi tersebut, mengelola katalog produk secara terstruktur, dan membangun kepercayaan konsumen dalam satu alur pengalaman yang
+                                kohesif.
+                            </p>
+                        </div>
+                        <div class="problem-card">
+                            <h5>Masalah 3: Identitas Visual Kultural Belum Dioptimalkan sebagai Aset Digital</h5>
+                            <p>
+                                Desain kemasan fisik Baline Chocolate sudah menampilkan motif seni Bali. Tapi representasi visual itu belum diterjemahkan secara konsisten ke medium digital. Akibatnya terjadi <em>brand dissonance</em>:
+                                konsumen yang menemukan produk secara daring mendapatkan pengalaman visual yang terputus dari kekayaan identitas kultural yang ada di kemasan fisiknya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up mt-3">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-3 p-md-4">
+                            <h4 style="font-family: &quot;Kanit&quot;, sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 10px"><i class="bi bi-question-circle me-2"></i>Rumusan Masalah</h4>
+                            <ol style="font-size: 0.88rem; line-height: 1.9; margin: 0; padding-left: 20px">
+                                <li>Bagaimana merancang platform niaga elektronik hybrid yang mengintegrasikan fungsi profil perusahaan dan toko daring dalam satu ekosistem digital yang kohesif?</li>
+                                <li>Bagaimana platform digital bisa jadi instrumen strategis untuk mendorong ekspansi merek Baline Chocolate dari pasar lokal Bali ke pasar nasional?</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Metodologi -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">IV. Metodologi Pengembangan</div>
+                        <h2 class="judul">Proses Perancangan dan Implementasi Platform</h2>
+                        <p class="p-text">
+                            Pengembangan platform Baline Chocolate menggunakan pendekatan <em>Human-Centered Design</em> yang menempatkan pengalaman konsumen akhir sebagai pusat setiap keputusan desain. Proses pengembangan dibagi ke dalam
+                            empat fase yang saling berurutan.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="waterfall-flow">
+                                <div class="method-step">
+                                    <div class="step-num">1</div>
+                                    <div class="step-content">
+                                        <h4>Riset dan Inventarisasi Aset Kultural</h4>
+                                        <p>
+                                            Fase awal mencakup wawancara dengan pemilik usaha untuk memahami nilai merek dan aspirasi ekspansi, analisis kompetitif terhadap platform cokelat artisan nasional dan internasional, serta
+                                            inventarisasi aset visual kultural Bali yang relevan. Keluaran fase ini adalah <em>brand brief</em> visual yang memetakan elemen seni Bali yang akan diintegrasikan ke dalam antarmuka digital.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">2</div>
+                                    <div class="step-content">
+                                        <h4>Perancangan Identitas Visual Digital</h4>
+                                        <p>
+                                            Penerjemahan identitas kultural dari kemasan fisik ke antarmuka digital dilakukan melalui pembuatan panduan gaya visual yang mendefinisikan palet warna, hierarki tipografi, dan tata cara
+                                            penggunaan ornamen Bali dalam konteks layar. Figma digunakan untuk menghasilkan prototipe interaktif resolusi tinggi sebelum pengembangan dimulai, memastikan konsistensi visual antara kemasan
+                                            produk dan pengalaman digital.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">3</div>
+                                    <div class="step-content">
+                                        <h4>Implementasi WordPress dan WooCommerce</h4>
+                                        <p>
+                                            Platform dibangun di atas WordPress dengan ekstensi WooCommerce sebagai tulang punggung sistem niaga elektronik. Implementasi mencakup arsitektur halaman hybrid, sistem manajemen produk dengan
+                                            atribut lengkap, konfigurasi gerbang pembayaran, integrasi kalkulasi ongkos kirim otomatis, serta optimasi aset visual menggunakan teknik <em>lazy loading</em> untuk menjaga kecepatan muat
+                                            halaman.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="method-step">
+                                    <div class="step-num">4</div>
+                                    <div class="step-content">
+                                        <h4>Pengujian Performa dan Konsistensi Merek</h4>
+                                        <p>
+                                            Pengujian dilakukan pada tiga dimensi: fungsionalitas sistem transaksi menggunakan metode <em>black-box testing</em>, performa teknis lewat Google PageSpeed Insights, serta konsistensi
+                                            representasi identitas visual kultural pada berbagai ukuran layar dan perangkat. Umpan balik dari iterasi pengujian dipakai untuk penyempurnaan sebelum peluncuran resmi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Hasil dan Pembahasan -->
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10">
+                        <div class="section-label">V. Hasil dan Pembahasan</div>
+                        <h2 class="judul">Balinechocolate.com: Platform Hybrid Berbasis Identitas Kultural</h2>
                     </div>
                 </div>
 
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">5.1 Arsitektur Platform Hybrid</h3>
                         <p class="p-text">
-                            Platform <strong>Balinechocolate.com</strong> dibangun sebagai situs web hibrida yang menggabungkan fungsi profil perusahaan dengan sistem niaga elektronik. Pendekatan ini memungkinkan pengunjung untuk
-                            mempelajari sejarah kakao Gianyar, membaca ulasan produk, dan langsung memasukkan barang ke dalam keranjang belanja tanpa harus berpindah aplikasi.
+                            Platform <strong>Balinechocolate.com</strong> dirancang sebagai situs web hybrid yang menggabungkan fungsi profil perusahaan dengan sistem niaga elektronik penuh dalam satu domain terpadu. Struktur navigasinya
+                            dibuat dengan hierarki konten yang jelas: pengunjung pertama kali disambut oleh narasi merek dan kisah perkebunan kakao sebelum diarahkan ke katalog produk. Alur ini membangun kepercayaan dulu sebelum mendorong
+                            konversi.
+                        </p>
+                        <p class="p-text">
+                            Arsitektur halaman terdiri dari beberapa lapisan informasi yang saling melengkapi: <em>Beranda</em> sebagai pintu masuk naratif, <em>Tentang Baline</em> yang mengisahkan filosofi dan kemitraan petani lokal,
+                            <em>Rumah Cokelat</em> sebagai showcase proses produksi, <em>Kreasi Cokelat</em> untuk eksplorasi produk premium, serta halaman <em>Produk</em> sebagai ruang transaksi utama.
                         </p>
                         <div class="tag-list mt-3">
                             <span class="exp-tag">Company Profile</span>
                             <span class="exp-tag">Online Store</span>
                             <span class="exp-tag">Order Management</span>
+                            <span class="exp-tag">Bilingual ID/EN</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
-                </div>
-
                 <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10">
-                        <div class="section-label">Fase Pengembangan 1</div>
-                        <h2 class="judul mb-4">Perancangan Antarmuka Berpusat pada Produk (UI/UX)</h2>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center fade-up mt-2">
                     <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">5.2 Integrasi Seni Visual Bali dalam Kemasan dan Antarmuka Digital</h3>
                         <p class="p-text">
-                            Situs web niaga elektronik dituntut untuk memiliki tingkat konversi yang tinggi. Oleh sebab itu, perancangan antarmuka dilakukan dengan sangat teliti untuk memastikan proses penjelajahan katalog hingga
-                            penyelesaian pembayaran berjalan intuitif.
+                            Ini adalah dimensi paling kritis dari seluruh proyek: bagaimana kekayaan seni visual Bali yang sudah diwujudkan dalam kemasan fisik produk Baline Chocolate bisa diterjemahkan ke medium digital dengan konsistensi
+                            dan kedalaman yang sama. Ada empat sumber ikonografi utama yang dipilih sebagai fondasi sistem visual merek.
                         </p>
 
-                        <div class="callout">
+                        <div class="packaging-showcase">
+                            <div class="packaging-item">
+                                <i class="bi bi-shield-fill pkg-icon"></i>
+                                <div class="pkg-name">Barong</div>
+                                <p class="pkg-desc">
+                                    Figur Barong sebagai manifestasi kekuatan pelindung dalam kosmologi Bali digunakan sebagai motif utama pada edisi kemasan premium. Sosok Barong dengan mahkota emas dan raut wajah yang khas ditampilkan
+                                    dalam gaya ilustrasi modern yang tetap menghormati proporsi dan detail tradisionalnya.
+                                </p>
+                            </div>
+                            <div class="packaging-item">
+                                <i class="bi bi-person-arms-up pkg-icon"></i>
+                                <div class="pkg-name">Legong</div>
+                                <p class="pkg-desc">
+                                    Penari Legong dengan kostum <em>prada</em> keemasan jadi ikon feminin yang merepresentasikan keanggunan produk cokelat artisan. Gestur tangan dan postur tari yang khas dikonversikan menjadi elemen grafis
+                                    siluet pada kemasan tipe susu dan cokelat putih.
+                                </p>
+                            </div>
+                            <div class="packaging-item">
+                                <i class="bi bi-image pkg-icon"></i>
+                                <div class="pkg-name">Wayang Kamasan</div>
+                                <p class="pkg-desc">
+                                    Gaya ilustrasi Wayang Kamasan dari desa Kamasan, Klungkung, dengan karakteristik warna bumi seperti oker, sienna, dan merah terra, serta komposisi figur menghadap ke samping, diadaptasi untuk panel narasi
+                                    di sisi kemasan. Gaya ini menceritakan kisah asal-usul kakao dalam bahasa visual leluhur Bali.
+                                </p>
+                            </div>
+                            <div class="packaging-item">
+                                <i class="bi bi-flower1 pkg-icon"></i>
+                                <div class="pkg-name">Motif Tari Tradisional</div>
+                                <p class="pkg-desc">
+                                    Ornamen dari ragam tari Bali lainnya seperti Kecak, Pendet, dan Baris digunakan sebagai elemen dekoratif berulang pada pita kemasan dan latar belakang antarmuka digital. Motif-motif ini memberikan
+                                    kekayaan visual tanpa mendominasi, menjaga keseimbangan antara kehadiran kultural dan keterbacaan informasi produk.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout mt-3">
                             <p>
-                                <strong>Identitas Visual Merek:</strong> Pemilihan palet warna didominasi oleh warna oranye cerah dan elemen putih bersih. Warna oranye dipilih secara khusus untuk merepresentasikan kehangatan, antusiasme,
-                                serta mencerminkan rona alami buah kakao yang matang di perkebunan. <br /><br />
-
-                                <strong>Tata Letak Etalase Digital:</strong> Halaman produk didesain menggunakan sistem grid yang menonjolkan fotografi kemasan cokelat. Setiap kartu produk dilengkapi dengan tombol akses cepat untuk
-                                mempermudah konsumen menambahkan barang ke keranjang belanja hanya dengan satu ketukan. <br /><br />
-
-                                <strong>Penyajian Informasi Terstruktur:</strong> Bagian informasi perusahaan ditempatkan secara strategis menggunakan tata letak layar terbagi. Sisi satu menampilkan gambar perkebunan yang autentik,
-                                sementara sisi lainnya memuat teks naratif mengenai dedikasi Baline Chocolate terhadap pemberdayaan petani lokal Gianyar.
+                                Pada antarmuka digital, ornamen-ornamen kultural ini hadir dalam tiga bentuk: sebagai <strong>elemen hero</strong> di banner utama beranda, sebagai <strong>pemisah seksi</strong> di antara blok konten dengan
+                                motif berulang berskala kecil, dan sebagai <strong>latar tekstur halus</strong> di area produk. Hasilnya adalah pengalaman visual yang kaya tanpa mengorbankan keterbacaan konten dan kecepatan muat halaman.
                             </p>
                         </div>
-                    </div>
-                </div>
 
-                <div class="row justify-content-center my-4 fade-up">
-                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
-                </div>
+                        <p class="p-text mt-3">
+                            Konsistensi antara kemasan fisik dan antarmuka digital inilah yang jadi titik diferensiasi terkuat platform ini. Ketika konsumen yang pertama kali menemukan produk secara daring kemudian mengunjungi situs web,
+                            mereka mengalami kesinambungan visual yang memperkuat persepsi keaslian dan kualitas. Ini yang dalam manajemen merek disebut sebagai <em>brand touchpoint consistency</em>.
+                        </p>
 
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10">
-                        <div class="section-label">Fase Pengembangan 2</div>
-                        <h2 class="judul mb-4">Integrasi Sistem Niaga dan Optimalisasi Kinerja</h2>
+                        <div style="margin-top: 18px">
+                            <span class="cultural-badge"><strong>Barong</strong> Edisi Premium Dark 70%</span>
+                            <span class="cultural-badge"><strong>Legong</strong> Edisi Milk Chocolate</span>
+                            <span class="cultural-badge"><strong>Wayang Kamasan</strong> Panel narasi kemasan</span>
+                            <span class="cultural-badge"><strong>Tari Pendet</strong> Motif ornamen berulang</span>
+                            <span class="cultural-badge"><strong>Tari Kecak</strong> Elemen border dekoratif</span>
+                            <span class="cultural-badge"><strong>Motif Prada</strong> Tekstur latar digital</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">5.3 Desain Antarmuka Berpusat pada Konversi</h3>
                         <p class="p-text">
-                            Kekuatan utama dari platform ini terletak pada arsitektur pengelolaan transaksi di belakang layar. Sebagai pengembang web, saya mengimplementasikan sistem manajemen konten WordPress yang sangat dinamis dan mudah
-                            dikelola oleh pemilik usaha.
+                            Palet warna antarmuka digital dipimpin oleh oranye hangat yang dipilih secara strategis untuk merepresentasikan dua hal sekaligus: kehangatan dan antusiasme sebagai nilai merek, serta rona alami buah kakao yang
+                            matang. Warna ini dipasangkan dengan latar krem bersih dan aksen cokelat tua, menciptakan hierarki visual yang mengarahkan mata konsumen secara natural dari narasi menuju tombol <em>call-to-action</em>.
                         </p>
-                        <p class="p-text mt-3">
-                            Keandalan situs web ini dicapai dengan mengintegrasikan ekstensi WooCommerce secara menyeluruh. Proses integrasi ini mencakup pembangunan logika keranjang belanja, sinkronisasi manajemen inventaris gudang,
-                            penghitungan ongkos kirim otomatis, hingga penyediaan gerbang pembayaran yang aman.
+                        <p class="p-text">
+                            Tata letak etalase digital menggunakan sistem grid tiga kolom yang menonjolkan fotografi kemasan produk beresolusi tinggi. Setiap kartu produk dilengkapi informasi harga, varian rasa, dan tombol
+                            <em>Tambahkan ke Keranjang</em> yang bisa diakses langsung tanpa harus masuk ke halaman detail, meminimalkan friksi dalam proses pembelian.
                         </p>
-                        <p class="p-text mt-3">
-                            Selanjutnya, keberadaan katalog produk yang sarat dengan gambar beresolusi tinggi berpotensi menurunkan kecepatan akses situs web. Untuk menyelesaikan kendala performa tersebut, saya menerapkan teknik pemuatan
-                            tunda pada seluruh aset visual. Pendekatan ini memastikan bahwa gambar hanya akan dimuat oleh peramban ketika pengguna menggulir layar ke arah area gambar tersebut, sehingga waktu muat halaman utama menjadi jauh
-                            lebih cepat dan efisien.
+                        <p class="p-text">
+                            Bagian narasi perusahaan diposisikan menggunakan tata letak layar terbagi: sisi kiri menampilkan foto perkebunan dan proses produksi yang autentik, sisi kanan memuat teks naratif tentang kemitraan dengan petani
+                            lokal Gianyar. Pendekatan ini membangun kepercayaan lewat transparansi proses produksi sambil mempertegas komitmen merek terhadap komunitas lokal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">5.4 Sistem Niaga Elektronik dan Optimasi Performa</h3>
+                        <p class="p-text">
+                            Fondasi teknis platform dibangun di atas WordPress dengan ekstensi WooCommerce yang dikonfigurasi secara komprehensif. Implementasi sistem transaksi mencakup arsitektur keranjang belanja yang responsif,
+                            sinkronisasi manajemen inventaris real-time, kalkulasi ongkos kirim otomatis berbasis API JNE dan Pos Indonesia, serta integrasi gerbang pembayaran yang mendukung transfer bank, kartu kredit, dan dompet digital.
+                        </p>
+                        <p class="p-text">
+                            Tantangan performa dari katalog produk berbasis fotografi beresolusi tinggi diatasi lewat teknik <em>lazy loading</em> pada seluruh aset visual. Gambar hanya dimuat ketika pengguna menggulir layar ke arah area
+                            tersebut, yang secara signifikan mengurangi waktu muat halaman utama. Selain itu, seluruh gambar produk dikompresi ke format WebP untuk meminimalkan ukuran file tanpa kompromi kualitas visual.
+                        </p>
+                        <p class="p-text">
+                            Platform juga diimplementasikan secara bilingual dalam Bahasa Indonesia dan Bahasa Inggris, untuk mengakomodasi segmen wisatawan mancanegara sekaligus membuka kemungkinan ekspansi ke pasar internasional di masa
+                            mendatang.
                         </p>
                     </div>
                 </div>
@@ -201,45 +698,131 @@
                     <div class="col-lg-10"><hr class="section-divider my-0" /></div>
                 </div>
 
+                <!-- Analisis Dampak -->
                 <div class="row justify-content-center fade-up">
                     <div class="col-lg-10">
-                        <div class="section-label">Dampak & Kesimpulan</div>
-                        <h2 class="judul mb-4">Mendorong Pertumbuhan Ekonomi Berbasis Digital</h2>
+                        <div class="section-label">VI. Analisis Dampak</div>
+                        <h2 class="judul">Platform sebagai Katalis Ekspansi Merek Nasional</h2>
+                        <p class="p-text">
+                            Dampak kehadiran platform digital Baline Chocolate tidak berhenti di efisiensi operasional. Pada dimensi yang lebih strategis, platform ini jadi fondasi konkret bagi ekspansi merek yang terencana: mengubah Baline
+                            Chocolate dari produk oleh-oleh lokal menjadi merek cokelat artisan yang dikenal di skala nasional.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <h3 class="judul-text mt-4">6.1 Ekspansi Jangkauan Pasar Lintas Geografi</h3>
+                        <p class="p-text">
+                            Sebelum hadir secara digital, konsumen Baline Chocolate secara praktis harus berada di Bali untuk bisa membeli produknya. Platform niaga elektronik menghapus batasan geografis itu secara fundamental. Konsumen
+                            dari Jakarta, Surabaya, Medan, atau kota-kota lain di seluruh Indonesia kini bisa mengakses, memilih, dan memesan produk langsung kepada produsen tanpa perantara, dengan sistem pengiriman yang sudah terintegrasi.
+                        </p>
+                        <p class="p-text">
+                            Lebih dari sekadar perluasan kanal penjualan, ini adalah ekspansi narasi merek. Setiap konsumen di luar Bali yang mengunjungi platform, membaca kisah petani kakao Gianyar, melihat ilustrasi Wayang Kamasan pada
+                            kemasan, atau memahami filosofi di balik nama "Baline", mereka menjadi bagian dari komunitas merek yang lebih luas, terlepas dari lokasi geografisnya.
+                        </p>
+                        <h3 class="judul-text mt-4">6.2 Identitas Visual Kultural sebagai Keunggulan Kompetitif</h3>
+                        <p class="p-text">
+                            Dalam pasar cokelat artisan yang semakin ramai, identitas kultural yang autentik jadi <em>moat</em> kompetitif yang sulit ditiru. Merek dari luar Bali tidak bisa dengan mudah mengklaim warisan visual Barong,
+                            Legong, atau Wayang Kamasan dengan kredibilitas yang sama. Konsistensi antara identitas visual pada kemasan fisik dan antarmuka digital Baline Chocolate memperkuat narasi keaslian ini secara berlapis.
+                        </p>
+                        <p class="p-text">
+                            Implementasi identitas kultural pada platform digital juga membuka peluang kemitraan dengan agen wisata, hotel butik, dan <em>gift shop</em> premium. Segmen ini secara aktif mencari produk oleh-oleh beridentitas
+                            kultural kuat untuk ditawarkan kepada tamu mereka.
+                        </p>
+                        <h3 class="judul-text mt-4">6.3 Platform sebagai Fondasi Ekosistem Merek Jangka Panjang</h3>
+                        <p class="p-text">
+                            Arsitektur platform yang dibangun sejak awal dengan mempertimbangkan skalabilitas memungkinkan penambahan fitur dan konten secara bertahap tanpa perancangan ulang. Halaman <em>Kerjasama</em> pada platform secara
+                            aktif membuka pintu bagi calon mitra distribusi, reseller, dan peluang kerja sama dengan hotel, maskapai, serta korporasi yang membutuhkan produk <em>corporate gift</em> berlabel kultural Bali.
+                        </p>
+                        <p class="p-text">
+                            Dalam jangka panjang, platform ini juga meletakkan fondasi bagi strategi ekspansi internasional. Antarmuka bilingual yang sudah tersedia, didukung narasi merek yang dibangun dengan standar
+                            <em>storytelling</em> internasional, menjadikan Baline Chocolate siap menjajaki pasar ekspor ke negara-negara dengan komunitas diaspora Indonesia yang besar maupun pasar yang apresiasi terhadap produk artisan
+                            Asia Tenggara.
+                        </p>
                     </div>
                 </div>
 
-                <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 content-block">
+                <div class="row justify-content-center fade-up mt-4">
+                    <div class="col-lg-10">
                         <div class="glass-card p-4 p-md-5">
                             <div class="row g-4">
                                 <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">📈</div>
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Perluasan Pasar</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Memungkinkan konsumen dari seluruh wilayah Indonesia untuk melakukan transaksi secara langsung.</p>
+                                    <i class="bi bi-globe2 impact-icon"></i>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Ekspansi Pasar Nasional</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Konsumen dari seluruh Indonesia bisa bertransaksi langsung, mengubah model penjualan dari lokal ke nasional tanpa investasi infrastruktur fisik tambahan.</p>
                                 </div>
                                 <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">⚙️</div>
+                                    <i class="bi bi-patch-check-fill impact-icon"></i>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Ekuitas Merek Berbasis Budaya</div>
+                                    <p class="p-text" style="font-size: 0.82rem">Integrasi Barong, Legong, Wayang Kamasan, dan motif tari Bali membangun ekuitas merek yang autentik dan sulit ditiru kompetitor dari luar Bali.</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="bi bi-gear-fill impact-icon"></i>
                                     <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Efisiensi Operasional</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Automasi manajemen pesanan mengurangi beban administrasi dan kesalahan pencatatan manual.</p>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 800; font-size: 2rem; color: var(--primary); margin-bottom: 4px">🏅</div>
-                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Kredibilitas Merek</div>
-                                    <p class="p-text" style="font-size: 0.82rem">Tampilan situs web profesional meningkatkan kepercayaan pelanggan terhadap produk lokal.</p>
+                                    <p class="p-text" style="font-size: 0.82rem">Otomasi manajemen pesanan, inventaris, dan kalkulasi pengiriman mengurangi beban administratif dan memungkinkan tim fokus pada kualitas produksi.</p>
                                 </div>
                             </div>
                             <hr style="border-color: var(--surface-border); margin: 24px 0" />
-                            <p class="p-text">
-                                Kesimpulannya, Projects Baline Chocolate mengilustrasikan bagaimana digitalisasi yang terukur dapat membawa dampak nyata bagi pelaku usaha daerah. Melalui perancangan antarmuka yang menarik dan dukungan
-                                sistem niaga elektronik yang andal, sebuah produk lokal kini memiliki panggung yang representatif untuk bersaing di pasar nasional.
-                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6 text-center">
+                                    <i class="bi bi-people-fill impact-icon"></i>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Peluang Kemitraan Strategis</div>
+                                    <p class="p-text" style="font-size: 0.82rem">
+                                        Halaman Kerjasama yang terstruktur pada platform membuka jalur aktif untuk kemitraan dengan hotel, agen wisata, maskapai, serta peluang pasar <em>corporate gift</em> berskala besar.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <i class="bi bi-send-fill impact-icon"></i>
+                                    <div style="font-family: &quot;Kanit&quot;, sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 6px">Fondasi Ekspansi Internasional</div>
+                                    <p class="p-text" style="font-size: 0.82rem">
+                                        Antarmuka bilingual Indonesia dan Inggris, bersama narasi merek berkelas internasional, meletakkan fondasi konkret bagi ekspansi ke pasar ekspor di masa mendatang.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <!-- Simpulan -->
                 <div class="row justify-content-center fade-up">
-                    <div class="col-lg-10 text-center mt-5">
-                        <a href="../project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projectss</a>
+                    <div class="col-lg-10">
+                        <div class="section-label">VII. Kesimpulan</div>
+                        <h2 class="judul">Penutup: Budaya sebagai Strategi, Digital sebagai Panggung</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 content-block">
+                        <p class="p-text">
+                            Proyek ini menunjukkan bahwa digitalisasi UMKM artisan yang efektif bukan cuma soal teknologi, tapi soal identitas. Platform Baline Chocolate membuktikan bahwa ketika identitas visual kultural yang autentik,
+                            mulai dari Barong, Legong, Wayang Kamasan, hingga motif tari tradisional Bali, diterjemahkan secara konsisten dari kemasan fisik ke antarmuka digital, hasilnya bukan sekadar toko daring biasa. Ia menjadi sebuah
+                            <em>brand world</em> yang imersif: ruang digital di mana konsumen tidak hanya membeli cokelat, tapi mengalami Bali.
+                        </p>
+                        <div class="callout">
+                            <p>
+                                Dalam ekonomi digital yang semakin jenuh dengan produk generik, keautentikan kultural adalah aset bisnis yang paling sulit ditiru dan paling berharga untuk dibangun. Bagi UMKM berbasis kearifan lokal,
+                                identitas budaya bukan sekadar ornamen, melainkan strategi ekspansi merek yang paling fundamental.
+                            </p>
+                        </div>
+                        <p class="p-text">
+                            Sebagai rekomendasi ke depan, ada tiga inisiatif yang bisa diprioritaskan: pertama, pengembangan fitur <em>virtual chocolate experience</em> yang memungkinkan konsumen menjelajahi proses produksi dari perkebunan
+                            hingga batang cokelat lewat konten video terintegrasi. Kedua, integrasi program loyalitas digital yang menghubungkan pembelian berulang dengan akses konten kultural eksklusif tentang seni Bali. Ketiga, ekspansi
+                            repertoar visual kultural dengan menggandeng seniman Bali secara langsung untuk menghasilkan ilustrasi edisi terbatas yang memperkuat posisi Baline Chocolate sebagai merek yang aktif melestarikan ekosistem seni
+                            lokal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center my-4 fade-up">
+                    <div class="col-lg-10"><hr class="section-divider my-0" /></div>
+                </div>
+
+                <div class="row justify-content-center fade-up">
+                    <div class="col-lg-10 text-center mt-4">
+                        <a href="../project.html" class="btn-primary-custom me-2 mb-2"><i class="bi bi-grid-3x3-gap"></i> View All Projects</a>
                         <a href="../../index.html" class="btn-outline-custom mb-2"><i class="bi bi-house-door"></i> Back to Home</a>
                     </div>
                 </div>
@@ -251,18 +834,14 @@
         </a>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
         <script>
-            // Logika pengaturan tema warna
             const html = document.documentElement;
             const toggle = document.getElementById("themeToggle");
             const mobileThemeBtn = document.getElementById("mobileTheme");
             const mobileThemeIcon = document.getElementById("mobileThemeIcon");
-
             const saved = localStorage.getItem("theme") || "light";
             html.setAttribute("data-theme", saved);
             updateThemeIcon(saved);
-
             function toggleTheme() {
                 const cur = html.getAttribute("data-theme");
                 const next = cur === "dark" ? "light" : "dark";
@@ -270,24 +849,18 @@
                 localStorage.setItem("theme", next);
                 updateThemeIcon(next);
             }
-
             function updateThemeIcon(t) {
                 mobileThemeIcon.className = t === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
             }
-
             toggle.addEventListener("click", toggleTheme);
             mobileThemeBtn.addEventListener("click", (e) => {
                 e.preventDefault();
                 toggleTheme();
             });
-
-            // Logika tombol gulir ke atas
             const scrollBtn = document.getElementById("scrollTop");
             window.addEventListener("scroll", () => {
                 scrollBtn.classList.toggle("visible", window.scrollY > 400);
             });
-
-            // Logika efek animasi
             const obs = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((e) => {
